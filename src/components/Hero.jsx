@@ -13,7 +13,7 @@ const Hero = () => {
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6 }}
               viewport={{ once: false, amount: 0.3 }}
-              className="font-bold text-2xl sm:text-4xl tracking-[1px]"
+              className="font-bold text-xl sm:text-4xl tracking-[1px]"
             >
               Hey, I’m Mustapha Adegbite.
             </motion.h2>
@@ -22,7 +22,7 @@ const Hero = () => {
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 2 }}
               viewport={{ once: false, amount: 0.3 }}
-              className="font-bold text-2xl sm:text-4xl tracking-[1px]"
+              className="font-bold text-xl sm:text-4xl tracking-[1px]"
             >
               Frontend Engineer
             </motion.h2>
@@ -37,11 +37,11 @@ const Hero = () => {
               I love turning ideas into sleek, responsive experiences that look
               good and feel even better.
             </motion.p>
-            <div className="mt-1 flex w-fit gap-x-2">
+            <div className="mt-1 flex flex-col sm:flex-row gap-y-2 w-fit gap-x-2">
               <a
                 href="mailto:adegbitemustapha73@gmail.com"
                 target="_blank"
-                className="text-white w-fit text-[16px] bg-black py-3 rounded-2xl px-5 hover:px-7 transition-all duration-300 ease-in-out hover:bg-black/80"
+                className="text-white w-full sm:w-fit text-[16px] bg-black py-3 rounded-2xl px-5 hover:px-7 transition-all duration-300 ease-in-out hover:bg-black/80"
               >
                 Hire me
               </a>
@@ -53,7 +53,7 @@ const Hero = () => {
               </ul>
             </div>
           </div>
-          <div className="w-[20em] h-[20em] rounded-[50%] overflow-hidden">
+          <div className="sm:w-[20em] sm:h-[20em] w-full h-[20em] rounded-[50%] overflow-hidden">
             <img
               src="/images/img1.webp"
               alt=""

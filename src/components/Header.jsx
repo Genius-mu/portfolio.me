@@ -9,38 +9,38 @@ const Header = () => {
           <div className="w-fit pr-2 border-r border-black/10 h-full flex">
             <Link
               to="/"
-              className="text-black py-2 rounded px-3 sm:px-4 hover:px-6 sm:hover:px-7 transition-all duration-300 ease-in-out hover:bg-[#f1f1f1]/30 hover:backdrop-blur-2xl"
+              className="text-black py-2 rounded px-2 sm:px-4 hover:px-4 sm:hover:px-7 transition-all duration-300 ease-in-out hover:bg-[#f1f1f1]/30 hover:backdrop-blur-2xl"
             >
-              <Home />
+              <Home className="w-4 h-4 sm:w-6 sm:h-6" />
             </Link>
           </div>
           <nav className="flex gap-x-2 pr-2 border-r border-black/10">
             <Link
               to="https://x.com/mustaphAdegbite"
-              className="text-black py-2 rounded px-3 sm:px-4 hover:px-6 sm:hover:px-7 transition-all duration-300 ease-in-out hover:bg-[#f1f1f1]/30 hover:backdrop-blur-2xl"
+              className="text-black py-2 rounded px-2 sm:px-4 hover:px-4 sm:hover:px-7 transition-all duration-300 ease-in-out hover:bg-[#f1f1f1]/30 hover:backdrop-blur-2xl"
               target="_blank"
             >
-              <Twitter />
+              <Twitter className="w-4 h-4 sm:w-6 sm:h-6" />
             </Link>
             <Link
               to="https://github.com/Genius-mu"
-              className="text-black py-2 rounded px-3 sm:px-4 hover:px-6 sm:hover:px-7 transition-all duration-300 ease-in-out hover:bg-[#f1f1f1]/30 hover:backdrop-blur-2xl"
+              className="text-black py-2 rounded px-2 sm:px-4 hover:px-4 sm:hover:px-7 transition-all duration-300 ease-in-out hover:bg-[#f1f1f1]/30 hover:backdrop-blur-2xl"
               target="_blank"
             >
-              <Github />
+              <Github className="w-4 h-4 sm:w-6 sm:h-6" />
             </Link>
             <a
               href="/resume.pdf"
               download="Mustapha_Adegbite_Resume.pdf"
-              className="text-black py-2 rounded px-3 sm:px-4 hover:px-6 sm:hover:px-7 transition-all duration-300 ease-in-out hover:bg-[#f1f1f1]/30 hover:backdrop-blur-2xl"
+              className="text-black py-2 rounded px-2 sm:px-4 hover:px-4 sm:hover:px-7 transition-all duration-300 ease-in-out hover:bg-[#f1f1f1]/30 hover:backdrop-blur-2xl"
             >
-              <FileBarChart />
+              <FileBarChart className="w-4 h-4 sm:w-6 sm:h-6" />
             </a>
           </nav>
           <a
             href="mailto:adegbitemustapha73@gmail.com"
             target="_blank"
-            className="text-white bg-black py-2 rounded px-4 hover:px-7 transition-all duration-300 ease-in-out hover:bg-black/80"
+            className="text-white bg-black text-[13px] sm:text-[16px] py-2 rounded px-4 hover:px-6 sm:hover:px-7 transition-all duration-300 ease-in-out hover:bg-black/80"
           >
             Hire me
           </a>
