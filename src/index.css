@@ -1,0 +1,65 @@
+@import "tailwindcss";
+
+body {
+  background-color: #fff;
+  cursor: cell;
+}
+html {
+  scroll-behavior: smooth;
+}
+.sec2 h2,
+.sec3 h2 {
+  font-family: Stack Sans Headline;
+}
+
+.sc4Div {
+  background: rgba(0, 0, 0, .9) url("/src/assets/low-poly-grid-haikei.svg");
+  background-blend-mode: darken;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@keyframes jelly-pop {
+  0% {
+    transform: scale(0.95);
+  }
+  60% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Wrapper already overflow-hidden by Tailwind */
+.carousel {
+  position: relative;
+}
+
+/* Smooth Infinite Track Animation */
+.track {
+  display: flex;
+  animation: marquee 15s linear infinite;
+  min-width: 200%;
+  will-change: transform;
+}
+
+/* Keyframes for seamless scroll */
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Pause on hover */
+.carousel:hover .track {
+  animation-play-state: paused;
+}
+
+/* Item sizing */
+.skill {
+  flex: 0 0 auto;
+}
