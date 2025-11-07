@@ -53,9 +53,12 @@ const Section2 = () => {
                   <Link
                     to={project.live}
                     target="_blank"
-                    className="font-semibold text-black w-[60%] text-[16px] bg-black/8 py-3 rounded-2xl px-4 hover:px-7 flex gap-x-4 transition-all duration-300 ease-in-out hover:bg-black/10"
+                    className="font-semibold overflow-hidden overflow-y-hidden text-black w-[60%] text-[16px] bg-black/8 py-3 rounded-2xl px-4 hover:px-7 flex gap-x-4 transition-all duration-300 ease-in-out hover:bg-black/10"
                   >
-                    View <span>{">"}</span>
+                    View{" "}
+                    <span className="overflow-hidden overflow-y-hidden">
+                      {">"}
+                    </span>
                   </Link>
                 </motion.div>
               </>
