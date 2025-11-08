@@ -1,0 +1,16 @@
+{
+  "name": "Mustapha Adegbite Portfolio",
+  "short_name": "MustaphaDev",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0f172a",
+  "theme_color": "#0f172a",
+  "description": "Frontend Developer Portfolio of Mustapha Adegbite, showcasing React, Next.js, and modern web projects.",
+  "icons": [
+    {
+      "src": "/images/img1.webp",
+      "sizes": "512x512",
+      "type": "image/webp"
+    }
+  ]
+}
