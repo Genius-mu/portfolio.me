@@ -1,4 +1,12 @@
-import { FileBarChart, Github, Home, Instagram, Mail, MailIcon, Twitter } from "lucide-react";
+import {
+  FileBarChart,
+  Github,
+  Home,
+  Instagram,
+  Mail,
+  MailIcon,
+  Twitter,
+} from "lucide-react";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
@@ -14,7 +22,16 @@ const Footer = () => {
             className="text-black/70 py-2 hover:text-black rounded px-2 sm:px-4 transition-all duration-300 ease-in-out hover:bg-[#f1f1f1]/30 hover:backdrop-blur-2xl"
             target="_blank"
           >
-            <Twitter className="w-4 h-4 sm:w-6 sm:h-6" />
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 1200 1227"
+              fill="currentColor"
+              className="w-4 h-4 sm:w-6 sm:h-6"
+            >
+              <path d="M714 519L1161 0h-109L671 420 426 0H0l464 726L0 1226h109l417-463 262 463h426z" />
+            </svg>
+
+            {/* <Twitter className="w-4 h-4 sm:w-6 sm:h-6" /> */}
           </Link>
           <Link
             to="https://github.com/Genius-mu"
@@ -23,14 +40,14 @@ const Footer = () => {
           >
             <Github className="w-4 h-4 sm:w-6 sm:h-6" />
           </Link>
-          {/* <a
+          <a
             href="https://www.instagram.com/genius_mu01/"
             className="text-black/70 py-2 hover:text-black rounded px-2 sm:px-4 transition-all duration-300 ease-in-out hover:bg-[#f1f1f1]/30 hover:backdrop-blur-2xl"
           >
             <Instagram className="w-4 h-4 sm:w-6 sm:h-6" />
-          </a> */}
+          </a>
           <a
-            href="https://www.instagram.com/genius_mu01/"
+            href="mailto:adegbitemustapha73@gmail.com"
             className="text-black/70 py-2 hover:text-black rounded px-2 sm:px-4 transition-all duration-300 ease-in-out hover:bg-[#f1f1f1]/30 hover:backdrop-blur-2xl"
           >
             <MailIcon className="w-4 h-4 sm:w-6 sm:h-6" />

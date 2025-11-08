@@ -20,7 +20,15 @@ const Header = () => {
               className="text-black py-2 rounded px-2 sm:px-4 hover:px-4 sm:hover:px-7 transition-all duration-300 ease-in-out hover:bg-[#f1f1f1]/30 hover:backdrop-blur-2xl"
               target="_blank"
             >
-              <Twitter className="w-4 h-4 sm:w-6 sm:h-6" />
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 1200 1227"
+                fill="currentColor"
+                className="w-4 h-4 sm:w-6 sm:h-6"
+              >
+                <path d="M714 519L1161 0h-109L671 420 426 0H0l464 726L0 1226h109l417-463 262 463h426z" />
+              </svg>
+              {/* <Twitter className="w-4 h-4 sm:w-6 sm:h-6" /> */}
             </Link>
             <Link
               to="https://github.com/Genius-mu"
