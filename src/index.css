@@ -16,7 +16,9 @@ html {
 .sec3 h2 {
   font-family: Stack Sans Headline;
 }
-
+.footP {
+  font-family: Inter;
+}
 .sc4Div {
   background: rgba(0, 0, 0, 0.9) url("/src/assets/low-poly-grid-haikei.svg");
   background-blend-mode: darken;

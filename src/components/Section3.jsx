@@ -17,7 +17,7 @@ const Section3 = () => {
   return (
     <>
       <section className="sec3 w-full h-fit pt-[6%] pb-[6%] flex justify-center items-center">
-        <div className="sm:w-[65%] w-[80%] h-full flex flex-col justify-center gap-y-9 items-start">
+        <div className="w-[90%] sm:w-[65%] h-full flex flex-col justify-center gap-y-9 items-start">
           <h2 className="font-semibold text-4xl tracking-[1px] text-center">
             About Me
           </h2>

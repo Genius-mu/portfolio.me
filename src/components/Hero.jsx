@@ -6,7 +6,7 @@ const Hero = () => {
   return (
     <>
       <section className="sec2 w-full h-fit pt-[6%] pb-[6%] flex justify-center items-center">
-        <div className="w-[80%] h-full flex flex-col gap-y-5 md:flex-row justify-between items-center">
+        <div className="w-[90%] sm:w-[80%] h-full flex flex-col-reverse gap-y-5 md:flex-row justify-between sm:items-center">
           <div className="flex flex-col gap-y-1 sm:gap-y-3">
             <motion.h2
               initial={{ opacity: 0, x: -30 }}
@@ -53,7 +53,7 @@ const Hero = () => {
               </ul>
             </div>
           </div>
-          <div className="sm:w-[20em] sm:h-[20em] w-full h-[20em] rounded-[50%] overflow-hidden">
+          <div className="sm:w-[20em] sm:h-[20em] w-[8em] h-[8em] rounded-[50%] overflow-hidden">
             <img
               src="/images/img1.webp"
               alt=""

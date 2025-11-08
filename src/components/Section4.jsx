@@ -66,7 +66,7 @@ const skills = ["HTML", "CSS", "JS", "React", "Tailwind", "Node", "Git", "TS"];
 export default function Section4Marquee() {
   return (
     <section className="sec4 w-full py-[2%] flex justify-center items-center">
-      <div className="sc4Div w-[80%] rounded sm:w-[65%] py-[4%] flex flex-col items-center gap-y-9">
+      <div className="sc4Div w-[90%] rounded sm:w-[65%] py-[4%] flex flex-col items-center gap-y-9">
         <div className="w-full flex justify-center">
           <h2 className="text-4xl font-bold text-white">My Skills</h2>
         </div>

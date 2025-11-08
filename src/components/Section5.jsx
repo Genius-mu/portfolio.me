@@ -6,7 +6,7 @@ const Section5 = () => {
 
   return (
     <section className="w-full py-24 flex justify-center items-center">
-      <div className="w-[80%] sm:w-[65%] flex flex-col items-center gap-y-4">
+      <div className="w-[90%] sm:w-[65%] flex flex-col items-center gap-y-4">
         {/* Header Text */}
         <div className="flex flex-col w-full h-fit gap-y-4">
           <h2 className="text-2xl font-bold">Let’s Build Something Great</h2>
