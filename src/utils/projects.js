@@ -56,11 +56,11 @@ export default [
     code: "https://github.com/yourname/todo",
   },
   {
-    title: "Finance",
+    title: "real-estate-web",
     description:
-      "A fun, interactive game that helps users improve their spelling skills. Built with React, featuring instant feedback, score tracking, and smooth animations for an engaging learning experience.",
-    image: "/images/img12.webp",
-    live: "https://finnapp.netlify.app/",
+      "A modern real estate web app built with Next.js and Tailwind CSS, featuring smooth navigation, responsive design, and dynamic property filters for an easy home browsing experience.",
+    image: "/images/img13.webp",
+    live: "https://re01.vercel.app/",
     code: "https://github.com/yourname/todo",
   },
 ];
