@@ -32,6 +32,14 @@ export default [
     code: "https://github.com/yourname/todo",
   },
   {
+    title: "Un. Todo",
+    description:
+      "A simple yet elegant React Todo app with animations, smooth interactions, and data persistence using localStorage",
+    image: "/images/img14.webp",
+    live: "https://todap.vercel.app/",
+    code: "https://github.com/yourname/ecommerce",
+  },
+  {
     title: "Electiz",
     description:
       "A React-based app that helps users create, assign, and track tickets efficiently. Built with smooth UI and real-time task updates to make team management easier.",
