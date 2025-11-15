@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import realProjects from "../utils/projects";
 import { motion } from "framer-motion";
+import { Github } from "lucide-react";
 
 const Projects = () => {
   const fadeVariants = {
@@ -50,16 +51,25 @@ const Projects = () => {
                   <p className="text-black/70 text-[16px] line-clamp-2">
                     {project.description}
                   </p>
-                  <Link
-                    to={project.live}
-                    target="_blank"
-                    className="font-semibold overflow-hidden overflow-y-hidden text-black w-[60%] text-[16px] bg-black/8 py-3 rounded-2xl px-4 hover:px-7 flex gap-x-4 transition-all duration-300 ease-in-out hover:bg-black/10"
-                  >
-                    View{" "}
-                    <span className="overflow-hidden overflow-y-hidden">
-                      {">"}
-                    </span>
-                  </Link>
+                  <span className="w-full overflow-hidden flex items-center gap-x-2">
+                    <Link
+                      to={project.live}
+                      target="_blank"
+                      className="font-semibold overflow-hidden overflow-y-hidden text-black w-[60%] text-[16px] bg-black/8 py-3 rounded-2xl px-4 hover:px-7 flex gap-x-4 transition-all duration-300 ease-in-out hover:bg-black/10"
+                    >
+                      View{" "}
+                      <span className="overflow-hidden overflow-y-hidden">
+                        {">"}
+                      </span>
+                    </Link>
+                    <Link
+                      to="https://github.com/Genius-mu"
+                      className="text-black py-2 rounded px-2 sm:px-4 hover:px-4 sm:hover:px-7 transition-all duration-300 ease-in-out hover:bg-[#f1f1f1]/50 hover:backdrop-blur-2xl"
+                      target="_blank"
+                    >
+                      <Github className="w-4 h-4 sm:w-6 sm:h-6" />
+                    </Link>
+                  </span>
                 </motion.div>
               </>
             ))}

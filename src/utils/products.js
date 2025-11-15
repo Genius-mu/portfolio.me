@@ -16,11 +16,11 @@ export default [
     code: "https://github.com/yourname/dashboard",
   },
   {
-    title: "Invoice Generator App",
+    title: "ClarityHub",
     description:
-      "A fast, professional tool for freelancers and businesses to generate and download invoices instantly. Built with React and Tailwind for speed and simplicity.",
-    image: "/images/img8.webp",
-    live: "https://inv-genapp.netlify.app/",
+      "ClarityHub is a smart organization app that helps users store resources, categorize them, and instantly find anything using powerful natural-language search and personalized AI recommendations.",
+    image: "/images/img15.webp",
+    live: "https://clarityhai.vercel.app/",
     code: "https://github.com/yourname/todo",
   },
   {

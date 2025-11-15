@@ -1,5 +1,13 @@
 export default [
   {
+    title: "ClarityHub",
+    description:
+      "ClarityHub is a smart organization app that helps users store resources, categorize them, and instantly find anything using powerful natural-language search and personalized AI recommendations.",
+    image: "/images/img15.webp",
+    live: "https://clarityhai.vercel.app/",
+    code: "https://github.com/yourname/todo",
+  },
+  {
     title: "Ticket-MA",
     description:
       "A React-based app that helps users create, assign, and track tickets efficiently. Built with smooth UI and real-time task updates to make team management easier.",

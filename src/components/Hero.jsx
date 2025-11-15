@@ -33,9 +33,10 @@ const Hero = () => {
               viewport={{ once: false, amount: 0.3 }}
               className="max-w-[450px] text-black/60"
             >
-              Building fast, interactive, and pixel-perfect web apps with React.
-              I love turning ideas into sleek, responsive experiences that look
-              good and feel even better.
+              I build fast, pixel-perfect React apps that solve real problems —
+              like turning scattered information into a clean, structured
+              experience with ClarityHub. I love transforming messy ideas into
+              smooth, responsive interfaces that make life easier.
             </motion.p>
             <div className="mt-1 flex flex-col sm:flex-row gap-y-2 w-fit gap-x-2">
               <a
