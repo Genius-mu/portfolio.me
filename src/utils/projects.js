@@ -79,4 +79,12 @@ export default [
     live: "https://re01.vercel.app/",
     code: "https://github.com/yourname/todo",
   },
+  {
+    title: "Charcoal Website",
+    description:
+      "A modern charcoal-themed landing page I rebuilt from an X design—enhanced with cleaner layout, better visuals, and full responsiveness. A simple showcase of turning inspiration into a refined, polished UI.",
+    image: "/images/img16.webp",
+    live: "https://charcoal-web.vercel.app/",
+    code: "https://github.com/yourname/todo",
+  },
 ];
