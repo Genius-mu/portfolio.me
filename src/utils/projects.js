@@ -50,7 +50,7 @@ export default [
   {
     title: "Electiz",
     description:
-      "A React-based app that helps users create, assign, and track tickets efficiently. Built with smooth UI and real-time task updates to make team management easier.",
+      "A bright, professional electrical services landing page designed with clean sections, strong visuals, and responsive layouts. Built to showcase services clearly and create instant trust for potential customers.",
     image: "/images/img9.webp",
     live: "https://electiz.netlify.app/",
     code: "https://github.com/yourname/ecommerce",
@@ -58,7 +58,7 @@ export default [
   {
     title: "DOM",
     description:
-      "A simple yet powerful app to build consistency. Users can log habits, track daily progress, and visualize streaks — all in a clean, responsive interface.",
+      "A beautifully modern image-generation landing page rebuilt from a design I discovered on X. I refined the layout, visuals, and interactions to create a smoother, more engaging user experience.",
     image: "/images/img11.webp",
     live: "https://amenadom.netlify.app/",
     code: "https://github.com/yourname/dashboard",
@@ -66,7 +66,7 @@ export default [
   {
     title: "Tania",
     description:
-      "A fast, professional tool for freelancers and businesses to generate and download invoices instantly. Built with React and Tailwind for speed and simplicity.",
+      "A calming, wellness-focused massage landing page rebuilt from an X template. I improved the visuals, spacing, and flow to create a soothing, modern, and fully responsive user experience.",
     image: "/images/img10.webp",
     live: "https://tanea.netlify.app/",
     code: "https://github.com/yourname/todo",
