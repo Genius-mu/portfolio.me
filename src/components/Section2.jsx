@@ -2,8 +2,12 @@ import { Link } from "react-router-dom";
 import projects from "../utils/products";
 import { motion } from "framer-motion";
 import { Github } from "lucide-react";
+import { useContext } from "react";
+import { ThemeTog } from "../App";
 
 const Section2 = () => {
+  const { dark } = useContext(ThemeTog);
+
   const fadeVariants = {
     hiddenLeft: { opacity: 0, x: -100, scale: 0.95 },
     hiddenRight: { opacity: 0, x: 100, scale: 0.95 },
@@ -22,7 +26,11 @@ const Section2 = () => {
       <section className="sec3 w-full h-fit pt-[6%] pb-[6%] flex justify-center items-center">
         <div className="w-[90%] sm:w-[80%] h-full flex flex-col justify-center gap-y-9 items-center">
           <div className="w-full h-full flex justify-center items-center">
-            <h2 className="font-semibold text-4xl tracking-[1px] text-center">
+            <h2
+              className={`font-semibold text-4xl tracking-[1px] text-center ${
+                dark ? "text-[#f1f1f1] " : "text-black/90"
+              }`}
+            >
               Projects That Speak for Me
             </h2>
           </div>
@@ -36,26 +44,40 @@ const Section2 = () => {
                   whileInView="visible"
                   viewport={{ once: false, amount: 0.3 }}
                   transition={{ delay: index * 0.2 }}
-                  className="flex flex-col gap-y-2 rounded-2xl p-5 w-full h-[25em] border border-black/40"
+                  className={`flex flex-col gap-y-2 rounded-2xl p-5 w-full h-[25em] border ${
+                    dark ? "border-[#f1f1f1]" : "border-black/40"
+                  }`}
                 >
                   <div className="w-full h-[60%] rounded-2xl overflow-hidden">
                     <img
                       src={project.image}
                       alt={project.title}
-                      className="w-full h-full hover:scale-109 transition-all duration-300 ease-in-out object-center"
+                      className={`w-full h-full hover:scale-109 transition-all duration-300 ease-in-out object-center`}
                     />
                   </div>
-                  <h2 className="font-bold text-2xl tracking-[1px]">
+                  <h2
+                    className={`"font-bold text-2xl tracking-[1px] ${
+                      dark ? "text-[#f1f1f1] " : "text-black/90"
+                    }`}
+                  >
                     {project.title}
                   </h2>
-                  <p className="text-black/70 text-[16px] line-clamp-2">
+                  <p
+                    className={`${
+                      dark ? "text-white " : "text-black/90"
+                    } text-[16px] line-clamp-2`}
+                  >
                     {project.description}
                   </p>
                   <span className="w-full overflow-hidden flex items-center gap-x-2">
                     <Link
                       to={project.live}
                       target="_blank"
-                      className="font-semibold overflow-hidden overflow-y-hidden text-black w-[60%] text-[16px] bg-black/8 py-3 rounded-2xl px-4 hover:px-7 flex gap-x-4 transition-all duration-300 ease-in-out hover:bg-black/10"
+                      className={`font-semibold overflow-hidden overflow-y-hidden ${
+                        dark
+                          ? "text-[#f1f1f1] bg-white/5 shadow-2xl"
+                          : "text-black/90 bg-black/8"
+                      } w-[60%] text-[16px] py-3 rounded-2xl px-4 hover:px-7 flex gap-x-4 transition-all duration-300 ease-in-out hover:bg-black/10`}
                     >
                       View{" "}
                       <span className="overflow-hidden overflow-y-hidden">

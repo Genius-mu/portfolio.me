@@ -1,16 +1,33 @@
 import { Field, Formik } from "formik";
 import { useForm } from "@formspree/react";
+import { useContext } from "react";
+import { ThemeTog } from "../App";
 
 const Section5 = () => {
   const [state, formspreeSubmit] = useForm("xldoqyjw");
+  const { dark } = useContext(ThemeTog);
 
   return (
     <section className="w-full py-24 flex justify-center items-center">
       <div className="w-[90%] sm:w-[65%] flex flex-col items-center gap-y-4">
         {/* Header Text */}
         <div className="flex flex-col w-full h-fit gap-y-4">
-          <h2 className="text-2xl font-bold">Let’s Build Something Great</h2>
-          <p className="max-w-[800px] text-black/70 text-[14px] sm:text-[16px] leading-6">
+          <h2
+            className={`text-2xl font-bold ${
+              dark
+                ? "text-[#f1f1f1] [text-shadow:1px_1px_1px_#111]"
+                : "text-black/70"
+            }`}
+          >
+            Let’s Build Something Great
+          </h2>
+          <p
+            className={`max-w-[800px] ${
+              dark
+                ? "text-[#f1f1f1] [text-shadow:1px_1px_1px_#111]"
+                : "text-black/70"
+            } text-[14px] sm:text-[16px] leading-6`}
+          >
             Got an idea, a project, or a vision that needs a frontend touch? I’d
             love to bring it to life. I build clean, fast, and interactive
             interfaces that turn ideas into real user experiences. If you’re
@@ -49,7 +66,11 @@ const Section5 = () => {
                       onChange={handleChange}
                       onBlur={handleBlur}
                       value={values.fullname}
-                      className={`w-full rounded-2xl outline-none pl-8 py-4 bg-black/5 border transition-all duration-200 ${
+                      className={`w-full rounded-2xl outline-none pl-8 py-4 bg-black/5 ${
+                        dark
+                          ? "text-[#f1f1f1] border-white/40"
+                          : "text-black/90 "
+                      } border transition-all duration-200 ${
                         touched.fullname
                           ? isValidName
                             ? "border-green-500"
@@ -66,7 +87,11 @@ const Section5 = () => {
                       onChange={handleChange}
                       onBlur={handleBlur}
                       value={values.email}
-                      className={`w-full rounded-2xl outline-none pl-8 py-4 bg-black/5 border transition-all duration-200 ${
+                      className={`w-full rounded-2xl outline-none pl-8 py-4 ${
+                        dark
+                          ? "text-white border-white/40"
+                          : "text-black/90 border-black/20"
+                      } bg-black/5 border transition-all duration-200 ${
                         touched.email
                           ? isValidEmail
                             ? "border-green-500"
@@ -84,7 +109,11 @@ const Section5 = () => {
                     onChange={handleChange}
                     onBlur={handleBlur}
                     value={values.message}
-                    className={`w-full h-[10em] resize-none outline-none rounded-2xl pl-6 py-3 bg-black/5 border transition-all duration-200 ${
+                    className={`w-full h-[10em] resize-none outline-none ${
+                      dark
+                        ? "text-white [text-shadow:1px_1px_1px_#111] border-white/40"
+                        : "text-black/90 border-black/20"
+                    } rounded-2xl pl-6 py-3 bg-black/5 border transition-all duration-200 ${
                       touched.message
                         ? isValidMessage
                           ? "border-green-500"

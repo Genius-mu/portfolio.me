@@ -7,11 +7,13 @@ import Section5 from "./components/Section5";
 const Home = () => {
   return (
     <>
-      <Hero />
-      <Section2 />
-      <Section3 />
-      <Section4Marquee />
-      <Section5 />
+      <div>
+        <Hero />
+        <Section2 />
+        <Section3 />
+        <Section4Marquee />
+        <Section5 />
+      </div>
     </>
   );
 };
