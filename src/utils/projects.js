@@ -42,7 +42,7 @@ export default [
   {
     title: "CryptoEn",
     description:
-      "A fun, interactive game that helps users improve their spelling skills. Built with React, featuring instant feedback, score tracking, and smooth animations for an engaging learning experience.",
+      "CryptoRise is a sleek, modern, dark-themed crypto website I built using React and Tailwind CSS. The goal was to create a smooth, visually balanced UI that feels futuristic yet simple for users exploring crypto payments.",
     image: "/images/img17.webp",
     live: "https://cryptoen.vercel.app/",
     code: "https://github.com/Genius-mu/crypto.me",
