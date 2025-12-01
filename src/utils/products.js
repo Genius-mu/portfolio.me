@@ -24,11 +24,11 @@ export default [
     code: "https://github.com/yourname/todo",
   },
   {
-    title: "Spelling Game App",
+    title: "CryptoEn",
     description:
       "A fun, interactive game that helps users improve their spelling skills. Built with React, featuring instant feedback, score tracking, and smooth animations for an engaging learning experience.",
     image: "/images/img7.webp",
-    live: "https://spellg-app.netlify.app/",
-    code: "https://github.com/yourname/todo",
+    live: "https://cryptoen.vercel.app/",
+    code: "https://github.com/Genius-mu/crypto.me",
   },
 ];
