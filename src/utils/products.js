@@ -19,7 +19,7 @@ export default [
     title: "Padi",
     description:
       "This is an Hackathon Project. The only voice assistant wey understand Mama when she talk pidgin, Papa when he shout for Hausa, and Grandma when she pray for Igbo.",
-    image: "/images/img8.webp",
+    image: "/images/img20.webp",
     live: "https://padi-hackathon.vercel.app/",
     code: "https://github.com/yourname/todo",
   },
