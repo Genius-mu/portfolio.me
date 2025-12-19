@@ -40,11 +40,27 @@ export default [
     code: "https://github.com/yourname/todo",
   },
   {
+    title: "Heart Breaking",
+    description:
+      "I built this to express my heartbreak creatively and turn emotion into design. A moody, dark-themed site with smooth animations and a somber aesthetic to capture the feeling of loss.",
+    image: "/images/img18.webp",
+    live: "https://heart-breaking.vercel.app/",
+    code: "https://github.com/yourname/todo",
+  },
+  {
     title: "CryptoEn",
     description:
       "CryptoRise is a sleek, modern, dark-themed crypto website I built using React and Tailwind CSS. The goal was to create a smooth, visually balanced UI that feels futuristic yet simple for users exploring crypto payments.",
     image: "/images/img17.webp",
     live: "https://cryptoen.vercel.app/",
+    code: "https://github.com/Genius-mu/crypto.me",
+  },
+  {
+    title: "Vektor",
+    description:
+      "A business website that solves poor mobile navigation and weak brand presence by delivering a clean layout, smooth interactions, and an intuitive user experience.",
+    image: "/images/img18.webp",
+    live: "https://vektor-phi.vercel.app/",
     code: "https://github.com/Genius-mu/crypto.me",
   },
   {
