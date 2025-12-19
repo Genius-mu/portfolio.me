@@ -16,11 +16,11 @@ export default [
     code: "https://github.com/yourname/dashboard",
   },
   {
-    title: "ClarityHub",
+    title: "Padi",
     description:
-      "ClarityHub is a smart organization app that helps users store resources, categorize them, and instantly find anything using powerful natural-language search and personalized AI recommendations.",
-    image: "/images/img15.webp",
-    live: "https://clarityhai.vercel.app/",
+      "This is an Hackathon Project. The only voice assistant wey understand Mama when she talk pidgin, Papa when he shout for Hausa, and Grandma when she pray for Igbo.",
+    image: "/images/img8.webp",
+    live: "https://padi-hackathon.vercel.app/",
     code: "https://github.com/yourname/todo",
   },
   {
