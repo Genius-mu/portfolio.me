@@ -40,7 +40,7 @@ export default [
     code: "https://github.com/yourname/todo",
   },
   {
-    title: "Heart Breaking",
+    title: "HeB",
     description:
       "I built this to express my heartbreak creatively and turn emotion into design. A moody, dark-themed site with smooth animations and a somber aesthetic to capture the feeling of loss.",
     image: "/images/img18.webp",
@@ -59,7 +59,7 @@ export default [
     title: "Vektor",
     description:
       "A business website that solves poor mobile navigation and weak brand presence by delivering a clean layout, smooth interactions, and an intuitive user experience.",
-    image: "/images/img18.webp",
+    image: "/images/img13.webp",
     live: "https://vektor-phi.vercel.app/",
     code: "https://github.com/Genius-mu/crypto.me",
   },
@@ -96,10 +96,10 @@ export default [
     code: "https://github.com/yourname/todo",
   },
   {
-    title: "real-estate-web",
+    title: "zeeHomes",
     description:
       "A modern real estate web app built with Next.js and Tailwind CSS, featuring smooth navigation, responsive design, and dynamic property filters for an easy home browsing experience.",
-    image: "/images/img13.webp",
+    image: "/images/img19.webp",
     live: "https://re01.vercel.app/",
     code: "https://github.com/yourname/todo",
   },
