@@ -58,7 +58,7 @@ const Hero = () => {
               <a
                 href="mailto:adegbitemustapha73@gmail.com"
                 target="_blank"
-                className={`text-white w-full sm:w-fit text-[16px] bg-black py-3 rounded-2xl px-5 hover:px-7 transition-all duration-300 ${
+                className={`text-white w-full sm:w-fit text-[16px] bg-black py-3 rounded-2xl px-5 hover:px-6 transition-all duration-300 ${
                   dark ? "text-[#f1f1f1] shadow-2xl" : "text-black"
                 } ease-in-out hover:bg-black/80`}
               >
@@ -68,13 +68,13 @@ const Hero = () => {
               <ul
                 className={`text-white w-fit backdrop-blur-md border ${
                   dark
-                    ? "border-blue-600/30 bg-blue-600/10"
-                    : "border-blue-600/30 bg-blue-600/10"
+                    ? "border-green-600/30 bg-green-600/10"
+                    : "border-green-600/30 bg-green-600/10"
                 } py-3 rounded-3xl px-8 hover:[box-shadow:1px_1px_5px_rgba(0,0,0,.1)] transition-all duration-300 ease-in-out`}
               >
                 <li
                   className={`text-[14px] sm:text-[16px] ${
-                    dark ? "text-white list-disc" : "text-blue-600 list-disc"
+                    dark ? "text-white" : "text-green-600"
                   } list-disc`}
                 >
                   Available for new projects

@@ -24,7 +24,9 @@ const Section3 = () => {
         <div className="w-[90%] sm:w-[65%] h-full flex flex-col justify-center gap-y-9 items-start">
           <h2
             className={`font-semibold text-4xl tracking-[1px] text-center ${
-              dark ? "text-[#f1f1f1] [text-shadow:1px_1px_1px_#111]" : "text-black/90"
+              dark
+                ? "text-[#f1f1f1] [text-shadow:1px_1px_1px_#111]"
+                : "text-black/90"
             }`}
           >
             About Me
@@ -35,8 +37,10 @@ const Section3 = () => {
             whileInView="visible"
             viewport={{ once: false, amount: 0.2 }}
             transition={{ delay: 0.1 }}
-            className={`max-w-[800px] pl-5 border-l-2 border-[#007BFF] text-[14px] sm:text-[16px] ${
-              dark ? "text-[#f1f1f1] [text-shadow:1px_1px_1px_#111]" : "text-black/90"
+            className={`max-w-[800px] pl-5 border-l-2 border-green-500 text-[14px] sm:text-[16px] ${
+              dark
+                ? "text-[#f1f1f1] [text-shadow:1px_1px_1px_#111]"
+                : "text-black/70"
             }`}
           >
             I specialize in using React and modern JavaScript (ES6+) to
@@ -51,12 +55,20 @@ const Section3 = () => {
             whileInView="visible"
             viewport={{ once: false, amount: 0.2 }}
             transition={{ delay: 0.3 }}
-            className={`max-w-[800px] pl-5 border-l-2 border-[#007BFF] text-[14px] sm:text-[16px] ${
-              dark ? "text-[#f1f1f1] [text-shadow:1px_1px_1px_#111]" : "text-black/90"
+            className={`max-w-[800px] pl-5 border-l-2 border-green-500 text-[14px] sm:text-[16px] ${
+              dark
+                ? "text-[#f1f1f1] [text-shadow:1px_1px_1px_#111]"
+                : "text-black/70"
             }`}
           >
             I’m Mustapha Adegbite —{" "}
-            <span className={`${dark ? "text-blue-400 [text-shadow:1px_1px_1px_#111]" : "text-black"}`} >
+            <span
+              className={`${
+                dark
+                  ? "text-green-500 [text-shadow:1px_1px_1px_#111]"
+                  : "text-black"
+              }`}
+            >
               a Frontend Developer who’s passionate about building
             </span>{" "}
             fast, responsive, and visually engaging web experiences.
@@ -67,13 +79,21 @@ const Section3 = () => {
             whileInView="visible"
             viewport={{ once: false, amount: 0.2 }}
             transition={{ delay: 0.1 }}
-            className={`max-w-[800px] pl-5 border-l-2 border-[#007BFF] text-[14px] sm:text-[16px] ${
-              dark ? "text-[#f1f1f1] [text-shadow:1px_1px_1px_#111]" : "text-black/90"
+            className={`max-w-[800px] pl-5 border-l-2 border-green-500 text-[14px] sm:text-[16px] ${
+              dark
+                ? "text-[#f1f1f1] [text-shadow:1px_1px_1px_#111]"
+                : "text-black/70"
             }`}
           >
             My journey into frontend development started with curiosity —
             turning small ideas into projects,
-            <span className={`${dark ? "text-blue-400 [text-shadow:1px_1px_1px_#111]" : "text-black"}`} >
+            <span
+              className={`${
+                dark
+                  ? "text-green-500 [text-shadow:1px_1px_1px_#111]"
+                  : "text-black"
+              }`}
+            >
               {" "}
               and projects into learning milestones. Each build helps me
               understand
@@ -87,16 +107,24 @@ const Section3 = () => {
             whileInView="visible"
             viewport={{ once: false, amount: 0.2 }}
             transition={{ delay: 0.3 }}
-            className={`max-w-[800px] pl-5 border-l-2 border-[#007BFF] text-[14px] sm:text-[16px] ${
-              dark ? "text-[#f1f1f1] [text-shadow:1px_1px_1px_#111]" : "text-black/90"
+            className={`max-w-[800px] pl-5 border-l-2 border-green-500 text-[14px] sm:text-[16px] ${
+              dark
+                ? "text-[#f1f1f1] [text-shadow:1px_1px_1px_#111]"
+                : "text-black/70"
             }`}
           >
-            <span className={`${dark ? "text-blue-400 [text-shadow:1px_1px_1px_#111]" : "text-black"}`} >
-              I believe great web experiences are not just about visuals —
-              they’re about performance
+            I believe great web experiences are not just about visuals —
+            <span
+              className={`${
+                dark
+                  ? "text-green-500 [text-shadow:1px_1px_1px_#111]"
+                  : "text-black"
+              }`}
+            >
+              they’re about performance , accessibility, and the little
+              animations{" "}
             </span>
-            , accessibility, and the little animations that make people smile
-            while using your app.
+            that make people smile while using your app.
           </motion.p>
           <motion.p
             variants={cardVariants}
@@ -104,20 +132,32 @@ const Section3 = () => {
             whileInView="visible"
             viewport={{ once: false, amount: 0.2 }}
             transition={{ delay: 0.1 }}
-            className={`max-w-[800px] pl-5 border-l-2 border-[#007BFF] text-[14px] sm:text-[16px] ${
-              dark ? "text-[#f1f1f1] [text-shadow:1px_1px_1px_#111]" : "text-black/90"
+            className={`max-w-[800px] pl-5 border-l-2 border-green-500 text-[14px] sm:text-[16px] ${
+              dark
+                ? "text-[#f1f1f1] [text-shadow:1px_1px_1px_#111]"
+                : "text-black/70"
             }`}
           >
-            <span className={`${dark ? "text-blue-400 [text-shadow:1px_1px_1px_#111]" : "text-black"} underline`} >
-              When I’m not coding, you’ll probably find me
+            When I’m not coding, you’ll probably find me{" "}
+            <span
+              className={`${
+                dark
+                  ? "text-green-500 [text-shadow:1px_1px_1px_#111]"
+                  : "text-black"
+              } `}
+            >
+              learning new tools, exploring design trends, or documenting my dev
+              journey on social media
             </span>{" "}
-            learning new tools, exploring design trends, or documenting my dev
-            journey on social media — sharing what I learn, what I build, and
-            how I grow along the way.
+            — sharing what I learn, what I build, and how I grow along the way.
           </motion.p>
-          <h2 className={`font-semibold text-2xl tracking-[1px] text-center ${
-              dark ? "text-[#f1f1f1] [text-shadow:1px_1px_1px_#111]" : "text-black/90"
-            }`}>
+          <h2
+            className={`font-semibold text-2xl tracking-[1px] text-center ${
+              dark
+                ? "text-[#f1f1f1] [text-shadow:1px_1px_1px_#111]"
+                : "text-black/90"
+            }`}
+          >
             Let’s connect and create something amazing.
           </h2>
         </div>
