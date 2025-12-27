@@ -1,11 +1,11 @@
 export default [
   {
-    title: "Time Drip",
+    title: "Ticket-MA",
     description:
       "A React-based app that helps users create, assign, and track tickets efficiently. Built with smooth UI and real-time task updates to make team management easier.",
     image: "/images/img6.webp",
-    live: "https://time-drip.vercel.app/",
-    code: "https://github.com/Genius-mu/TimeDrip",
+    live: "https://ticket-m-app.netlify.app/",
+    code: "https://github.com/yourname/ecommerce",
   },
   {
     title: "HabitXP",
