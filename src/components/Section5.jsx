@@ -1,10 +1,16 @@
 import { Field, Formik } from "formik";
 import { useForm } from "@formspree/react";
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { ThemeTog } from "../App";
+import Modal from "./Modal";
 
 const Section5 = () => {
   const [state, formspreeSubmit] = useForm("xldoqyjw");
+  const [modalOpen, setModalOpen] = useState(false);
+  const [modalData, setModalData] = useState({
+    title: "",
+    message: "",
+  });
   const { dark } = useContext(ThemeTog);
 
   return (
@@ -41,6 +47,33 @@ const Section5 = () => {
           <Formik
             initialValues={{ fullname: "", email: "", message: "" }}
             onSubmit={async (values, { resetForm }) => {
+              if (!values.fullname.trim()) {
+                setModalData({
+                  title: "Fullname field",
+                  message: "Hey, you didn't input your fullname.",
+                });
+                setModalOpen(true);
+                return;
+              }
+
+              if (!values.email.trim()) {
+                setModalData({
+                  title: "Email field",
+                  message: "Hey, you didn't fill in the email field.",
+                });
+                setModalOpen(true);
+                return;
+              }
+
+              if (!values.message.trim()) {
+                setModalData({
+                  title: "Message field",
+                  message: "Hey, you didn't type any message.",
+                });
+                setModalOpen(true);
+                return;
+              }
+
               await formspreeSubmit(values);
               if (!state.errors) resetForm();
             }}
@@ -143,6 +176,23 @@ const Section5 = () => {
           </Formik>
         </div>
       </div>
+      <Modal
+        isOpen={modalOpen}
+        onClose={() => setModalOpen(false)}
+        title={modalData.title}
+      >
+        <p className="text-red-500 mb-6">{modalData.message}</p>
+        <button
+          onClick={() => setModalOpen(false)}
+          className="relative bg-green-600 text-white px-4 py-1 rounded-lg font-medium overflow-hidden group hover:scale-105 transition-all duration-300 hover:shadow-lg hover:shadow-green-500/50 flex justify-center items-center"
+        >
+          <div className="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-1000 bg-gradient-to-r from-transparent via-white/30 to-transparent"></div>
+          <div className="absolute inset-0 bg-green-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+          <span className="relative z-10 group-hover:scale-110 inline-block transition-transform duration-300">
+            Close
+          </span>
+        </button>
+      </Modal>
     </section>
   );
 };

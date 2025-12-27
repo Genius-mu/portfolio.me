@@ -84,7 +84,7 @@ const Projects = () => {
                         {">"}
                       </span>
                     </Link>
-                    <Link
+                    {/* <Link
                       to={project.code}
                       className={`${
                         dark
@@ -94,7 +94,7 @@ const Projects = () => {
                       target="_blank`}
                     >
                       <Github className="w-4 h-4 sm:w-6 sm:h-6" />
-                    </Link>
+                    </Link> */}
                   </span>
                 </motion.div>
               </>
