@@ -45,7 +45,7 @@ const Section2 = () => {
                   viewport={{ once: false, amount: 0.3 }}
                   transition={{ delay: index * 0.2 }}
                   className={`flex flex-col gap-y-2 rounded-2xl p-5 w-full h-[25em] border ${
-                    dark ? "border-[#f1f1f1]" : "border-black/40"
+                    dark ? "border-[#f1f1f1] bg-white/5 bg-blend-saturation" : "border-black/40"
                   }`}
                 >
                   <div className="w-full h-[50%] rounded-2xl overflow-hidden">
