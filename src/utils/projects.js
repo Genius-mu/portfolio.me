@@ -82,7 +82,7 @@ export default [
   {
     title: "web3Q",
     description:
-      "A secure, fast, and user-friendly web3 bridge for transferring assets between Ethereum, Polygon, and Arbitrum networks.",
+      "A secure, fast, and user-friendly web3 website for transferring assets between Ethereum, Polygon, and Arbitrum networks.",
     image: "/images/img22.webp",
     live: "https://web3-gm.vercel.app/",
     code: "https://github.com/Genius-mu/web3",
