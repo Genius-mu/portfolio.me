@@ -1,11 +1,11 @@
 import { Link } from "react-router-dom";
-import realProjects from "../utils/projects";
+import projects from "../utils/products";
 import { motion } from "framer-motion";
 import { Github } from "lucide-react";
 import { useContext } from "react";
 import { ThemeTog } from "../App";
 
-const Projects = () => {
+const Section2 = () => {
   const { dark } = useContext(ThemeTog);
 
   const fadeVariants = {
@@ -35,7 +35,7 @@ const Projects = () => {
             </h2>
           </div>
           <div className="md:w-[90%] xl:w-[80%] sm:w-full h-full grid grid-cols-1 sm:grid-cols-2 justify-center gap-8 items-center">
-            {realProjects.map((project, index) => (
+            {projects.map((project, index) => (
               <>
                 <motion.div
                   key={project}
@@ -45,14 +45,16 @@ const Projects = () => {
                   viewport={{ once: false, amount: 0.3 }}
                   transition={{ delay: index * 0.2 }}
                   className={`flex flex-col gap-y-2 rounded-2xl p-5 w-full h-[25em] border ${
-                    dark ? "border-[#f1f1f1]" : "border-black/40"
+                    dark
+                      ? "border-[#f1f1f1] bg-white/5 bg-blend-saturation"
+                      : "border-black/40"
                   }`}
                 >
                   <div className="w-full h-[50%] rounded-2xl overflow-hidden">
                     <img
                       src={project.image}
                       alt={project.title}
-                      className="w-full h-full hover:scale-109 transition-all duration-300 ease-in-out object-center"
+                      className={`w-full h-full hover:scale-109 transition-all duration-300 ease-in-out object-center`}
                     />
                   </div>
                   <h2
@@ -77,7 +79,7 @@ const Projects = () => {
                         dark
                           ? "text-[#f1f1f1] bg-white/5 shadow-2xl"
                           : "text-black/90 bg-black/8"
-                      } w-[40%] text-[16px] py-3 rounded-2xl px-4 hover:px-7 flex gap-x-4 transition-all duration-300 ease-in-out hover:bg-black/10`}
+                      } w-[40%] text-[16px] py-3 rounded-2xl px-4 hover:px-7 flex gap-x-4 transition-all duration-300 ease-in-out hover:bg-black/30`}
                     >
                       View{" "}
                       <span className="overflow-hidden overflow-y-hidden">
@@ -101,10 +103,10 @@ const Projects = () => {
             ))}
           </div>
           <Link
-            to="/"
+            to="/projects"
             className="font-semibold text-white w-fit text-[16px] bg-black py-3 rounded-2xl px-9 hover:px-7 flex gap-x-4 transition-all duration-300 ease-in-out hover:bg-black/80"
           >
-            {"<"} Back
+            View All {">"}
           </Link>
         </div>
       </section>
@@ -112,4 +114,4 @@ const Projects = () => {
   );
 };
 
-export default Projects;
+export default Section2;
