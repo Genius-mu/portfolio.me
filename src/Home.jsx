@@ -87,7 +87,7 @@ const Home = () => {
     startY: Math.random() * 100,
     moveX: Math.random() * 300 - 150,
     moveY: Math.random() * 300 - 150,
-    duration: Math.random() * 20 + 20,
+    duration: Math.random() * 20 + 1,
     delay: Math.random() * 2,
   }));
 
