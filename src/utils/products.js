@@ -1,11 +1,11 @@
 export default [
   {
-    title: "Ticket-MA",
+    title: "TimeDrip",
     description:
-      "A React-based app that helps users create, assign, and track tickets efficiently. Built with smooth UI and real-time task updates to make team management easier.",
-    image: "/images/img6.webp",
-    live: "https://ticket-m-app.netlify.app/",
-    code: "https://github.com/yourname/ecommerce",
+      "A responsive web application that helps you identify and quantify time-wasting activities in your daily routine. Calculate the financial impact of unproductive habits and get personalized recommendations to optimize your productivity.",
+    image: "/images/img21.webp",
+    live: "https://time-drip.vercel.app/",
+    code: "https://github.com/Genius-mu/TimeDrip",
   },
   {
     title: "HabitXP",
@@ -13,7 +13,7 @@ export default [
       "A simple yet powerful app to build consistency. Users can log habits, track daily progress, and visualize streaks — all in a clean, responsive interface.",
     image: "/images/img5.webp",
     live: "http://habitxpp.netlify.app/",
-    code: "https://github.com/yourname/dashboard",
+    code: "https://github.com/Genius-mu/HabitXP",
   },
   {
     title: "Padi",
@@ -21,7 +21,7 @@ export default [
       "This is an Hackathon Project. The only voice assistant wey understand Mama when she talk pidgin, Papa when he shout for Hausa, and Grandma when she pray for Igbo.",
     image: "/images/img20.webp",
     live: "https://padi-hackathon.vercel.app/",
-    code: "https://github.com/yourname/todo",
+    code: "https://github.com/Genius-mu/padi-hackathon",
   },
   {
     title: "CryptoEn",
