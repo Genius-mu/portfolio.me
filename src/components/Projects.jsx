@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import projects from "../utils/products";
+import projects from "../utils/projects";
 import { motion } from "framer-motion";
 import { Github } from "lucide-react";
 import { useContext } from "react";
@@ -103,10 +103,10 @@ const Section2 = () => {
             ))}
           </div>
           <Link
-            to="/projects"
+            to="/"
             className="font-semibold text-white w-fit text-[16px] bg-black py-3 rounded-2xl px-9 hover:px-7 flex gap-x-4 transition-all duration-300 ease-in-out hover:bg-black/80"
           >
-            View All {">"}
+            Back {">"}
           </Link>
         </div>
       </section>
