@@ -39,31 +39,3 @@ h2 {
     transform: scale(1);
   }
 }
-
-/* .carousel {
-  position: relative;
-}
-
-.track {
-  display: flex;
-  animation: marquee 15s linear infinite;
-  min-width: 200%;
-  will-change: transform;
-}
-
-@keyframes marquee {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-50%);
-  }
-}
-
-.carousel:hover .track {
-  animation-play-state: paused;
-}
-
-.skill {
-  flex: 0 0 auto;
-} */

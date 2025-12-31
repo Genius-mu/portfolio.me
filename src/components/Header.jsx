@@ -21,7 +21,7 @@ const Header = () => {
               } py-2 rounded px-2 sm:px-4 hover:px-3 sm:hover:px-6 transition-all duration-300 ease-in-out hover:backdrop-blur-2xl group-hover/resume:scale-110 group-hover/resume:-rotate-12 hover:backdrop-saturate-150 hover:shadow-[0_8px_32px_0_rgba(255,255,255,0.1)] overflow-y-hidden`}
             >
               <Home
-                className={`w-3 h-3 sm:w-5 sm:h-5`}
+                className={`w-4 h-4 sm:w-5 sm:h-5`}
                 strokeWidth={`${dark ? 2 : 2}`}
               />
             </Link>
@@ -45,7 +45,7 @@ const Header = () => {
               >
                 <path d="M714 519L1161 0h-109L671 420 426 0H0l464 726L0 1226h109l417-463 262 463h426z" />
               </svg>
-              {/* <Twitter className={`w-3 h-3 sm:w-5 sm:h-5`} strokeWidth={`${dark ? 3 : 1}`} /> */}
+              {/* <Twitter className={`w-4 h-4 sm:w-5 sm:h-5`} strokeWidth={`${dark ? 3 : 1}`} /> */}
             </Link>
             <Link
               to="https://github.com/Genius-mu"
@@ -57,7 +57,7 @@ const Header = () => {
               target="_blank"
             >
               <Github
-                className={`w-3 h-3 sm:w-5 sm:h-5`}
+                className={`w-4 h-4 sm:w-5 sm:h-5`}
                 strokeWidth={`${dark ? 2 : 2}`}
               />
             </Link>
@@ -71,7 +71,7 @@ const Header = () => {
               } py-2 rounded px-2 sm:px-4 hover:px-3 sm:hover:px-6 transition-all duration-300 ease-in-out hover:backdrop-blur-2xl group-hover/resume:scale-110 group-hover/resume:-rotate-12 hover:backdrop-saturate-150 hover:shadow-[0_8px_32px_0_rgba(255,255,255,0.1)] overflow-y-hidden`}
             >
               <FileBarChart
-                className={`w-3 h-3 sm:w-5 sm:h-5`}
+                className={`w-4 h-4 sm:w-5 sm:h-5`}
                 strokeWidth={`${dark ? 2 : 2}`}
               />
             </a>

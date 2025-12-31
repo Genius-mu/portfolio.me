@@ -6,6 +6,7 @@ import Projects from "./components/Projects";
 import { createContext, useState } from "react";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import CustomCursor from "./components/CustomCu";
 
 export const ThemeTog = createContext();
 
@@ -39,6 +40,7 @@ function App() {
         <ThemeTog.Provider value={{ dark, setDark }}>
           <Footer />
         </ThemeTog.Provider>
+        <CustomCursor />
       </div>
     </>
   );
