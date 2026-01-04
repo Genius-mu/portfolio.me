@@ -119,7 +119,7 @@ const Section3 = () => {
             trends, and documenting my developer journey by sharing what I
             build, what breaks, and how I improve along the way.
           </motion.p>
-          
+
           <h2
             className={`font-semibold text-2xl tracking-[1px] text-center ${
               dark
