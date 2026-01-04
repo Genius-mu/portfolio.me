@@ -7,8 +7,8 @@
 /* Inner dot */
 .cursor-dot {
   position: fixed;
-  width: 6px;
-  height: 6px;
+  width: 7px;
+  height: 7px;
   background-color: #4ade80; /* green-400 */
   border-radius: 50%;
   pointer-events: none;

@@ -43,63 +43,22 @@ const Section3 = () => {
                 : "text-black/70"
             }`}
           >
-            I specialize in using React and modern JavaScript (ES6+) to
-            transform creative ideas and UI designs into clean, functional, and
-            interactive applications. I enjoy bringing structure to design chaos
-            — from styling with Tailwind CSS to integrating APIs that make web
-            apps dynamic and alive.
-          </motion.p>
-          <motion.p
-            variants={cardVariants}
-            initial="hiddenRight"
-            whileInView="visible"
-            viewport={{ once: false, amount: 0.2 }}
-            transition={{ delay: 0.3 }}
-            className={`max-w-[800px] pl-5 border-l-2 border-green-500 text-[14px] sm:text-[16px] ${
-              dark
-                ? "text-[#f1f1f1] [text-shadow:1px_1px_1px_#111]"
-                : "text-black/70"
-            }`}
-          >
-            I’m Mustapha Adegbite —{" "}
+            I’m Mustapha Adegbite, a Frontend Developer who builds fast,
+            responsive, and visually engaging web experiences with{" "}
             <span
               className={`${
                 dark
-                  ? "text-green-500 [text-shadow:1px_1px_1px_#111]"
-                  : "text-black"
-              }`}
-            >
-              a Frontend Developer who’s passionate about building
-            </span>{" "}
-            fast, responsive, and visually engaging web experiences.
-          </motion.p>
-          <motion.p
-            variants={cardVariants}
-            initial="hiddenLeft"
-            whileInView="visible"
-            viewport={{ once: false, amount: 0.2 }}
-            transition={{ delay: 0.1 }}
-            className={`max-w-[800px] pl-5 border-l-2 border-green-500 text-[14px] sm:text-[16px] ${
-              dark
-                ? "text-[#f1f1f1] [text-shadow:1px_1px_1px_#111]"
-                : "text-black/70"
-            }`}
-          >
-            My journey into frontend development started with curiosity —
-            turning small ideas into projects,
-            <span
-              className={`${
-                dark
-                  ? "text-green-500 [text-shadow:1px_1px_1px_#111]"
+                  ? "text-white/50 font-semibold [text-shadow:1px_1px_1px_#111]"
                   : "text-black"
               }`}
             >
               {" "}
-              and projects into learning milestones. Each build helps me
-              understand
+              React and modern JavaScript (ES6+).
             </span>{" "}
-            not just how the web works, but how users feel when interacting with
-            it.
+            I enjoy turning raw ideas and UI designs into clean, functional
+            interfaces — bringing order to design chaos using Tailwind CSS,
+            thoughtful component structure, and smooth micro-interactions that
+            make apps feel alive.
           </motion.p>
           <motion.p
             variants={cardVariants}
@@ -113,18 +72,24 @@ const Section3 = () => {
                 : "text-black/70"
             }`}
           >
-            I believe great web experiences are not just about visuals —
+            My journey into frontend development grew from curiosity into
+            real-world projects.{" "}
             <span
               className={`${
                 dark
-                  ? "text-green-500 [text-shadow:1px_1px_1px_#111]"
+                  ? "text-white/50 font-semibold [text-shadow:1px_1px_1px_#111]"
                   : "text-black"
               }`}
             >
-              they’re about performance , accessibility, and the little
-              animations{" "}
-            </span>
-            that make people smile while using your app.
+              I’ve built a reusable React component library focused on
+              consistency and scalability, TimeDrip, a productivity-driven web
+              app that balances performance with user experience, and Padi — a
+              multilingual, offline-first voice assistant project built for
+              Nigerian senior citizens, developed during a hackathon with
+              accessibility and real human needs at its core.
+            </span>{" "}
+            Each project pushed me to think beyond visuals and focus on
+            structure, performance, and usability.
           </motion.p>
           <motion.p
             variants={cardVariants}
@@ -138,19 +103,23 @@ const Section3 = () => {
                 : "text-black/70"
             }`}
           >
-            When I’m not coding, you’ll probably find me{" "}
+            I believe great web experiences live at the intersection of
+            performance, accessibility, and emotion — fast load times, inclusive
+            design, and{" "}
             <span
               className={`${
                 dark
-                  ? "text-green-500 [text-shadow:1px_1px_1px_#111]"
+                  ? "text-white/50 font-semibold [text-shadow:1px_1px_1px_#111]"
                   : "text-black"
-              } `}
+              }`}
             >
-              learning new tools, exploring design trends, or documenting my dev
-              journey on social media
+              subtle animations that make users smile without distracting them.
             </span>{" "}
-            — sharing what I learn, what I build, and how I grow along the way.
+            When I’m not coding, I’m learning new tools, exploring design
+            trends, and documenting my developer journey by sharing what I
+            build, what breaks, and how I improve along the way.
           </motion.p>
+          
           <h2
             className={`font-semibold text-2xl tracking-[1px] text-center ${
               dark
