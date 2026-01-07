@@ -63,7 +63,7 @@ const Header = () => {
             </Link>
             <a
               href="/resume.pdf"
-              download="Mustapha_Adegbite_Resume.pdf"
+              download="mustapha adegbite's resume.pdf"
               className={`${
                 dark
                   ? "text-white hover:bg-white/1"
