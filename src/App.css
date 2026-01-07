@@ -11,7 +11,7 @@
   height: 9px;
   background-color: #4ade80; /* green-400 */
   border-radius: 50%;
-  border: 1.5px solid #fff;
+  /* border: 1.5px solid #999; */
   pointer-events: none;
   z-index: 9999;
   transform: translate(-50%, -50%);
@@ -29,6 +29,6 @@
   z-index: 9998;
   transform: translate(-50%, -50%);
   transition: transform 0.1s ease-out;
-  box-shadow: 0 0 10px #565656;
+  /* box-shadow: 0 0 10px #565656; */
   /* box-shadow: 0 0 10px rgb(0, 191, 0); */
 }
