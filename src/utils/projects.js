@@ -1,5 +1,13 @@
 export default [
   {
+    title: "Alubarika",
+    description:
+      "I built this website to give an FX trader a central place where clients can learn about his services and contact him directly, without moving from platform to platform.",
+    image: "/images/img24.webp",
+    live: "http://alubarika.vercel.app/",
+    code: "https://github.com/Genius-mu/Alubarika",
+  },
+  {
     title: "ClarityQ",
     description:
       "ClarityHub is a smart organization app that helps users store resources, categorize them, and instantly find anything using powerful natural-language search and personalized AI recommendations.",
