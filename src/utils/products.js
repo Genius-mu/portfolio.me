@@ -1,5 +1,13 @@
 export default [
   {
+    title: "Alubarika",
+    description:
+      "I built this website to give an FX trader a central place where clients can learn about his services and contact him directly, without moving from platform to platform.",
+    image: "/images/img24.webp",
+    live: "http://alubarika.vercel.app/",
+    code: "https://github.com/Genius-mu/Alubarika",
+  },
+  {
     title: "TimeDrip",
     description:
       "A responsive web application that helps you identify and quantify time-wasting activities in your daily routine. Calculate the financial impact of unproductive habits and get personalized recommendations to optimize your productivity.",
@@ -22,13 +30,5 @@ export default [
     image: "/images/img20.webp",
     live: "https://padi-hackathon.vercel.app/",
     code: "https://github.com/Genius-mu/padi-hackathon",
-  },
-  {
-    title: "CryptoEn",
-    description:
-      "CryptoRise is a sleek, modern, dark-themed crypto website I built using React and Tailwind CSS. The goal was to create a smooth, visually balanced UI that feels futuristic yet simple for users exploring crypto payments.",
-    image: "/images/img17.webp",
-    live: "https://cryptoen.vercel.app/",
-    code: "https://github.com/Genius-mu/crypto.me",
   },
 ];

@@ -65,7 +65,7 @@ const Section2 = () => {
                   <p
                     className={`${
                       dark ? "text-white " : "text-black/90"
-                    } text-[16px] line-clamp-2`}
+                    } text-[16px] line-clamp-3`}
                   >
                     {project.description}
                   </p>
