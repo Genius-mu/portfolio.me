@@ -47,10 +47,11 @@ const Hero = () => {
                   : "text-black/60"
               }`}
             >
-              I build fast, pixel-perfect React apps that solve real problems —
-              like turning scattered information into a clean, structured
-              experience with ClarityHub. I love transforming messy ideas into
-              smooth, responsive interfaces that make life easier.
+              I build high-performance React applications that turn complex,
+              scattered information into clear, usable products. ClarityHub is
+              one example - turning unorganized information into intuitive
+              interfaces, bridging the gap between raw ideas and real-world
+              usability.
             </motion.p>
             <div
               className={`mt-1 flex flex-col sm:flex-row gap-y-2 w-fit gap-x-2`}
