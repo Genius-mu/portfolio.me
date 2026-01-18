@@ -24,7 +24,11 @@ const Footer = () => {
     <>
       <footer className="w-full relative pt-5 pb-19 flex flex-col gap-y-1 justify-center items-center">
         {/* Top gradient line */}
-        <hr className={`absolute top-0 left-0 right-0 border-0 h-px bg-gradient-to-r from-transparent ${dark ? "via-white/30" : "via-black/30"} to-transparent z-10`} />
+        <hr
+          className={`absolute top-0 left-0 right-0 border-0 h-px bg-gradient-to-r from-transparent ${
+            dark ? "via-white/30" : "via-black/30"
+          } to-transparent z-10`}
+        />
         <p
           className={`footP ${
             dark ? "text-white/70" : "text-black/70"
@@ -36,16 +40,16 @@ const Footer = () => {
           <Link
             to="https://x.com/mustaphAdegbite"
             className={`${
-              dark ? "text-white/90" : "text-black/70"
-            } py-2 rounded px-2 sm:px-4 transition-all duration-300 ease-in-out "
-            target="_blank`}
+              dark ? "text-white/90 hover:text-white" : "text-black/70 hover:text-black/90"
+            } py-2 rounded px-2 sm:px-4 transition-all duration-300 ease-in-out`}
+            target="_blank"
           >
             <X className="w-4 h-4 sm:w-5 sm:h-5" />
           </Link>
           <Link
             to="https://github.com/Genius-mu"
             className={`${
-              dark ? "text-white/90" : "text-black/70"
+              dark ? "text-white/90 hover:text-white" : "text-black/70 hover:text-black/90"
             } py-2 rounded px-2 sm:px-4 transition-all duration-300 ease-in-out`}
             target="_blank"
           >
@@ -54,7 +58,7 @@ const Footer = () => {
           <a
             href="https://www.instagram.com/genius_mu01/"
             className={`${
-              dark ? "text-white/90" : "text-black/70"
+              dark ? "text-white/90 hover:text-white" : "text-black/70 hover:text-black/90"
             } py-2 rounded px-2 sm:px-4 transition-all duration-300 ease-in-out`}
           >
             <Instagram className="w-4 h-4 sm:w-6 sm:h-6" />
@@ -62,7 +66,7 @@ const Footer = () => {
           <a
             href="mailto:adegbitemustapha73@gmail.com"
             className={`${
-              dark ? "text-white/90" : "text-black/70"
+              dark ? "text-white/90 hover:text-white" : "text-black/70 hover:text-black/90"
             } py-2 rounded px-2 sm:px-4 transition-all duration-300 ease-in-out`}
           >
             <MailIcon className="w-4 h-4 sm:w-6 sm:h-6" />
