@@ -11,12 +11,20 @@ import { Link } from "react-router-dom";
 import { useContext } from "react";
 import { ThemeTog } from "../App";
 
+const X = ({ className }) => (
+  <svg className={className} fill="currentColor" viewBox="0 0 24 24">
+    <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+  </svg>
+);
+
 const Footer = () => {
   const { dark } = useContext(ThemeTog);
 
   return (
     <>
-      <footer className="w-full pt-5 pb-13 border-t border-black/20 flex flex-col gap-y-1 justify-center items-center">
+      <footer className="w-full relative pt-5 pb-19 flex flex-col gap-y-1 justify-center items-center">
+        {/* Top gradient line */}
+        <hr className={`absolute top-0 left-0 right-0 border-0 h-px bg-gradient-to-r from-transparent ${dark ? "via-white/30" : "via-black/30"} to-transparent z-10`} />
         <p
           className={`footP ${
             dark ? "text-white/70" : "text-black/70"
@@ -32,16 +40,7 @@ const Footer = () => {
             } py-2 rounded px-2 sm:px-4 transition-all duration-300 ease-in-out "
             target="_blank`}
           >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 1200 1227"
-              fill="currentColor"
-              className="w-4 h-4 sm:w-6 sm:h-6"
-            >
-              <path d="M714 519L1161 0h-109L671 420 426 0H0l464 726L0 1226h109l417-463 262 463h426z" />
-            </svg>
-
-            {/* <Twitter className="w-4 h-4 sm:w-6 sm:h-6" /> */}
+            <X className="w-4 h-4 sm:w-5 sm:h-5" />
           </Link>
           <Link
             to="https://github.com/Genius-mu"

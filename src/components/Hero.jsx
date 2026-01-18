@@ -41,7 +41,7 @@ const Hero = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 1 }}
               viewport={{ once: false, amount: 0.3 }}
-              className={`max-w-[450px] ${
+              className={`max-w-[500px] ${
                 dark
                   ? "text-[#f1f1f1] [text-shadow:1px_1px_1px_#111]"
                   : "text-black/60"
@@ -49,9 +49,7 @@ const Hero = () => {
             >
               I build high-performance React applications that turn complex,
               scattered information into clear, usable products. ClarityHub is
-              one example - turning unorganized information into intuitive
-              interfaces, bridging the gap between raw ideas and real-world
-              usability.
+              one example!
             </motion.p>
             <div
               className={`mt-1 flex flex-col sm:flex-row gap-y-2 w-fit gap-x-2`}

@@ -3,6 +3,12 @@ import { Link } from "react-router-dom";
 import { useContext } from "react";
 import { ThemeTog } from "../App";
 
+const X = ({ className }) => (
+  <svg className={className} fill="currentColor" viewBox="0 0 24 24">
+    <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+  </svg>
+);
+
 const Header = () => {
   const { dark, setDark } = useContext(ThemeTog);
 
@@ -64,14 +70,7 @@ const Header = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 1200 1227"
-                fill="currentColor"
-                className="w-3 h-3 sm:w-4 sm:h-4"
-              >
-                <path d="M714 519L1161 0h-109L671 420 426 0H0l464 726L0 1226h109l417-463 262 463h426z" />
-              </svg>
+              <X className="w-4 h-4 sm:w-5 sm:h-5" />
             </Link>
 
             <Link
