@@ -98,8 +98,7 @@ const Section2 = () => {
 
                 <span className="w-full overflow-hidden flex items-center gap-x-2 z-10">
                   <Link
-                    to={project.live}
-                    target="_blank"
+                    to={`/project/${project.id}`}
                     rel="noopener noreferrer"
                     className={`font-semibold overflow-hidden ${
                       dark
@@ -108,19 +107,6 @@ const Section2 = () => {
                     } w-[40%] text-base py-3 rounded-2xl px-4 hover:px-7 flex items-center gap-x-2 transition-all duration-300 ease-in-out hover:bg-black/30`}
                   >
                     View <span><ArrowRight className="w-5 h-5" /></span>
-                  </Link>
-
-                  <Link
-                    to={project.code}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className={`${
-                      dark
-                        ? "text-[#f1f1f1] bg-white/10 shadow-lg"
-                        : "text-black/90 bg-black/10"
-                    } py-2 rounded px-2 sm:px-4 hover:px-4 sm:hover:px-7 transition-all duration-300 ease-in-out hover:backdrop-blur-xl`}
-                  >
-                    <Github className="w-4 h-4 sm:w-6 sm:h-6" />
                   </Link>
                 </span>
               </motion.div>

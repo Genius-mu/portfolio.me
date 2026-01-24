@@ -37,7 +37,14 @@ function App() {
               </ThemeTog.Provider>
             }
           />
-          <Route path="/project/:id" element={<ProjectsView />} />
+          <Route
+            path="/project/:id"
+            element={
+              <ThemeTog.Provider value={{ dark, setDark }}>
+                <ProjectsView />
+              </ThemeTog.Provider>
+            }
+          />
         </Routes>
         <ThemeTog.Provider value={{ dark, setDark }}>
           <Footer />

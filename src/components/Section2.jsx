@@ -9,8 +9,8 @@ const Section2 = () => {
   const { dark } = useContext(ThemeTog);
 
   const fadeVariants = {
-    hiddenLeft: { opacity: 0, x: -100, scale: 0.95 },
-    hiddenRight: { opacity: 0, x: 100, scale: 0.95 },
+    hiddenLeft: { opacity: 0, x: -50, scale: 0.95 },
+    hiddenRight: { opacity: 0, x: 50, scale: 0.95 },
     hiddenUp: { opacity: 0, y: 100, scale: 0.95 },
     visible: {
       opacity: 1,
@@ -61,7 +61,7 @@ const Section2 = () => {
                 className={`relative flex flex-col overflow-hidden gap-y-2 rounded-2xl p-5 w-full h-[25em] border ${
                   dark
                     ? "border-[#f1f1f1] bg-white/5"
-                    : "border-black/40 bg-white/30"
+                    : "border-black/20 bg-white/30"
                 }`}
               >
                 {/* Liquid Glass Effects - Fixed layering */}
@@ -99,7 +99,6 @@ const Section2 = () => {
                 <span className="w-full overflow-hidden flex items-center gap-x-2 z-10">
                   <Link
                     to={`/project/${project.id}`}
-                    target="_blank"
                     rel="noopener noreferrer"
                     className={`font-semibold overflow-hidden ${
                       dark
@@ -113,7 +112,7 @@ const Section2 = () => {
                     </span>
                   </Link>
 
-                  <Link
+                  {/* <Link
                     to={project.code}
                     target="_blank"
                     rel="noopener noreferrer"
@@ -124,7 +123,7 @@ const Section2 = () => {
                     } py-2 rounded px-2 sm:px-4 hover:px-4 sm:hover:px-7 transition-all duration-300 ease-in-out hover:backdrop-blur-xl`}
                   >
                     <Github className="w-4 h-4 sm:w-6 sm:h-6" />
-                  </Link>
+                  </Link> */}
                 </span>
               </motion.div>
             ))}
