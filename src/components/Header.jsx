@@ -32,7 +32,7 @@ const Header = () => {
 
           {/* Liquid Glass Effects - Fixed layering */}
           <div
-            className="absolute inset-0 backdrop-blur-sm rounded-2xl -z-10"
+            className="absolute inset-0 backdrop-blur-[5px] rounded-2xl -z-10"
             style={{ filter: "url(#glass-distortion)" }}
           ></div>
           <div className="absolute inset-0 bg-white/1 rounded-2xl -z-10"></div>

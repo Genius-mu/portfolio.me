@@ -7,6 +7,7 @@ import { createContext, useState } from "react";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import CustomCursor from "./components/CustomCu";
+import ProjectsView from "./components/ProjectsView";
 
 export const ThemeTog = createContext();
 
@@ -36,6 +37,7 @@ function App() {
               </ThemeTog.Provider>
             }
           />
+          <Route path="/project/:id" element={<ProjectsView />} />
         </Routes>
         <ThemeTog.Provider value={{ dark, setDark }}>
           <Footer />

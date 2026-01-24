@@ -98,7 +98,7 @@ const Section2 = () => {
 
                 <span className="w-full overflow-hidden flex items-center gap-x-2 z-10">
                   <Link
-                    to={project.live}
+                    to={`/project/${project.id}`}
                     target="_blank"
                     rel="noopener noreferrer"
                     className={`font-semibold overflow-hidden ${
