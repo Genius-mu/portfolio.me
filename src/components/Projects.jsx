@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import projects from "../utils/projects";
 import { motion } from "framer-motion";
-import { Github } from "lucide-react";
+import { ArrowRight, Github } from "lucide-react";
 import { useContext } from "react";
 import { ThemeTog } from "../App";
 
@@ -107,7 +107,7 @@ const Section2 = () => {
                         : "text-black/90 bg-black/10"
                     } w-[40%] text-base py-3 rounded-2xl px-4 hover:px-7 flex items-center gap-x-2 transition-all duration-300 ease-in-out hover:bg-black/30`}
                   >
-                    View <span>{">"}</span>
+                    View <span><ArrowRight className="w-5 h-5" /></span>
                   </Link>
 
                   <Link
