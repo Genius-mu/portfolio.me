@@ -36,12 +36,12 @@ const Footer = () => {
         >
           Copyrights © 2025 Mustapha Adegbite
         </p>
-        <nav className="flex gap-x-2">
+        <nav className="flex gap-x-2 overflow-hidden">
           <Link
             to="https://x.com/mustaphAdegbite"
             className={`${
               dark ? "text-white/90 hover:text-white" : "text-black/70 hover:text-black/90"
-            } py-2 rounded px-2 sm:px-4 transition-all duration-300 ease-in-out`}
+            } py-2 rounded px-2 sm:px-4 transition-all duration-300 ease-in-out hover:scale-110`}
             target="_blank"
           >
             <X className="w-4 h-4 sm:w-5 sm:h-5" />
@@ -50,7 +50,7 @@ const Footer = () => {
             to="https://github.com/Genius-mu"
             className={`${
               dark ? "text-white/90 hover:text-white" : "text-black/70 hover:text-black/90"
-            } py-2 rounded px-2 sm:px-4 transition-all duration-300 ease-in-out`}
+            } py-2 rounded px-2 sm:px-4 transition-all duration-300 ease-in-out hover:scale-110`}
             target="_blank"
           >
             <Github className="w-4 h-4 sm:w-6 sm:h-6" />
@@ -59,7 +59,7 @@ const Footer = () => {
             href="https://www.instagram.com/genius_mu01/"
             className={`${
               dark ? "text-white/90 hover:text-white" : "text-black/70 hover:text-black/90"
-            } py-2 rounded px-2 sm:px-4 transition-all duration-300 ease-in-out`}
+            } py-2 rounded px-2 sm:px-4 transition-all duration-300 ease-in-out hover:scale-110`}
           >
             <Instagram className="w-4 h-4 sm:w-6 sm:h-6" />
           </a>
@@ -67,7 +67,7 @@ const Footer = () => {
             href="mailto:adegbitemustapha73@gmail.com"
             className={`${
               dark ? "text-white/90 hover:text-white" : "text-black/70 hover:text-black/90"
-            } py-2 rounded px-2 sm:px-4 transition-all duration-300 ease-in-out`}
+            } py-2 rounded px-2 sm:px-4 transition-all duration-300 ease-in-out hover:scale-110`}
           >
             <MailIcon className="w-4 h-4 sm:w-6 sm:h-6" />
           </a>

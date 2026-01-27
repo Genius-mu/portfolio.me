@@ -25,7 +25,7 @@ const ProjectsView = () => {
           />
 
           <h1
-            className={`text-4xl ${dark ? "text-white/80" : "text-black/90"} font-bold mb-4 overflow-hidden`}
+            className={`text-4xl ${dark ? "text-white/90" : "text-black/90"} font-bold mb-4 overflow-hidden`}
           >
             {project.title}
           </h1>
@@ -34,6 +34,19 @@ const ProjectsView = () => {
           >
             {project.description}
           </p>
+
+          {/* <div className="grid grid-cols-3 py-5 gap-2">
+            {project.imgs.map((img, i) => (
+              <div className="w-full rounded-xl h-[10em] overflow-hidden">
+                <img
+                  key={i}
+                  src={img}
+                  alt={`Project image ${i + 1}`}
+                  className="object-cover h-full w-full duration-300 transition hover:scale-105"
+                />
+              </div>
+            ))}
+          </div> */}
 
           <div className="flex justify-start items-center w-full gap-x-3">
             <div>
@@ -47,6 +60,7 @@ const ProjectsView = () => {
             <div className="flex gap-4">
               <Link
                 to={project.live}
+                target="_blank"
                 rel="noopener noreferrer"
                 className={`font-semibold overflow-hidden ${
                   dark
