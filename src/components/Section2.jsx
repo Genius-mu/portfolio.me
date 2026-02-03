@@ -9,15 +9,15 @@ const Section2 = () => {
   const { dark } = useContext(ThemeTog);
 
   const fadeVariants = {
-    hiddenLeft: { opacity: 0, x: -50, scale: 0.95 },
-    hiddenRight: { opacity: 0, x: 50, scale: 0.95 },
-    hiddenUp: { opacity: 0, y: 100, scale: 0.95 },
+    hiddenLeft: { opacity: 0, x: -10, scale: 0.99 },
+    hiddenRight: { opacity: 0, x: 10, scale: 0.99 },
+    hiddenUp: { opacity: 0, y: 50, scale: 0.95 },
     visible: {
       opacity: 1,
       x: 0,
       y: 0,
       scale: 1,
-      transition: { duration: 0.8, ease: "easeOut" },
+      transition: { duration: 0.2, ease: "easeOut" },
     },
   };
 
@@ -133,7 +133,9 @@ const Section2 = () => {
             to="/projects"
             className="font-semibold text-white w-fit text-base bg-black py-3 rounded-2xl px-9 hover:px-7 flex items-center gap-x-4 transition-all duration-300 ease-in-out hover:bg-black/80"
           >
-            View All {">"}
+            View All <span>
+              <ArrowRight />
+            </span>
           </Link>
         </div>
       </section>

@@ -9,15 +9,15 @@ const Section2 = () => {
   const { dark } = useContext(ThemeTog);
 
   const fadeVariants = {
-    hiddenLeft: { opacity: 0, x: -100, scale: 0.95 },
-    hiddenRight: { opacity: 0, x: 100, scale: 0.95 },
-    hiddenUp: { opacity: 0, y: 100, scale: 0.95 },
+    hiddenLeft: { opacity: 0, x: -10, scale: 0.99 },
+    hiddenRight: { opacity: 0, x: 10, scale: 0.99 },
+    hiddenUp: { opacity: 0, y: 50, scale: 0.95 },
     visible: {
       opacity: 1,
       x: 0,
       y: 0,
       scale: 1,
-      transition: { duration: 0.8, ease: "easeOut" },
+      transition: { duration: 0.2, ease: "easeOut" },
     },
   };
 
