@@ -8,16 +8,31 @@ import { ThemeTog } from "../App";
 const Section2 = () => {
   const { dark } = useContext(ThemeTog);
 
-  const fadeVariants = {
-    hiddenLeft: { opacity: 0, x: -10, scale: 0.99 },
-    hiddenRight: { opacity: 0, x: 10, scale: 0.99 },
-    hiddenUp: { opacity: 0, y: 50, scale: 0.95 },
+  const cardVariants = {
+    hidden: {
+      opacity: 0,
+      y: 30,
+      scale: 0.95,
+    },
     visible: {
       opacity: 1,
-      x: 0,
       y: 0,
       scale: 1,
-      transition: { duration: 0.2, ease: "easeOut" },
+      transition: {
+        duration: 0.5,
+        ease: [0.25, 0.46, 0.45, 0.94],
+      },
+    },
+  };
+
+  const imageVariants = {
+    rest: { scale: 1 },
+    hover: {
+      scale: 1.1,
+      transition: {
+        duration: 0.4,
+        ease: "easeOut",
+      },
     },
   };
 
@@ -53,11 +68,10 @@ const Section2 = () => {
             {projects.map((project, index) => (
               <motion.div
                 key={project.id || index}
-                variants={fadeVariants}
-                initial={index % 2 === 0 ? "hiddenLeft" : "hiddenRight"}
+                variants={cardVariants}
+                whileHover={{ y: -8 }}
                 whileInView="visible"
                 viewport={{ once: false, amount: 0.3 }}
-                transition={{ delay: index * 0.2 }}
                 className={`relative flex flex-col overflow-hidden gap-y-2 rounded-2xl p-5 w-full h-[25em] border ${
                   dark
                     ? "border-[#f1f1f1] bg-white/5"
@@ -133,7 +147,8 @@ const Section2 = () => {
             to="/projects"
             className="font-semibold text-white w-fit text-base bg-black py-3 rounded-2xl px-9 hover:px-7 flex items-center gap-x-4 transition-all duration-300 ease-in-out hover:bg-black/80"
           >
-            View All <span>
+            View All{" "}
+            <span>
               <ArrowRight />
             </span>
           </Link>
