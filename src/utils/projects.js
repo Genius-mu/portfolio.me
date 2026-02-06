@@ -7,7 +7,7 @@ export default [
     image: "/images/img24.webp",
     live: "http://alubarika.vercel.app/",
     code: "https://github.com/Genius-mu/Alubarika",
-    imgs: ["/images/img25.webp", "/images/img26.webp", "/images/img27.webp"],
+    imgs: ["/images/img25.webp", "/images/img26.webp"],
   },
   {
     id: "ClarityQ",
