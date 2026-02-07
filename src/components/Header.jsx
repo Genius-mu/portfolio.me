@@ -49,7 +49,7 @@ const Header = () => {
                 dark
                   ? "text-white hover:bg-white/10"
                   : "text-black/70 hover:bg-black/5 hover:text-black/90"
-              } py-2 rounded px-2 sm:px-4 hover:px-3 sm:hover:px-6 transition-all duration-300 ease-in-out`}
+              } py-2 rounded px-2 sm:px-4 hover:px-3 sm:hover:px-6 transition-all duration-300 ease-in-out text-shadow-2xl`}
             >
               <Home className="w-4 h-4 sm:w-5 sm:h-5" strokeWidth={2} />
             </Link>

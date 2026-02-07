@@ -64,19 +64,19 @@ const Section2 = () => {
             </h2>
           </div>
 
-          <div className="md:w-[90%] xl:w-[80%] sm:w-full h-full grid grid-cols-1 sm:grid-cols-2 justify-center gap-8 items-center">
+          <div className="md:w-[90%] xl:w-[80%] sm:w-full h-full grid grid-cols-1 sm:grid-cols-2 justify-center gap-7 items-center">
             {projects.map((project, index) => (
               <motion.div
                 key={project.id || index}
                 variants={cardVariants}
-                whileHover={{ y: -8 }}
+                whileHover={{ y: -4 }}
                 whileInView="visible"
                 viewport={{ once: false, amount: 0.3 }}
-                className={`relative flex flex-col overflow-hidden gap-y-2 rounded-2xl p-5 w-full h-[25em] border ${
+                className={`relative flex flex-col overflow-hidden justify-center items-center gap-y-2 rounded-2xl p-5 w-full h-[25em] border ${
                   dark
                     ? "border-[#f1f1f1] bg-white/5"
                     : "border-black/20 bg-white/30"
-                }`}
+                } shadow-[-1px_-1px_1px_#999_inset]`}
               >
                 {/* Liquid Glass Effects - Fixed layering */}
                 <div
@@ -86,7 +86,7 @@ const Section2 = () => {
                 <div className="absolute inset-0 bg-white/2 rounded-2xl -z-10"></div>
                 <div className="absolute inset-0 rounded-2xl -z-10 shadow-[inset_2px_2px_1px_rgba(255,255,255,0.1),inset_-1px_-1px_1px_rgba(255,255,255,0.3)]"></div>
 
-                <div className="w-full h-[50%] rounded-2xl overflow-hidden z-10">
+                <div className="w-full h-[50%] shadow-xl rounded-2xl overflow-hidden z-10">
                   <img
                     src={project.image}
                     alt={project.title}
@@ -95,7 +95,7 @@ const Section2 = () => {
                 </div>
 
                 <h2
-                  className={`font-bold text-2xl tracking-[1px] z-10 ${
+                  className={`font-bold w-full text-left text-2xl tracking-[1px] z-10 ${
                     dark ? "text-[#f1f1f1]" : "text-black/90"
                   }`}
                 >

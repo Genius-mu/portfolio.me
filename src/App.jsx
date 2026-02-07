@@ -6,7 +6,7 @@ import Projects from "./components/Projects";
 import { createContext, useState } from "react";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import CustomCursor from "./components/CustomCu";
+// import CustomCursor from "./components/CustomCu";
 import ProjectsView from "./components/ProjectsView";
 
 export const ThemeTog = createContext();
@@ -16,7 +16,7 @@ function App() {
 
   return (
     <>
-      <div className={`${dark ? "bg-black/85" : "bg-black/2"}`}>
+      <div className={`${dark ? "bg-gray-900" : "bg-black/2"}`}>
         <ThemeTog.Provider value={{ dark, setDark }}>
           <Header />
         </ThemeTog.Provider>
@@ -49,7 +49,7 @@ function App() {
         <ThemeTog.Provider value={{ dark, setDark }}>
           <Footer />
         </ThemeTog.Provider>
-        <CustomCursor />
+        {/* <CustomCursor /> */}
       </div>
     </>
   );
