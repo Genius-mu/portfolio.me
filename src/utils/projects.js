@@ -133,10 +133,10 @@ export default [
     title: "Special Todo",
     description:
       "A simple yet elegant React Todo app with animations, smooth interactions, and data persistence using localStorage",
-    image: "/images/img50.webp",
+    image: "/images/img52.webp",
     live: "https://todap.vercel.app/",
     code: "https://github.com/Genius-mu/to-do",
-    imgs: ["/images/img50.webp", "/images/img51.webp"],
+    imgs: ["/images/img52.webp", "/images/img53.webp"],
   },
   {
     id: "Electiz",
