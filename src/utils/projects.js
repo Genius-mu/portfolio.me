@@ -73,7 +73,7 @@ export default [
     title: "Spelling Game",
     description:
       "A fun, interactive game that helps users improve their spelling skills. Built with React, featuring instant feedback, score tracking, and smooth animations for an engaging learning experience.",
-    image: "/images/img7.webp",
+    image: "/images/img38.webp",
     live: "https://spell-goat.vercel.app/",
     code: "https://github.com/Genius-mu/Spell-Goat",
     imgs: ["/images/img38.webp", "/images/img39.webp"],
