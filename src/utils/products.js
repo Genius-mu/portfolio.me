@@ -24,7 +24,7 @@ export default [
     description:
       "A simple yet powerful app to build consistency. Users can log habits, track daily progress, and visualize streaks — all in a clean, responsive interface.",
     image: "/images/img5.webp",
-    live: "http://habitxpp.netlify.app/",
+    live: "habit-gx29.vercel.app",
     code: "https://github.com/Genius-mu/HabitXP",
   },
   {
