@@ -17,6 +17,7 @@ export default [
     image: "/images/img21.webp",
     live: "https://time-drip.vercel.app/",
     code: "https://github.com/Genius-mu/TimeDrip",
+    imgs: ["/images/img32.webp", "/images/img33.webp"],
   },
   {
     id: "HabitXP",
@@ -26,6 +27,7 @@ export default [
     image: "/images/img5.webp",
     live: "https://habit-gx29.vercel.app/",
     code: "https://github.com/Genius-mu/HabitXP",
+    imgs: ["/images/img34.webp", "/images/img35.webp"],
   },
   {
     id: "Padi",
@@ -35,5 +37,6 @@ export default [
     image: "/images/img20.webp",
     live: "https://padi-hackathon.vercel.app/",
     code: "https://github.com/Genius-mu/padi-hackathon",
+    imgs: ["/images/img36.webp", "/images/img37.webp"],
   },
 ];
