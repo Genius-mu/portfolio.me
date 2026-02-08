@@ -44,7 +44,7 @@ export default [
     title: "HabitXP",
     description:
       "A simple yet powerful app to build consistency. Users can log habits, track daily progress, and visualize streaks — all in a clean, responsive interface.",
-    image: "/images/img5.webp",
+    image: "/images/img34.webp",
     live: "https://habit-gx29.vercel.app/",
     code: "https://github.com/Genius-mu/HabitXP",
     imgs: ["/images/img34.webp", "/images/img35.webp"],
