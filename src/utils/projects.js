@@ -17,6 +17,7 @@ export default [
     image: "/images/img15.webp",
     live: "https://clarity-q.vercel.app/",
     code: "https://github.com/Genius-mu/ClarityQ",
+    imgs: ["/images/img28.webp", "/images/img29.webp"],
   },
   {
     id: "Ticket-MA",
@@ -26,6 +27,7 @@ export default [
     image: "/images/img6.webp",
     live: "https://ticket-m-app.netlify.app/",
     code: "https://github.com/Genius-mu/Ticket-Management-App",
+    imgs: ["/images/img30.webp", "/images/img31.webp"],
   },
   {
     id: "TimeDrip",
@@ -35,6 +37,7 @@ export default [
     image: "/images/img21.webp",
     live: "https://time-drip.vercel.app/",
     code: "https://github.com/Genius-mu/TimeDrip",
+    imgs: ["/images/img32.webp", "/images/img33.webp"],
   },
   {
     id: "HabitXP",
@@ -44,6 +47,7 @@ export default [
     image: "/images/img5.webp",
     live: "https://habit-gx29.vercel.app/",
     code: "https://github.com/Genius-mu/HabitXP",
+    imgs: ["/images/img34.webp", "/images/img35.webp"],
   },
   {
     id: "Padi",
@@ -53,6 +57,7 @@ export default [
     image: "/images/img20.webp",
     live: "https://padi-hackathon.vercel.app/",
     code: "https://github.com/Genius-mu/padi-hackathon",
+    imgs: ["/images/img36.webp", "/images/img37.webp"],
   },
   {
     id: "Invoice Generator",
@@ -71,6 +76,7 @@ export default [
     image: "/images/img7.webp",
     live: "https://spell-goat.vercel.app/",
     code: "https://github.com/Genius-mu/Spell-Goat",
+    imgs: ["/images/img38.webp", "/images/img39.webp"],
   },
   {
     id: "HeB",
@@ -80,6 +86,7 @@ export default [
     image: "/images/img18.webp",
     live: "https://heart-breaking.vercel.app/",
     code: "https://github.com/Genius-mu/heart-breaking",
+    imgs: ["/images/img40.webp", "/images/img41.webp"],
   },
   {
     id: "CryptoEn",
@@ -89,6 +96,7 @@ export default [
     image: "/images/img17.webp",
     live: "https://cryptoen.vercel.app/",
     code: "https://github.com/Genius-mu/crypto.me",
+    imgs: ["/images/img42.webp", "/images/img43.webp"],
   },
   {
     id: "CrossChain",
@@ -98,6 +106,7 @@ export default [
     image: "/images/img22.webp",
     live: "https://cross4chain.vercel.app/",
     code: "https://github.com/Genius-mu/CrossChain",
+    imgs: ["/images/img44.webp", "/images/img45.webp"],
   },
   {
     id: "web3Q",
@@ -107,6 +116,7 @@ export default [
     image: "/images/img23.webp",
     live: "https://web3-gm.vercel.app/",
     code: "https://github.com/Genius-mu/web3",
+    imgs: ["/images/img46.webp", "/images/img47.webp"],
   },
   {
     id: "Vektor",
@@ -116,6 +126,7 @@ export default [
     image: "/images/img13.webp",
     live: "https://vektor-phi.vercel.app/",
     code: "https://github.com/Genius-mu/Vektor",
+    imgs: ["/images/img48.webp", "/images/img49.webp"],
   },
   {
     id: "Special Todo",
@@ -125,6 +136,7 @@ export default [
     image: "/images/img14.webp",
     live: "https://todap.vercel.app/",
     code: "https://github.com/Genius-mu/to-do",
+    imgs: ["/images/img50.webp", "/images/img51.webp"],
   },
   {
     id: "Electiz",

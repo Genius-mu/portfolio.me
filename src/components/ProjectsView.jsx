@@ -130,8 +130,8 @@ const ProjectsView = () => {
                   key={i}
                   className={`rounded-xl overflow-hidden shadow-xl ${
                     dark
-                      ? "bg-gray-800 shadow-gray-900/50"
-                      : "bg-white shadow-gray-300/50"
+                      ? "bg-gray-800 shadow-gray-900/80"
+                      : "bg-white shadow-gray-300/80"
                   }`}
                   style={{ animationDelay: `${i * 100}ms` }}
                 >
