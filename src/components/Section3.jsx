@@ -41,7 +41,7 @@ const Section3 = () => {
               dark
                 ? "text-[#f1f1f1] [text-shadow:1px_1px_1px_#111]"
                 : "text-black/70"
-            }`}
+            } sm:line-clamp-7 line-clamp-3`}
           >
             I’m Mustapha Adegbite, a Frontend Developer who builds fast,
             responsive, and visually engaging web experiences with{" "}
@@ -70,7 +70,7 @@ const Section3 = () => {
               dark
                 ? "text-[#f1f1f1] [text-shadow:1px_1px_1px_#111]"
                 : "text-black/70"
-            }`}
+            } sm:line-clamp-7 line-clamp-3`}
           >
             My journey into frontend development grew from curiosity into
             real-world projects.{" "}
@@ -101,7 +101,14 @@ const Section3 = () => {
               dark
                 ? "text-[#f1f1f1] [text-shadow:1px_1px_1px_#111]"
                 : "text-black/70"
-            }`}
+            } sm:line-clamp-7 line-clamp-3`}
+            // style={{
+            //   display: "-webkit-box",
+            //   overflow: "hidden",
+            //   WebkitBoxOrient: "vertical",
+            //   WebkitLineClamp: "2",
+            //   WebkitLineBreak: "2",
+            // }}
           >
             I believe great web experiences live at the intersection of
             performance, accessibility, and emotion — fast load times, inclusive

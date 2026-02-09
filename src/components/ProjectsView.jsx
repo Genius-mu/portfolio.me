@@ -86,7 +86,7 @@ const ProjectsView = () => {
           </p>
 
           {/* Action buttons */}
-          <div className="flex flex-wrap gap-4">
+          <div className="flex overflow-hidden py-2 pb-4 flex-wrap gap-4">
             <a
               href={project.live}
               target="_blank"
