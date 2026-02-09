@@ -10,46 +10,65 @@
 // const Home = () => {
 //   const { dark } = useContext(ThemeTog);
 
-//   // Generate consistent random values for each orb
-//   const orbs = [...Array(20)].map((_, i) => ({
-//     color: ["#3b82f6", "#8b5cf6", "#06b6d4"][i % 3],
-//     size: Math.random() * 400 + 150,
-//     startX: Math.random() * 100,
-//     startY: Math.random() * 100,
-//     moveX: Math.random() * 200 - 100,
-//     moveY: Math.random() * 200 - 100,
-//     duration: Math.random() * 15 + 15,
+//   // Generate Matrix-style falling code streams
+//   const codeStreams = [...Array(40)].map((_, i) => ({
+//     color: ["#00ff41", "#008f11", "#00ff41"][i % 3], // Matrix green variations
+//     startX: i * 2.5 + Math.random() * 2, // Evenly distributed columns
+//     duration: Math.random() * 3 + 2, // Falling speed
+//     delay: Math.random() * 5,
+//     length: Math.random() * 30 + 10, // Trail length
 //   }));
+
+//   // Random characters for the Matrix effect
+//   const matrixChars =
+//     "01アイウエオカキクケコサシスセソタチツテトナニヌネノハヒフヘホマミムメモヤユヨラリルレロワヲン";
+//   const getRandomChar = () =>
+//     matrixChars[Math.floor(Math.random() * matrixChars.length)];
 
 //   return (
 //     <div className="relative">
-//       {/* Animated background - only shows in dark mode */}
+//       {/* Matrix-style falling code animation - only shows in dark mode */}
 //       {dark && (
 //         <div className="fixed inset-0 overflow-hidden pointer-events-none z-0">
-//           {orbs.map((orb, i) => (
-//             <motion.div
+//           {codeStreams.map((stream, i) => (
+//             <div
 //               key={i}
-//               className="absolute rounded-full mix-blend-screen filter blur-3xl"
+//               className="absolute top-0 overflow-hidden"
 //               style={{
-//                 background: `radial-gradient(circle, ${orb.color} 0%, transparent 70%)`,
-//                 width: orb.size,
-//                 height: orb.size,
-//                 left: `${orb.startX}%`,
-//                 top: `${orb.startY}%`,
+//                 left: `${stream.startX}%`,
 //               }}
-//               animate={{
-//                 x: [0, orb.moveX, 0],
-//                 y: [0, orb.moveY, 0],
-//                 scale: [1, 1.3, 1],
-//                 opacity: [0.15, 0.25, 0.15],
-//               }}
-//               transition={{
-//                 duration: orb.duration,
-//                 repeat: Infinity,
-//                 ease: "easeInOut",
-//               }}
-//             />
+//             >
+//               {/* Create multiple characters in each stream */}
+//               {[...Array(Math.floor(stream.length))].map((_, charIndex) => (
+//                 <motion.div
+//                   key={`${i}-${charIndex}`}
+//                   className="font-mono text-sm font-bold overflow-hidden"
+//                   style={{
+//                     color: charIndex === 0 ? "#ffffff" : stream.color, // White leading character
+//                     textShadow:
+//                       charIndex === 0
+//                         ? `0 0 10px #00ff41, 0 0 20px #00ff41`
+//                         : `0 0 5px ${stream.color}`,
+//                     opacity: 1 - charIndex / stream.length, // Fade as it goes down
+//                   }}
+//                   animate={{
+//                     y: [-50, window.innerHeight + 50],
+//                   }}
+//                   transition={{
+//                     duration: stream.duration,
+//                     repeat: Infinity,
+//                     ease: "linear",
+//                     delay: stream.delay + charIndex * 0.05,
+//                   }}
+//                 >
+//                   {getRandomChar()}
+//                 </motion.div>
+//               ))}
+//             </div>
 //           ))}
+
+//           {/* Overlay gradient for better readability */}
+//           <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-transparent to-black/20" />
 //         </div>
 //       )}
 
@@ -67,6 +86,10 @@
 
 // export default Home;
 
+
+
+
+
 import Hero from "./components/Hero";
 import Section2 from "./components/Section2";
 import Section3 from "./components/Section3";
@@ -79,76 +102,79 @@ import { ThemeTog } from "./App";
 const Home = () => {
   const { dark } = useContext(ThemeTog);
 
-  // Generate consistent random values for each particle
-  const particles = [...Array(80)].map((_, i) => ({
-    color: ["#3b82f6", "#8b5cf6", "#06b6d4", "#ec4899"][i % 4],
-    size: Math.random() * 6 + 2,
+  // Generate bubbles with varying sizes and speeds
+  const bubbles = [...Array(25)].map((_, i) => ({
+    color: ["#3b82f680", "#8b5cf680", "#06b6d480", "#ec489980"][i % 4],
+    size: Math.random() * 80 + 30,
     startX: Math.random() * 100,
-    startY: Math.random() * 100,
-    moveX: Math.random() * 300 - 150,
-    moveY: Math.random() * 300 - 150,
-    duration: Math.random() * 20 + 1,
-    delay: Math.random() * 2,
+    startY: 100 + Math.random() * 20, // Start below viewport
+    floatHeight: Math.random() * 120 + 80, // How high it floats
+    duration: Math.random() * 15 + 10,
+    delay: Math.random() * 5,
+    drift: Math.random() * 40 - 20, // Horizontal drift
   }));
 
   return (
     <div className="relative">
-      {/* Particle animation background - only shows in dark mode */}
+      {/* Floating bubbles background - only shows in dark mode */}
       {dark && (
         <div className="fixed inset-0 overflow-hidden pointer-events-none z-0">
-          {particles.map((particle, i) => (
+          {bubbles.map((bubble, i) => (
             <motion.div
               key={i}
               className="absolute rounded-full"
               style={{
-                backgroundColor: particle.color,
-                width: particle.size,
-                height: particle.size,
-                left: `${particle.startX}%`,
-                top: `${particle.startY}%`,
-                boxShadow: `0 0 ${particle.size * 2}px ${particle.color}`,
+                background: `radial-gradient(circle at 30% 30%, ${bubble.color.replace("80", "cc")}, ${bubble.color})`,
+                width: bubble.size,
+                height: bubble.size,
+                left: `${bubble.startX}%`,
+                bottom: `-${bubble.size}px`,
+                boxShadow: `0 0 ${bubble.size * 0.8}px ${bubble.color}, inset 0 0 ${bubble.size * 0.3}px rgba(255, 255, 255, 0.3)`,
+                border: "1px solid rgba(255, 255, 255, 0.1)",
               }}
               animate={{
-                x: [0, particle.moveX, 0],
-                y: [0, particle.moveY, 0],
-                opacity: [0, 0.6, 0],
-                scale: [0, 1, 0],
+                y: [
+                  `0vh`,
+                  `-${bubble.floatHeight}vh`,
+                  `-${bubble.floatHeight + 20}vh`,
+                ],
+                x: [0, bubble.drift, bubble.drift * 1.5],
+                opacity: [0, 0.7, 0],
+                scale: [0.8, 1, 0.9],
               }}
               transition={{
-                duration: particle.duration,
+                duration: bubble.duration,
                 repeat: Infinity,
                 ease: "easeInOut",
-                delay: particle.delay,
+                delay: bubble.delay,
               }}
             />
           ))}
 
-          {/* Connection lines between nearby particles */}
-          <svg className="absolute inset-0 w-full h-full">
-            {particles.slice(0, 30).map((particle, i) => {
-              const nextParticle = particles[(i + 1) % 30];
-              return (
-                <motion.line
-                  key={`line-${i}`}
-                  x1={`${particle.startX}%`}
-                  y1={`${particle.startY}%`}
-                  x2={`${nextParticle.startX}%`}
-                  y2={`${nextParticle.startY}%`}
-                  stroke={particle.color}
-                  strokeWidth="0.5"
-                  animate={{
-                    opacity: [0, 0.15, 0],
-                  }}
-                  transition={{
-                    duration: particle.duration,
-                    repeat: Infinity,
-                    ease: "easeInOut",
-                    delay: particle.delay,
-                  }}
-                />
-              );
-            })}
-          </svg>
+          {/* Add subtle background glow orbs */}
+          {[...Array(5)].map((_, i) => (
+            <motion.div
+              key={`glow-${i}`}
+              className="absolute rounded-full filter blur-3xl"
+              style={{
+                background: `radial-gradient(circle, ${["#3b82f6", "#8b5cf6", "#06b6d4", "#ec4899", "#10b981"][i]} 0%, transparent 70%)`,
+                width: Math.random() * 300 + 200,
+                height: Math.random() * 300 + 200,
+                left: `${Math.random() * 100}%`,
+                top: `${Math.random() * 100}%`,
+              }}
+              animate={{
+                x: [0, Math.random() * 100 - 50, 0],
+                y: [0, Math.random() * 100 - 50, 0],
+                opacity: [0.1, 0.2, 0.1],
+              }}
+              transition={{
+                duration: Math.random() * 20 + 15,
+                repeat: Infinity,
+                ease: "easeInOut",
+              }}
+            />
+          ))}
         </div>
       )}
 
