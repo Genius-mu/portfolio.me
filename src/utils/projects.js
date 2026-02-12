@@ -65,8 +65,9 @@ export default [
     description:
       "A fast, professional tool for freelancers and businesses to generate and download invoices instantly. Built with React and Tailwind for speed and simplicity.",
     image: "/images/img8.webp",
-    live: "https://inv-genapp.netlify.app/",
+    live: "https://invoice-generator-livid-five.vercel.app/",
     code: "https://github.com/Genius-mu/Invoice-Generator",
+    imgs: ["/images/img54.webp", "/images/img55.webp"],
   },
   {
     id: "Spelling Game",
