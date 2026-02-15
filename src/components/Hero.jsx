@@ -76,7 +76,7 @@ const Hero = () => {
                     dark ? "text-white" : "text-green-600"
                   } list-disc`}
                 >
-                  Available for new projects
+                  Available for work
                 </li>
               </ul>
             </div>
