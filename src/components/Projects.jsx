@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import projects from "../utils/projects";
 import { motion } from "framer-motion";
-import { ArrowRight, Github } from "lucide-react";
+import { ArrowLeft, ArrowRight, Github } from "lucide-react";
 import { useContext } from "react";
 import { ThemeTog } from "../App";
 
@@ -118,9 +118,12 @@ const Section2 = () => {
 
           <Link
             to="/"
-            className="font-semibold text-white w-fit text-base bg-black py-3 rounded-2xl px-9 hover:px-7 flex items-center gap-x-4 transition-all duration-300 ease-in-out hover:bg-black/80"
+            className="font-semibold text-white w-fit text-base bg-black py-3 rounded-2xl px-8 hover:px-7 flex items-center gap-x-4 transition-all duration-300 ease-in-out hover:bg-black/80"
           >
-            Back {">"}
+            <span> 
+              <ArrowLeft className="w-5 h-5" />
+            </span>
+            Back
           </Link>
         </div>
       </section>

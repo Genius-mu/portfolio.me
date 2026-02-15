@@ -124,7 +124,7 @@ const ProjectsView = () => {
             >
               Gallery
             </h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 p-5 gap-6">
               {project.imgs.map((img, i) => (
                 <div
                   key={i}

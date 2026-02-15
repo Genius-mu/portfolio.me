@@ -147,6 +147,7 @@ export default [
     image: "/images/img9.webp",
     live: "https://electiz.netlify.app/",
     code: "https://github.com/Genius-mu/Electiz",
+    imgs: ["/images/img56.webp", "/images/img57.webp"],
   },
   {
     id: "DOM",
@@ -156,6 +157,7 @@ export default [
     image: "/images/img11.webp",
     live: "https://amenadom.netlify.app/",
     code: "https://github.com/Genius-mu/-DOM1-",
+    imgs: ["/images/img58.webp", "/images/img59.webp"],
   },
   {
     id: "Tania",
@@ -165,15 +167,7 @@ export default [
     image: "/images/img10.webp",
     live: "https://tanea.netlify.app/",
     code: "https://github.com/Genius-mu/Tania",
-  },
-  {
-    id: "zeeHomes",
-    title: "zeeHomes",
-    description:
-      "A modern real estate web app built with Next.js and Tailwind CSS, featuring smooth navigation, responsive design, and dynamic property filters for an easy home browsing experience.",
-    image: "/images/img19.webp",
-    live: "https://re01.vercel.app/",
-    code: "https://github.com/Genius-mu/real-estate",
+    imgs: ["/images/img60.webp", "/images/img61.webp"],
   },
   {
     id: "Charcoal Website",
@@ -183,5 +177,16 @@ export default [
     image: "/images/img16.webp",
     live: "https://charcoal-web.vercel.app/",
     code: "https://github.com/Genius-mu/Chakol-web",
+    imgs: ["/images/img62.webp", "/images/img63.webp"],
+  },
+  {
+    id: "Estate Zoom",
+    title: "Estate Zoom",
+    description:
+      "A modern charcoal-themed landing page I rebuilt from an X design—enhanced with cleaner layout, better visuals, and full responsiveness. A simple showcase of turning inspiration into a refined, polished UI.",
+    image: "/images/img65.webp",
+    live: "https://estate-zoom.vercel.app/",
+    code: "https://github.com/Genius-mu/Chakol-web",
+    imgs: ["/images/img65.webp", "/images/img64.webp"],
   },
 ];
