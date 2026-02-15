@@ -59,7 +59,7 @@ const Hero = () => {
                 target="_blank"
                 className={`text-white w-full sm:w-fit text-[16px] bg-black py-3 rounded-2xl px-5 hover:px-6 transition-all duration-300 ${
                   dark ? "text-[#f1f1f1] shadow-2xl" : "text-black"
-                } ease-in-out hover:bg-black/80`}
+                } ease-in-out disCD flex justify-center items-center hover:bg-black/80`}
               >
                 Hire me
               </a>
@@ -74,7 +74,7 @@ const Hero = () => {
                 <li
                   className={`text-[14px] sm:text-[16px] ${
                     dark ? "text-white" : "text-green-600"
-                  } list-disc`}
+                  }`}
                 >
                   Available for work
                 </li>

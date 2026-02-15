@@ -64,7 +64,7 @@ const Section2 = () => {
             </h2>
           </div>
 
-          <div className="md:w-[90%] xl:w-[80%] sm:w-full h-full grid grid-cols-1 sm:grid-cols-2 justify-center gap-7 items-center">
+          <div className="md:w-[90%] xl:w-[80%] sm:w-full h-full grid grid-cols-1 sm:grid-cols-2 justify-center gap-7 items-center pt-4">
             {projects.map((project, index) => (
               <motion.div
                 key={project.id || index}
