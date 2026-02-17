@@ -86,7 +86,7 @@ const Section2 = () => {
                 <div className="absolute inset-0 bg-white/2 rounded-2xl -z-10"></div>
                 <div className="absolute inset-0 rounded-2xl -z-10 shadow-[inset_2px_2px_1px_rgba(255,255,255,0.1),inset_-1px_-1px_1px_rgba(255,255,255,0.3)]"></div>
 
-                <div className="w-full h-[50%] shadow-xl rounded-2xl overflow-hidden z-10">
+                <div className="w-full h-[50%] border border-black/30 shadow-xl rounded-2xl overflow-hidden z-10">
                   <img
                     src={project.image}
                     alt={project.title}

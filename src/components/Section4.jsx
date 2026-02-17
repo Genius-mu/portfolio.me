@@ -33,7 +33,7 @@ export default function Section4Marquee() {
               <div
                 key={`a-${i}`}
                 className="skill flex-none w-40 h-14 rounded-lg flex items-center justify-center 
-                           bg-blue-500/20 text-white font-medium text-lg shadow-md"
+                           bg-green-600/10 text-white font-medium text-lg shadow-md"
               >
                 {skill}
               </div>
@@ -44,7 +44,7 @@ export default function Section4Marquee() {
               <div
                 key={`b-${i}`}
                 className="skill flex-none w-40 h-14 rounded-lg flex items-center justify-center 
-                           bg-blue-500/20 text-white font-medium text-lg shadow-md"
+                           bg-green-600/10 text-white font-medium text-lg shadow-md"
               >
                 {skill}
               </div>
