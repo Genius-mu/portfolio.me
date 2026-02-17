@@ -183,7 +183,7 @@ export default [
     id: "Estate Zoom",
     title: "Estate Zoom",
     description:
-      "A modern charcoal-themed landing page I rebuilt from an X design—enhanced with cleaner layout, better visuals, and full responsiveness. A simple showcase of turning inspiration into a refined, polished UI.",
+      "EstateZoom is a modern real estate web application built with React, Vite, and Tailwind CSS. It provides a seamless platform for users to find their dream home, explore properties for sale and rent, and connect with real estate agents.",
     image: "/images/img65.webp",
     live: "https://estate-zoom.vercel.app/",
     code: "https://github.com/Genius-mu/Chakol-web",
