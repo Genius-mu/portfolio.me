@@ -21,7 +21,7 @@ const Section3 = () => {
   return (
     <>
       <section className="sec3 w-full h-fit pt-[6%] pb-[6%] flex justify-center items-center">
-        <div className="w-[90%] sm:w-[65%] h-full flex flex-col justify-center gap-y-9 items-start">
+        <div className="w-[90%] sm:w-[65%] h-full flex flex-col justify-center gap-y-6 items-start">
           <h2
             className={`font-semibold text-4xl tracking-[1px] text-center ${
               dark
@@ -37,7 +37,7 @@ const Section3 = () => {
             whileInView="visible"
             viewport={{ once: false, amount: 0.2 }}
             transition={{ delay: 0.1 }}
-            className={`max-w-[800px] pl-5 border-l-2 border-green-500 text-[14px] sm:text-[16px] ${
+            className={`max-w-[800px] pl-5 border-l-3 rounded-l-[3px] border-gray-400 text-[14px] hover:border-green-400 my-3 hover:my-0 hover:py-3 hover:bg-green-600/10 transition duration-200 sm:text-[16px] ${
               dark
                 ? "text-[#f1f1f1] [text-shadow:1px_1px_1px_#111]"
                 : "text-black/70"
@@ -66,7 +66,7 @@ const Section3 = () => {
             whileInView="visible"
             viewport={{ once: false, amount: 0.2 }}
             transition={{ delay: 0.3 }}
-            className={`max-w-[800px] pl-5 border-l-2 border-green-500 text-[14px] sm:text-[16px] ${
+            className={`max-w-[800px] pl-5 border-l-3 rounded-l-[3px] border-gray-400 text-[14px] hover:border-green-400 my-3 hover:my-0 hover:py-3 hover:bg-green-600/10 transition duration-200 sm:text-[16px] ${
               dark
                 ? "text-[#f1f1f1] [text-shadow:1px_1px_1px_#111]"
                 : "text-black/70"
@@ -97,7 +97,7 @@ const Section3 = () => {
             whileInView="visible"
             viewport={{ once: false, amount: 0.2 }}
             transition={{ delay: 0.1 }}
-            className={`max-w-[800px] pl-5 border-l-2 border-green-500 text-[14px] sm:text-[16px] ${
+            className={`max-w-[800px] pl-5 border-l-3 rounded-l-[3px] border-gray-400 hover:border-green-400 my-3 hover:my-0 hover:py-3 hover:bg-green-600/10 transition duration-200 text-[14px] sm:text-[16px] ${
               dark
                 ? "text-[#f1f1f1] [text-shadow:1px_1px_1px_#111]"
                 : "text-black/70"

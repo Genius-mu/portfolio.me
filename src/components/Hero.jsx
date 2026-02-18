@@ -54,7 +54,7 @@ const Hero = () => {
             <div
               className={`mt-1 flex flex-col sm:flex-row gap-y-2 w-fit gap-x-2`}
             >
-              <a
+              {/* <a
                 href="mailto:adegbitemustapha73@gmail.com"
                 target="_blank"
                 className={`text-white w-full sm:w-fit text-[16px] bg-black py-3 rounded-2xl px-5 hover:px-6 transition-all duration-300 ${
@@ -62,6 +62,17 @@ const Hero = () => {
                 } ease-in-out disCD flex justify-center items-center hover:bg-black/80`}
               >
                 Hire me
+              </a> */}
+              <a
+                href="mailto:adegbitemustapha73@gmail.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className={`text-white w-full sm:w-fit text-[16px] bg-black py-3 rounded-2xl px-5 hover:px-6 transition-all duration-300 ${
+                  dark ? "text-[#f1f1f1] shadow-2xl" : "text-black"
+                } disCD flex justify-center items-center hover:bg-black/80 overflow-hidden z-10 transition-all duration-300 ease-in-out group/cta relative`}
+              >
+                <div className="absolute inset-0 -translate-x-full group-hover/cta:translate-x-full transition-transform duration-1000 bg-gradient-to-r from-transparent via-white/20 to-transparent"></div>
+                <span className="relative z-10">Hire me</span>
               </a>
 
               <ul
