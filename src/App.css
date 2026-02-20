@@ -1,5 +1,114 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Stack+Sans+Headline:wght@200..700&family=Stack+Sans+Notch:wght@200..700&display=swap");
 
+.btn1Class {
+  cursor: pointer;
+  --c: #0ea5e9;
+  padding: 12px 28px;
+  margin: 1em;
+  position: relative;
+  min-width: 12em;
+  background: transparent;
+  font-size: 12px;
+  font-weight: bold;
+  color: var(--c);
+  text-align: center;
+  text-transform: uppercase;
+  font-family: sans-serif;
+  letter-spacing: 0.1em;
+  border: 2px solid var(--c);
+  border-radius: 8px;
+  overflow: hidden;
+  z-index: 1;
+  transition: 0.5s;
+}
+
+.btn1Class span {
+  position: absolute;
+  width: 25%;
+  height: 100%;
+  background-color: var(--c);
+  transform: translateY(150%);
+  border-radius: 50%;
+  left: calc((var(--n) - 1) * 25%);
+  transition: 0.5s;
+  transition-delay: calc((var(--n) - 1) * 0.1s);
+  z-index: -1;
+}
+
+.btn1Class:hover {
+  color: black;
+}
+
+.btn1Class:hover span {
+  transform: translateY(0) scale(2);
+}
+
+.btn1Class span:nth-child(1) {
+  --n: 1;
+}
+
+.btn1Class span:nth-child(2) {
+  --n: 2;
+}
+
+.btn1Class span:nth-child(3) {
+  --n: 3;
+}
+
+.btn1Class span:nth-child(4) {
+  --n: 4;
+}
+
+@keyframes nebula-float {
+  0% {
+    transform: translate(0, -50%) scale(0.8);
+    opacity: 0;
+    background: #c774ff;
+  }
+  20% {
+    opacity: 0.8;
+  }
+  100% {
+    transform: translate(calc(var(--x) * 140px), calc(var(--y) * 35px))
+      scale(1.1);
+    opacity: 0;
+    background: #6df2ff;
+  }
+}
+
+/* Trigger particle animation on input focus */
+.nebula-input .input:focus ~ .nebula-particle {
+  animation: nebula-float 2s forwards ease-out;
+  animation-delay: var(--delay);
+}
+
+/* Float the label up when focused or has value */
+.nebula-input .input:focus ~ .user-label,
+.nebula-input .input:not(:placeholder-shown) ~ .user-label {
+  transform: translateY(-25px);
+  font-size: 12px;
+  color: #d18cff;
+  left: 10px;
+}
+
+/* Purple glow on focus */
+.nebula-input .input:focus {
+  border-color: #b56aff !important;
+  box-shadow:
+    0 5px 8px rgba(181, 106, 255, 0.3),
+    0 10px 20px rgba(181, 106, 255, 0.2),
+    0 15px 40px rgba(181, 106, 255, 0.15),
+    0 20px 60px rgba(181, 106, 255, 0.1);
+}
+
+/* Float label up for textarea too */
+.nebula-input .input:focus ~ .user-label,
+.nebula-input .input:not(:placeholder-shown) ~ .user-label {
+  transform: translateY(-25px);
+  font-size: 12px;
+  color: #d18cff;
+}
+
 /* * {
   cursor: none;
 }
@@ -123,3 +232,4 @@
     --a: 360deg;
   }
 } */
+
