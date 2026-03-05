@@ -11,8 +11,8 @@ const ProjectsView = () => {
 
   // Find adjacent projects for navigation
   const currentIndex = projects.findIndex((p) => p.id === id);
-  const prevProject = currentIndex > 0 ? projects[currentIndex - 1] : null;
-  const nextProject =
+  // const prevProject = currentIndex > 0 ? projects[currentIndex - 1] : null;
+  // const nextProject =
     currentIndex < projects.length - 1 ? projects[currentIndex + 1] : null;
 
   if (!project) {
