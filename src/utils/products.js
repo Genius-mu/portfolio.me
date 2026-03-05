@@ -7,6 +7,7 @@ export default [
     image: "/images/img24.webp",
     live: "http://alubarika.vercel.app/",
     code: "https://github.com/Genius-mu/Alubarika",
+    stacks: ["react", "tailwind CSS", "framer motion"],
     imgs: ["/images/img25.webp", "/images/img26.webp", "/images/img27.webp"],
   },
   {
@@ -17,6 +18,7 @@ export default [
     image: "/images/img21.webp",
     live: "https://time-drip.vercel.app/",
     code: "https://github.com/Genius-mu/TimeDrip",
+    stacks: ["react", "tailwind CSS", "framer motion", "localStorage"],
     imgs: ["/images/img32.webp", "/images/img33.webp"],
   },
   {
@@ -27,6 +29,13 @@ export default [
     image: "/images/img34.webp",
     live: "https://habit-gx29.vercel.app/",
     code: "https://github.com/Genius-mu/HabitXP",
+    stacks: [
+      "react",
+      "tailwind CSS",
+      "framer motion",
+      "localStorage",
+      "indexDB",
+    ],
     imgs: ["/images/img34.webp", "/images/img35.webp"],
   },
   {
@@ -37,6 +46,7 @@ export default [
     image: "/images/img20.webp",
     live: "https://padi-hackathon.vercel.app/",
     code: "https://github.com/Genius-mu/padi-hackathon",
+    stacks: ["flutter", "tailwind CSS", "framer motion", "yarnGpt", "API"],
     imgs: ["/images/img36.webp", "/images/img37.webp"],
   },
 ];

@@ -148,7 +148,7 @@ const ProjectsView = () => {
         )}
 
         {/* Technologies used */}
-        {project.technologies && project.technologies.length > 0 && (
+        {project.stacks && project.stacks.length > 0 && (
           <div className="mb-12">
             <h2
               className={`text-2xl font-bold mb-6 ${dark ? "text-white" : "text-gray-900"}`}
@@ -156,7 +156,7 @@ const ProjectsView = () => {
               Technologies
             </h2>
             <div className="flex flex-wrap gap-3">
-              {project.technologies.map((tech, i) => (
+              {project.stacks.map((tech, i) => (
                 <span
                   key={i}
                   className={`px-4 py-2 rounded-full text-sm font-medium transition-colors duration-200 ${
