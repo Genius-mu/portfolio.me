@@ -7,7 +7,7 @@ export default [
     image: "/images/img24.webp",
     live: "http://alubarika.vercel.app/",
     code: "https://github.com/Genius-mu/Alubarika",
-    // stacks: ["react", "tailwind CSS", "framer motion"],
+    stacks: ["react", "tailwind CSS", "framer motion"],
     imgs: ["/images/img25.webp", "/images/img26.webp"],
   },
   {
@@ -18,6 +18,7 @@ export default [
     image: "/images/img15.webp",
     live: "https://clarity-q.vercel.app/",
     code: "https://github.com/Genius-mu/ClarityQ",
+    stacks: ["react", "tailwind CSS", "framer motion", "AI API"],
     imgs: ["/images/img28.webp", "/images/img29.webp"],
   },
   {
@@ -28,6 +29,7 @@ export default [
     image: "/images/img6.webp",
     live: "https://ticket-m-app.netlify.app/",
     code: "https://github.com/Genius-mu/Ticket-Management-App",
+    stacks: ["react", "tailwind CSS", "framer motion"],
     imgs: ["/images/img30.webp", "/images/img31.webp"],
   },
   {
@@ -38,7 +40,7 @@ export default [
     image: "/images/img21.webp",
     live: "https://time-drip.vercel.app/",
     code: "https://github.com/Genius-mu/TimeDrip",
-    // stacks: ["react", "tailwind CSS", "framer motion", "localStorage"],
+    stacks: ["react", "tailwind CSS", "framer motion", "localStorage"],
     imgs: ["/images/img32.webp", "/images/img33.webp"],
   },
   {
@@ -49,13 +51,13 @@ export default [
     image: "/images/img34.webp",
     live: "https://habit-gx29.vercel.app/",
     code: "https://github.com/Genius-mu/HabitXP",
-    // stacks: [
-    //   "react",
-    //   "tailwind CSS",
-    //   "framer motion",
-    //   "localStorage",
-    //   "indexDB",
-    // ],
+    stacks: [
+      "react",
+      "tailwind CSS",
+      "framer motion",
+      "localStorage",
+      "indexDB",
+    ],
     imgs: ["/images/img34.webp", "/images/img35.webp"],
   },
   {
@@ -66,7 +68,7 @@ export default [
     image: "/images/img20.webp",
     live: "https://padi-hackathon.vercel.app/",
     code: "https://github.com/Genius-mu/padi-hackathon",
-    // stacks: ["flutter", "tailwind CSS", "framer motion", "yarnGpt", "API"],
+    stacks: ["flutter", "tailwind CSS", "framer motion", "yarnGpt", "API"],
     imgs: ["/images/img36.webp", "/images/img37.webp"],
   },
   {
@@ -77,6 +79,7 @@ export default [
     image: "/images/img8.webp",
     live: "https://invoice-generator-livid-five.vercel.app/",
     code: "https://github.com/Genius-mu/Invoice-Generator",
+    stacks: ["react", "tailwind CSS", "framer motion", "PDF generation"],
     imgs: ["/images/img54.webp", "/images/img55.webp"],
   },
   {
@@ -87,6 +90,7 @@ export default [
     image: "/images/img38.webp",
     live: "https://spell-goat.vercel.app/",
     code: "https://github.com/Genius-mu/Spell-Goat",
+    stacks: ["react", "tailwind CSS", "framer motion"],
     imgs: ["/images/img38.webp", "/images/img39.webp"],
   },
   {
@@ -97,6 +101,7 @@ export default [
     image: "/images/img18.webp",
     live: "https://heart-breaking.vercel.app/",
     code: "https://github.com/Genius-mu/heart-breaking",
+    stacks: ["react", "tailwind CSS", "framer motion"],
     imgs: ["/images/img40.webp", "/images/img41.webp"],
   },
   {
@@ -107,6 +112,7 @@ export default [
     image: "/images/img17.webp",
     live: "https://cryptoen.vercel.app/",
     code: "https://github.com/Genius-mu/crypto.me",
+    stacks: ["react", "tailwind CSS", "framer motion"],
     imgs: ["/images/img42.webp", "/images/img43.webp"],
   },
   {
@@ -117,6 +123,7 @@ export default [
     image: "/images/img22.webp",
     live: "https://cross4chain.vercel.app/",
     code: "https://github.com/Genius-mu/CrossChain",
+    stacks: ["react", "web3.js", "smart contracts", "tailwind CSS"],
     imgs: ["/images/img44.webp", "/images/img45.webp"],
   },
   {
@@ -127,6 +134,7 @@ export default [
     image: "/images/img23.webp",
     live: "https://web3-gm.vercel.app/",
     code: "https://github.com/Genius-mu/web3",
+    stacks: ["react", "web3.js", "tailwind CSS", "framer motion"],
     imgs: ["/images/img46.webp", "/images/img47.webp"],
   },
   {
@@ -137,6 +145,7 @@ export default [
     image: "/images/img13.webp",
     live: "https://vektor-phi.vercel.app/",
     code: "https://github.com/Genius-mu/Vektor",
+    stacks: ["react", "tailwind CSS", "framer motion"],
     imgs: ["/images/img48.webp", "/images/img49.webp"],
   },
   {
@@ -147,6 +156,7 @@ export default [
     image: "/images/img52.webp",
     live: "https://todap.vercel.app/",
     code: "https://github.com/Genius-mu/to-do",
+    stacks: ["react", "tailwind CSS", "framer motion", "localStorage"],
     imgs: ["/images/img52.webp", "/images/img53.webp"],
   },
   {
@@ -157,6 +167,7 @@ export default [
     image: "/images/img9.webp",
     live: "https://electiz.netlify.app/",
     code: "https://github.com/Genius-mu/Electiz",
+    stacks: ["react", "tailwind CSS", "framer motion"],
     imgs: ["/images/img56.webp", "/images/img57.webp"],
   },
   {
@@ -167,6 +178,7 @@ export default [
     image: "/images/img11.webp",
     live: "https://amenadom.netlify.app/",
     code: "https://github.com/Genius-mu/-DOM1-",
+    stacks: ["react", "tailwind CSS", "framer motion", "image generation API"],
     imgs: ["/images/img58.webp", "/images/img59.webp"],
   },
   {
@@ -177,6 +189,7 @@ export default [
     image: "/images/img10.webp",
     live: "https://tanea.netlify.app/",
     code: "https://github.com/Genius-mu/Tania",
+    stacks: ["react", "tailwind CSS", "framer motion"],
     imgs: ["/images/img60.webp", "/images/img61.webp"],
   },
   {
@@ -187,6 +200,7 @@ export default [
     image: "/images/img16.webp",
     live: "https://charcoal-web.vercel.app/",
     code: "https://github.com/Genius-mu/Chakol-web",
+    stacks: ["react", "tailwind CSS", "framer motion"],
     imgs: ["/images/img62.webp", "/images/img63.webp"],
   },
   {
@@ -197,6 +211,7 @@ export default [
     image: "/images/img65.webp",
     live: "https://estate-zoom.vercel.app/",
     code: "https://github.com/Genius-mu/Chakol-web",
+    stacks: ["react", "tailwind CSS", "framer motion", "map API"],
     imgs: ["/images/img65.webp", "/images/img64.webp"],
   },
 ];
