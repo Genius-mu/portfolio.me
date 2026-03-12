@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <!-- Basic SEO -->
@@ -81,6 +81,19 @@
   </head>
   <body>
     <div id="root"></div>
+    <!-- SalesAgent Widget -->
+    <script>
+      window.SalesAgentConfig = {
+        businessId: "e912ab66-4c70-476b-ab13-afa906c3d368",
+        baseUrl: "https://sales-agent-jet.vercel.app",
+      };
+      (function (d, s) {
+        var js = d.createElement(s);
+        js.src = "https://sales-agent-jet.vercel.app/widget.js";
+        js.async = true;
+        d.body.appendChild(js);
+      })(document, "script");
+    </script>
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
