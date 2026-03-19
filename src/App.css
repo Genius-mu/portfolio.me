@@ -94,11 +94,11 @@
 /* Purple glow on focus */
 .nebula-input .input:focus {
   border-color: #b56aff !important;
-  box-shadow:
+  /* box-shadow:
     0 5px 8px rgba(181, 106, 255, 0.3),
     0 10px 20px rgba(181, 106, 255, 0.2),
     0 15px 40px rgba(181, 106, 255, 0.15),
-    0 20px 60px rgba(181, 106, 255, 0.1);
+    0 20px 60px rgba(181, 106, 255, 0.1); */
 }
 
 /* Float label up for textarea too */

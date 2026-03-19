@@ -43,7 +43,7 @@ const Section3 = () => {
                 : "text-black/70"
             } sm:line-clamp-7 line-clamp-3`}
           >
-            I’m Mustapha Adegbite, a Frontend Developer who builds fast,
+            I'm Mustapha Adegbite, a Frontend Developer who builds fast,
             responsive, and visually engaging web experiences with{" "}
             <span
               className={`${
@@ -53,12 +53,11 @@ const Section3 = () => {
               }`}
             >
               {" "}
-              React and modern JavaScript (ES6+).
+              React, Next.js, and modern JavaScript (ES6+).
             </span>{" "}
-            I enjoy turning raw ideas and UI designs into clean, functional
-            interfaces — bringing order to design chaos using Tailwind CSS,
-            thoughtful component structure, and smooth micro-interactions that
-            make apps feel alive.
+            I don't just implement designs — I engineer interfaces that feel
+            alive. Clean component architecture, precise Tailwind styling, and
+            micro-interactions that turn good UIs into great products.
           </motion.p>
           <motion.p
             variants={cardVariants}
@@ -73,7 +72,7 @@ const Section3 = () => {
             } sm:line-clamp-7 line-clamp-3`}
           >
             My journey into frontend development grew from curiosity into
-            real-world projects.{" "}
+            shipped products.{" "}
             <span
               className={`${
                 dark
@@ -81,15 +80,14 @@ const Section3 = () => {
                   : "text-black"
               }`}
             >
-              I’ve built a reusable React component library focused on
-              consistency and scalability, TimeDrip, a productivity-driven web
-              app that balances performance with user experience, and Padi — a
-              multilingual, offline-first voice assistant project built for
-              Nigerian senior citizens, developed during a hackathon with
-              accessibility and real human needs at its core.
+              I built Saim — an embeddable AI sales agent that qualifies leads
+              and captures contacts 24/7, a reusable React component library
+              built for consistency and scale, and Padi — a multilingual,
+              offline-first voice assistant designed for Nigerian senior
+              citizens, built during a hackathon with accessibility at its core.
             </span>{" "}
-            Each project pushed me to think beyond visuals and focus on
-            structure, performance, and usability.
+            Every project pushed me to think beyond visuals — obsessing over
+            structure, performance, and real human impact.
           </motion.p>
           <motion.p
             variants={cardVariants}
@@ -110,9 +108,8 @@ const Section3 = () => {
             //   WebkitLineBreak: "2",
             // }}
           >
-            I believe great web experiences live at the intersection of
-            performance, accessibility, and emotion — fast load times, inclusive
-            design, and{" "}
+            Great web experiences live at the intersection of performance,
+            accessibility, and emotion — fast load times, inclusive design, and{" "}
             <span
               className={`${
                 dark
@@ -120,11 +117,11 @@ const Section3 = () => {
                   : "text-black"
               }`}
             >
-              subtle animations that make users smile without distracting them.
+              interactions that feel human, not just functional.
             </span>{" "}
-            When I’m not coding, I’m learning new tools, exploring design
-            trends, and documenting my developer journey by sharing what I
-            build, what breaks, and how I improve along the way.
+            When I'm not shipping, I'm studying what the best builders do
+            differently — then applying it. I document what I build, what
+            breaks, and how I grow.
           </motion.p>
 
           <h2

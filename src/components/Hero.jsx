@@ -47,9 +47,10 @@ const Hero = () => {
                   : "text-black/60"
               }`}
             >
-              I build high-performance React applications that turn complex,
-              scattered information into clear, usable products. ClarityHub is
-              one example!
+              Most websites lose leads silently — I built Saim to fix that. It's
+              an embeddable AI sales agent that qualifies visitors, captures
+              contacts, and works 24/7. I don't just write React code; I ship
+              products that solve real problems.
             </motion.p>
             <div
               className={`mt-1 flex flex-col sm:flex-row gap-y-2 w-fit gap-x-2`}

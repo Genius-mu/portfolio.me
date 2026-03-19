@@ -34,11 +34,10 @@ const Section5 = () => {
                 : "text-black/70"
             } text-[14px] sm:text-[16px] leading-6`}
           >
-            Got an idea, a project, or a vision that needs a frontend touch? I’d
-            love to bring it to life. I build clean, fast, and interactive
-            interfaces that turn ideas into real user experiences. If you’re
-            looking for someone who codes with purpose and passion — let’s
-            connect.
+            Got an idea, a project, or a vision that needs a frontend touch? I'd
+            love to bring it to life. Saim, Gamified HabitXP, and a Spelling
+            Game — my projects speak for themselves. If you're looking for
+            someone who codes with purpose and passion — let's connect.
           </p>
         </div>
 
@@ -49,8 +48,9 @@ const Section5 = () => {
             onSubmit={async (values, { resetForm }) => {
               if (!values.fullname.trim()) {
                 setModalData({
-                  title: "Fullname field",
-                  message: "Hey, you didn't input your fullname.",
+                  title: "Hold on! 👀",
+                  message:
+                    "You forgot your name — I can't reply to 'Hey you'. Drop it in and let's talk.",
                 });
                 setModalOpen(true);
                 return;
@@ -58,8 +58,9 @@ const Section5 = () => {
 
               if (!values.email.trim()) {
                 setModalData({
-                  title: "Email field",
-                  message: "Hey, you didn't fill in the email field.",
+                  title: "No email? Really? 😄",
+                  message:
+                    "How am I supposed to reach you — telepathy? Toss in your email and we're good.",
                 });
                 setModalOpen(true);
                 return;
@@ -67,8 +68,9 @@ const Section5 = () => {
 
               if (!values.message.trim()) {
                 setModalData({
-                  title: "Message field",
-                  message: "Hey, you didn't type any message.",
+                  title: "Say something! 🗣️",
+                  message:
+                    "You opened the form, you filled your details — don't go quiet now. What's on your mind?",
                 });
                 setModalOpen(true);
                 return;
@@ -95,10 +97,10 @@ const Section5 = () => {
                       <Field
                         type="text"
                         name="fullname"
-                        placeholder=" "
                         onChange={handleChange}
                         onBlur={handleBlur}
                         value={values.fullname}
+                        placeholder="Full Name"
                         className={`input w-full rounded-2xl outline-none pl-8 py-4 bg-black/5 ${
                           dark
                             ? "text-[#f1f1f1] border-white/40"
@@ -111,16 +113,6 @@ const Section5 = () => {
                             : "border-black/20"
                         }`}
                       />
-
-                      <label
-                        className={`user-label absolute left-8 top-4 pointer-events-none transition-all duration-300 ease-out px-1 text-sm ${
-                          dark
-                            ? "bg-[#00000f] text-[#6a6a8a]"
-                            : "bg-white text-gray-400"
-                        }`}
-                      >
-                        Fullname
-                      </label>
 
                       <div
                         className="nebula-particle absolute w-1.5 h-1.5 rounded-full pointer-events-none opacity-0 top-1/2 left-10"
@@ -177,7 +169,7 @@ const Section5 = () => {
                       <Field
                         type="email"
                         name="email"
-                        placeholder=" "
+                        placeholder="Email Address"
                         onChange={handleChange}
                         onBlur={handleBlur}
                         value={values.email}
@@ -194,7 +186,7 @@ const Section5 = () => {
                         }`}
                       />
 
-                      <label
+                      {/* <label
                         className={`user-label absolute left-8 top-4 pointer-events-none transition-all duration-300 ease-out px-1 text-sm ${
                           dark
                             ? "bg-[#00000f] text-[#6a6a8a]"
@@ -202,7 +194,7 @@ const Section5 = () => {
                         }`}
                       >
                         Email Address
-                      </label>
+                      </label> */}
 
                       <div
                         className="nebula-particle absolute w-1.5 h-1.5 rounded-full pointer-events-none opacity-0 top-1/2 left-10"
@@ -313,7 +305,7 @@ const Section5 = () => {
         onClose={() => setModalOpen(false)}
         title={modalData.title}
       >
-        <p className="text-red-500 mb-6">{modalData.message}</p>
+        <p className="text-green-500 mb-6">{modalData.message}</p>
         <button
           onClick={() => setModalOpen(false)}
           className="relative bg-green-600 text-white px-4 py-1 rounded-lg font-medium overflow-hidden group hover:scale-105 transition-all duration-300 hover:shadow-lg hover:shadow-green-500/50 flex justify-center items-center"
