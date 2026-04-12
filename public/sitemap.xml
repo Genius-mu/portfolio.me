@@ -142,16 +142,5 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-
-  <!-- ADD MORE PROJECT URLS HERE -->
-  <!-- Copy and paste the pattern below for each additional project -->
-  <!-- 
-  <url>
-    <loc>https://mustaphadev.vercel.app/project/ProjectName</loc>
-    <lastmod>2026-04-12</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  -->
-
+  
 </urlset>
