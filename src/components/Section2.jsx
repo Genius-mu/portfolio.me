@@ -96,7 +96,7 @@ const Section2 = () => {
 
                 <h2
                   className={`font-bold w-full text-left text-xl tracking-[1px] z-10 ${
-                    dark ? "text-[#f1f1f1]" : "text-black/90"
+                    dark ? "text-[#f1f1f1]" : "text-black/90 line-clamp-1"
                   }`}
                 >
                   {project.title}

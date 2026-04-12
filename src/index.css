@@ -4,13 +4,14 @@
   box-sizing: border-box;
   overflow-x: hidden;
 }
-h1,
+/* h1,
 h2,
 h3 {
-  font-family: "Stack Sans Notch", sans-serif;
-}
+  font-family: "Bricolage Grotesque", sans-serif;
+} */
 p {
   font-weight: 400;
+  font-family: "Bricolage Grotesque", sans-serif;
 }
 body {
   background-color: #fff;
@@ -21,7 +22,8 @@ html {
 }
 .sec2 h2,
 .sec3 h2 {
-  font-family: Stack Sans Headline;
+  /* font-family: Stack Sans Headline; */
+  font-family: "Bricolage Grotesque", sans-serif;
 }
 .footP {
   font-family: Inter;
