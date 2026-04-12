@@ -80,7 +80,7 @@ const Section2 = () => {
                 whileHover={{ y: -4 }}
                 whileInView="visible"
                 viewport={{ once: false, amount: 0.3 }}
-                className={`relative flex flex-col overflow-hidden gap-y-2 rounded-2xl p-5 w-full h-[25em] border ${
+                className={`relative flex flex-col overflow-hidden gap-y-3 rounded-2xl p-5 w-full h-fit border ${
                   dark
                     ? "border-[#f1f1f1] bg-white/5"
                     : "border-black/40 bg-white/30"
@@ -103,7 +103,7 @@ const Section2 = () => {
                 </div>
 
                 <h2
-                  className={`font-bold text-2xl tracking-[1px] z-10 ${
+                  className={`font-bold text-xl tracking-[1px] z-10 ${
                     dark ? "text-[#f1f1f1]" : "text-black/90"
                   }`}
                 >

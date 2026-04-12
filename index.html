@@ -4,19 +4,23 @@
     <!-- Basic SEO -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mustapha Adegbite | Frontend Developer Portfolio</title>
+    <title>Mustapha Adegbite | React & Frontend Developer Portfolio</title>
     <meta name="theme-color" content="#0f172a" />
     <link rel="manifest" href="/manifest.json" />
     <meta
       name="description"
-      content="Hi, I'm Mustapha Adegbite — a passionate Frontend Developer building responsive, modern web apps using React, Next.js, and Node.js. Check out my projects and let's build something great together!"
+      content="I'm Mustapha Adegbite, a Frontend Developer building modern, responsive web apps with React, Next.js, and Tailwind CSS. Explore 19+ projects and hire me to build your next web application."
     />
     <meta
       name="keywords"
-      content="Mustapha Adegbite, frontend developer, react developer, portfolio, web developer, JavaScript, Next.js, UI developer, Nigeria developer"
+      content="Mustapha Adegbite, frontend developer, React developer, Next.js developer, portfolio, web developer, JavaScript developer, Tailwind CSS, Nigeria developer, freelance developer"
     />
     <meta name="author" content="Mustapha Adegbite" />
-    <link rel="canonical" href="http://mustaphadev.vercel.app/" />
+    <meta
+      name="robots"
+      content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+    />
+    <link rel="canonical" href="https://mustaphadev.vercel.app/" />
 
     <!-- Favicon -->
     <link
@@ -25,39 +29,54 @@
       href="https://mustaphadev.vercel.app/images/img1.webp"
     />
 
+    <!-- Preconnect for Performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="dns-prefetch" href="https://sales-agent-jet.vercel.app" />
+
     <!-- Open Graph (Facebook, LinkedIn) -->
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="http://mustaphadev.vercel.app/" />
+    <meta property="og:url" content="https://mustaphadev.vercel.app/" />
     <meta
       property="og:title"
-      content="Mustapha Adegbite | Frontend Developer Portfolio"
+      content="Mustapha Adegbite | React Frontend Developer Portfolio"
     />
     <meta
       property="og:description"
-      content="Explore my work as a Frontend Developer — React, Next.js, and creative web experiences built with passion."
+      content="Explore my portfolio: 19+ web projects built with React, Next.js, and modern web technologies. Full-stack frontend development services available."
     />
     <meta
       property="og:image"
       content="https://mustaphadev.vercel.app/images/img1.webp"
     />
+    <meta
+      property="og:image:alt"
+      content="Mustapha Adegbite - Frontend Developer"
+    />
+    <meta property="og:site_name" content="Mustapha Adegbite Portfolio" />
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:url" content="http://mustaphadev.vercel.app/" />
+    <meta name="twitter:url" content="https://mustaphadev.vercel.app/" />
     <meta
       name="twitter:title"
-      content="Mustapha Adegbite | Frontend Developer"
+      content="Mustapha Adegbite | React Frontend Developer"
     />
     <meta
       name="twitter:description"
-      content="Frontend Developer building clean, responsive, and modern web apps using React and Next.js."
+      content="Frontend developer building clean, responsive web apps. React, Next.js, Tailwind CSS specialist. Check out my 19+ projects."
     />
     <meta
       name="twitter:image"
       content="https://mustaphadev.vercel.app/images/img1.webp"
     />
+    <meta name="twitter:creator" content="@mustaphAdegbite" />
 
-    <!-- Schema.org Structured Data (for Google) -->
+    <!-- Additional Meta Tags -->
+    <meta name="language" content="English" />
+    <meta name="revisit-after" content="7 days" />
+    <meta name="googlebot" content="index, follow" />
+
+    <!-- Schema.org Structured Data (Person + Portfolio) -->
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -65,6 +84,7 @@
         "name": "Mustapha Adegbite",
         "url": "https://mustaphadev.vercel.app/",
         "image": "https://mustaphadev.vercel.app/images/img1.webp",
+        "email": "mustaphaadegbite@gmail.com",
         "sameAs": [
           "https://github.com/Genius-mu",
           "https://www.linkedin.com/in/mustaphaadegbite/",
@@ -75,25 +95,38 @@
           "@type": "Organization",
           "name": "Freelance / Open Source"
         },
-        "description": "Frontend Developer skilled in React, Next.js, and modern web design."
+        "description": "Frontend Developer building modern, responsive web applications with React, Next.js, and Tailwind CSS.",
+        "knowsAbout": [
+          "React",
+          "Next.js",
+          "JavaScript",
+          "Tailwind CSS",
+          "Framer Motion",
+          "Web Design",
+          "UI/UX",
+          "Frontend Development"
+        ]
+      }
+    </script>
+
+    <!-- Portfolio/CreativeWork Schema -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "CreativeWork",
+        "name": "Mustapha Adegbite's Portfolio",
+        "author": {
+          "@type": "Person",
+          "name": "Mustapha Adegbite"
+        },
+        "description": "Portfolio showcasing 19+ web development projects built with React, Next.js, and modern web technologies.",
+        "url": "https://mustaphadev.vercel.app/",
+        "image": "https://mustaphadev.vercel.app/images/img1.webp"
       }
     </script>
   </head>
   <body>
     <div id="root"></div>
-    <!-- SalesAgent Widget -->
-    <!-- <script>
-      window.SaimConfig = {
-        businessId: "5c7e6853-6174-495d-aeaf-dccce0c2ea8f",
-        baseUrl: "https://sales-agent-jet.vercel.app",
-      };
-      (function (d, s) {
-        var js = d.createElement(s);
-        js.src = "https://sales-agent-jet.vercel.app/widget.js";
-        js.async = true;
-        d.body.appendChild(js);
-      })(document, "script");
-    </script> -->
     <!-- Saim Widget -->
     <script>
       window.SaimConfig = {
