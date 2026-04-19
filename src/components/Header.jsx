@@ -15,7 +15,7 @@ const Header = () => {
   return (
     <>
       <header className="w-full z-50 h-32 flex justify-center items-center relative">
-        <div className="w-fit fixed p-3 rounded-2xl py-3 gap-x-2 border border-black/10 h-fit flex justify-between items-center bg-white/5 shadow-xl">
+        <div className="md:w-fit fixed p-3 rounded-2xl py-3 gap-x-2 border border-black/10 h-fit flex justify-between items-center bg-white/5 shadow-xl w-fit">
           {/* SVG Filter for Glass Effect */}
           <svg className="absolute w-0 h-0">
             <defs>
@@ -51,14 +51,14 @@ const Header = () => {
                   : "text-black/70 hover:bg-black/5 hover:text-black/90"
               } py-2 rounded px-2 sm:px-4 hover:px-3 sm:hover:px-6 transition-all duration-300 ease-in-out text-shadow-2xl`}
             >
-              <Home className="w-4 h-4 sm:w-5 sm:h-5" strokeWidth={2} />
+              <Home className="w-5 h-5 sm:w-5 sm:h-5" strokeWidth={2} />
             </Link>
           </div>
 
           <nav
-            className={`flex gap-x-2 pr-2 border-r ${
+            className={`flex md:gap-x-2 pr-2 border-r ${
               dark ? "border-white/20" : "border-black/10"
-            } z-10`}
+            } z-10 gap-x-4`}
           >
             <Link
               to="https://x.com/mustaphAdegbite"
@@ -70,7 +70,7 @@ const Header = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <X className="w-4 h-4 sm:w-5 sm:h-5" />
+              <X className="w-5 h-5 sm:w-5 sm:h-5" />
             </Link>
 
             <Link
@@ -83,7 +83,7 @@ const Header = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <Github className="w-4 h-4 sm:w-5 sm:h-5" strokeWidth={2} />
+              <Github className="w-5 h-5 sm:w-5 sm:h-5" strokeWidth={2} />
             </Link>
 
             <a
@@ -95,7 +95,7 @@ const Header = () => {
                   : "text-black/70 hover:bg-black/5 hover:text-black/90"
               } py-2 rounded px-2 sm:px-4 hover:px-3 sm:hover:px-6 transition-all duration-300 ease-in-out`}
             >
-              <FileBarChart className="w-4 h-4 sm:w-5 sm:h-5" strokeWidth={2} />
+              <FileBarChart className="w-5 h-5 sm:w-5 sm:h-5" strokeWidth={2} />
             </a>
           </nav>
 
@@ -110,13 +110,34 @@ const Header = () => {
           </a>
         </div>
 
-        <div className="fixed bottom-8 z-50">
+        <div className="fixed top-23 sm:top-24 px-3 py-1 rounded-b-xl z-50">
+          {/* SVG Filter for Glass Effect */}
+          <svg className="absolute w-0 h-0">
+            <defs>
+              <filter id="glass-distortion">
+                <feTurbulence
+                  type="fractalNoise"
+                  baseFrequency="0.01"
+                  numOctaves="3"
+                />
+                <feDisplacementMap in="SourceGraphic" scale="5" />
+              </filter>
+            </defs>
+          </svg>
+
+          {/* Liquid Glass Effects - Fixed layering */}
+          <div
+            className="absolute inset-0 backdrop-blur-[5px] rounded-b-xl -z-10"
+            style={{ filter: "url(#glass-distortion)" }}
+          ></div>
+          <div className="absolute inset-0 bg-white/1 rounded-b-xl -z-10"></div>
+          <div className="absolute inset-0 rounded-b-xl -z-10 shadow-[inset_2px_2px_1px_rgba(255,255,255,0.5),inset_-1px_-1px_1px_rgba(255,255,255,0.5)]"></div>
           <button
             onClick={() => setDark(!dark)}
             aria-label="Toggle dark mode"
             className={`relative w-12 h-6 rounded-full flex items-center transition-colors duration-300 ${
               dark ? "bg-gray-700" : "bg-gray-200"
-            } hover:shadow-lg`}
+            } hover:shadow-lg border border-gray-400`}
           >
             <div
               className={`absolute w-5 h-5 rounded-full flex items-center justify-center transition-transform duration-300 ${
