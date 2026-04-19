@@ -110,7 +110,7 @@ const Header = () => {
           </a>
         </div>
 
-        <div className="fixed top-23 sm:top-24 px-3 py-1 rounded-b-xl z-50">
+        <div className="fixed top-[5.89em] sm:top-24 px-3 py-1 rounded-b-xl z-50">
           {/* SVG Filter for Glass Effect */}
           <svg className="absolute w-0 h-0">
             <defs>
@@ -131,7 +131,7 @@ const Header = () => {
             style={{ filter: "url(#glass-distortion)" }}
           ></div>
           <div className="absolute inset-0 bg-white/1 rounded-b-xl -z-10"></div>
-          <div className="absolute inset-0 rounded-b-xl -z-10 shadow-[inset_2px_2px_1px_rgba(255,255,255,0.5),inset_-1px_-1px_1px_rgba(255,255,255,0.5)]"></div>
+          <div className="absolute inset-0 rounded-b-xl -z-10 shadow-[inset_1px_-2px_1px_rgba(255,255,255,0.5),inset_-1px_-1px_1px_rgba(255,255,255,0.5)]"></div>
           <button
             onClick={() => setDark(!dark)}
             aria-label="Toggle dark mode"
