@@ -4,22 +4,26 @@ import { motion } from "framer-motion";
 import { ArrowLeft, ArrowRight, Github } from "lucide-react";
 import { useContext } from "react";
 import { ThemeTog } from "../App";
+import { useInView } from "react-intersection-observer";
 
 const Section2 = () => {
   const { dark } = useContext(ThemeTog);
+  const { ref, inView } = useInView({ threshold: 0.1, triggerOnce: true });
 
-  // const fadeVariants = {
-  //   hiddenLeft: { opacity: 0, x: -10, scale: 0.99 },
-  //   hiddenRight: { opacity: 0, x: 10, scale: 0.99 },
-  //   hiddenUp: { opacity: 0, y: 50, scale: 0.95 },
-  //   visible: {
-  //     opacity: 1,
-  //     x: 0,
-  //     y: 0,
-  //     scale: 1,
-  //     transition: { duration: 0.2, ease: "easeOut" },
-  //   },
-  // };
+  const handleMouseMove = (e) => {
+    const card = e.currentTarget;
+    const rect = card.getBoundingClientRect();
+    const x = e.clientX - rect.left;
+    const y = e.clientY - rect.top;
+    const rotateX = (y - rect.height / 2) / 10;
+    const rotateY = (rect.width / 2 - x) / 10;
+    card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale(1.02)`;
+  };
+
+  const handleMouseLeave = (e) => {
+    e.currentTarget.style.transform =
+      "perspective(1000px) rotateX(0) rotateY(0) scale(1)";
+  };
 
   const cardVariants = {
     hidden: {
@@ -40,7 +44,10 @@ const Section2 = () => {
 
   return (
     <>
-      <section className="sec3 w-full h-fit pt-[6%] pb-[6%] flex justify-center items-center">
+      <section
+        ref={ref}
+        className="sec3 w-full h-fit pt-[6%] pb-[6%] flex justify-center items-center"
+      >
         {/* SVG Filter for Glass Effect */}
         <svg className="absolute w-0 h-0">
           <defs>
@@ -55,7 +62,7 @@ const Section2 = () => {
           </defs>
         </svg>
 
-        <div className="w-[90%] sm:w-[80%] h-full flex flex-col justify-center gap-y-9 items-center">
+        <div className="w-[90%] sm:w-full xl:w-[80%] h-full flex flex-col justify-center gap-y-9 items-center">
           <div className="w-full h-full flex justify-center items-center">
             <h2
               className={`font-semibold text-4xl tracking-[1px] text-center ${
@@ -66,20 +73,16 @@ const Section2 = () => {
             </h2>
           </div>
 
-          <div className="md:w-[90%] pt-4 xl:w-[80%] sm:w-full h-full grid grid-cols-1 sm:grid-cols-2 justify-center gap-8 items-center">
+          <div className="md:w-[90%] pt-4 xl:w-[90%] px-[5%] sm:w-full h-full grid grid-cols-1 sm:grid-cols-2 justify-center gap-8 items-center">
             {projects.map((project, index) => (
               <motion.div
-                // key={project.id || index}
-                // variants={fadeVariants}
-                // initial={index % 2 === 0 ? "hiddenLeft" : "hiddenRight"}
-                // whileInView="visible"
-                // viewport={{ once: false, amount: 0.3 }}
-                // transition={{ delay: index * 0.2 }}
                 key={project.id || index}
                 variants={cardVariants}
                 whileHover={{ y: -4 }}
                 whileInView="visible"
                 viewport={{ once: false, amount: 0.3 }}
+                onMouseMove={handleMouseMove}
+                onMouseLeave={handleMouseLeave}
                 className={`relative flex flex-col overflow-hidden gap-y-3 rounded-2xl p-5 w-full h-fit border ${
                   dark
                     ? "border-[#f1f1f1] bg-white/5"
@@ -103,7 +106,7 @@ const Section2 = () => {
                 </div>
 
                 <h2
-                  className={`font-bold text-xl tracking-[1px] z-10 ${
+                  className={`font-bold text-xl line-clamp-2 overflow-hidden tracking-[1px] z-10 ${
                     dark ? "text-[#f1f1f1]" : "text-black/90"
                   }`}
                 >

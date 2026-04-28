@@ -75,12 +75,12 @@ const ProjectsView = () => {
         {/* Project header */}
         <div className="mb-12 animate-fade-in">
           <h1
-            className={`text-4xl overflow-hidden sm:text-5xl font-bold mb-4 ${dark ? "text-white" : "text-gray-900"}`}
+            className={`xl:text-4xl text-xl overflow-hidden sm:text-3xl font-bold mb-4 ${dark ? "text-white" : "text-gray-900"}`}
           >
             {project.title}
           </h1>
           <p
-            className={`text-lg sm:text-xl overflow-hidden mb-8 ${dark ? "text-gray-400" : "text-gray-600"}`}
+            className={`text-[14px] text-justify sm:text-[16px] overflow-hidden mb-8 ${dark ? "text-gray-400" : "text-gray-600"}`}
           >
             {project.description}
           </p>
@@ -161,8 +161,8 @@ const ProjectsView = () => {
                   key={i}
                   className={`px-4 py-2 rounded-full text-sm font-medium transition-colors duration-200 ${
                     dark
-                      ? "bg-gray-800 text-gray-300 hover:bg-gray-700"
-                      : "bg-gray-200 text-gray-700 hover:bg-gray-300"
+                      ? "bg-blue-800/50 text-gray-300 hover:bg-gray-700"
+                      : "bg-blue-800/20 text-gray-700 hover:bg-gray-400 hover:text-black"
                   }`}
                 >
                   {tech}

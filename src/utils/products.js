@@ -1,5 +1,26 @@
 export default [
   {
+    id: "CodeFlow",
+    title: "CodeFlow - GitHub Analytics Dashboard",
+    description:
+      "CodeFlow is a single-page GitHub analytics dashboard that takes any GitHub username and surfaces a year-long contribution heatmap, language distribution, top-starred repos, a 30-day commit timeline, and a sortable, filterable, CSV-exportable repos table — all wrapped in a clean dark/light theme. Built fully client-side with React, TypeScript, Tailwind v4, TanStack Query, Zustand, Zod, and Recharts. Zod validates every API response at the boundary so broken data fails loudly instead of silently corrupting charts. The data layer is fully decoupled from the UI, which made adding features like CSV export trivial. Debouncing filter inputs turned a stuttery experience into a smooth one — a reminder that performance is felt, not just measured.",
+    metaDescription:
+      "CodeFlow: a GitHub analytics dashboard with contribution heatmaps, language stats, commit timelines, and exportable repo data. Built with React, TypeScript, TanStack Query, and Recharts.",
+    image: "/images/img66.webp",
+    live: "https://codeflow-amg.vercel.app/",
+    code: "https://github.com/Genius-mu/codeflow",
+    stacks: [
+      "react",
+      "typescript",
+      "tailwind CSS",
+      "tanstack query",
+      "zustand",
+      "zod",
+      "recharts",
+    ],
+    imgs: ["/images/img66.webp", "/images/img67.webp"],
+  },
+  {
     id: "Alubarika",
     title: "Alubarika - FX Trading Platform & Client Management",
     description:
@@ -43,18 +64,5 @@ export default [
       "indexDB",
     ],
     imgs: ["/images/img34.webp", "/images/img35.webp"],
-  },
-  {
-    id: "Padi",
-    title: "Padi - Multilingual Voice Assistant for African Languages",
-    description:
-      "Hackathon award-winning voice assistant that understands Nigerian languages. Padi speaks Pidgin with Mama, Hausa with Papa, and Igbo with Grandma—bringing technology closer to African families with natural, intuitive communication.",
-    metaDescription:
-      "Padi: Voice assistant supporting Pidgin, Hausa, and Igbo. Hackathon winner. AI that understands African languages. Talk naturally in your language.",
-    image: "/images/img20.webp",
-    live: "https://padi-hackathon.vercel.app/",
-    code: "https://github.com/Genius-mu/padi-hackathon",
-    stacks: ["flutter", "tailwind CSS", "framer motion", "yarnGpt", "API"],
-    imgs: ["/images/img36.webp", "/images/img37.webp"],
   },
 ];

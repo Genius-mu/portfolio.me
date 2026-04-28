@@ -9,13 +9,13 @@ const Hero = () => {
     <>
       <section className="sec2 w-full h-fit pt-[6%] pb-[6%] flex justify-center items-center">
         <div className="w-[90%] sm:w-[80%] h-full flex flex-col-reverse gap-y-5 md:flex-row justify-between sm:items-center">
-          <div className="flex flex-col gap-y-1 sm:gap-y-3">
+          <div className="flex flex-col sm:items-center md:items-start gap-y-1 sm:gap-y-3">
             <motion.h2
               initial={{ opacity: 0, x: -30 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6 }}
               viewport={{ once: false, amount: 0.3 }}
-              className={`font-bold ${
+              className={`font-bold sm:text-center md:text-left ${
                 dark
                   ? "text-[#f1f1f1] [text-shadow:1px_1px_1px_#111]"
                   : "text-black"
@@ -41,7 +41,7 @@ const Hero = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 1 }}
               viewport={{ once: false, amount: 0.3 }}
-              className={`max-w-[500px] ${
+              className={`max-w-[500px] sm:text-center md:text-left ${
                 dark
                   ? "text-[#f1f1f1] [text-shadow:1px_1px_1px_#111]"
                   : "text-black/60"
