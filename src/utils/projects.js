@@ -192,7 +192,13 @@ export default [
     image: "/images/img13.webp",
     live: "https://vektor-phi.vercel.app/",
     code: "https://github.com/Genius-mu/Vektor",
-    stacks: ["react", "tailwind CSS", "framer motion"],
+    stacks: [
+      "react",
+      "tailwind CSS",
+      "react-router",
+      "framer-motion",
+      "lucide-react",
+    ],
     imgs: ["/images/img48.webp", "/images/img49.webp"],
   },
   {
@@ -205,7 +211,13 @@ export default [
     image: "/images/img52.webp",
     live: "https://todap.vercel.app/",
     code: "https://github.com/Genius-mu/to-do",
-    stacks: ["react", "tailwind CSS", "framer motion", "localStorage"],
+    stacks: [
+      "react",
+      "tailwind CSS",
+      "framer-motion",
+      "lucide-react",
+      "localStorage",
+    ],
     imgs: ["/images/img52.webp", "/images/img53.webp"],
   },
   {
@@ -218,7 +230,13 @@ export default [
     image: "/images/img9.webp",
     live: "https://electiz.netlify.app/",
     code: "https://github.com/Genius-mu/Electiz",
-    stacks: ["react", "tailwind CSS", "framer motion"],
+    stacks: [
+      "react",
+      "tailwind CSS",
+      "react-router",
+      "framer-motion",
+      "lucide-react",
+    ],
     imgs: ["/images/img56.webp", "/images/img57.webp"],
   },
   {
@@ -231,7 +249,14 @@ export default [
     image: "/images/img11.webp",
     live: "https://amenadom.netlify.app/",
     code: "https://github.com/Genius-mu/-DOM1-",
-    stacks: ["react", "tailwind CSS", "framer motion", "image generation API"],
+    stacks: [
+      "react",
+      "tailwind CSS",
+      "image generation API",
+      "react-router",
+      "framer-motion",
+      "lucide-react",
+    ],
     imgs: ["/images/img58.webp", "/images/img59.webp"],
   },
   {
@@ -242,9 +267,17 @@ export default [
     metaDescription:
       "Tania: wellness and massage service landing page with calming, emotionally-aligned design. Booking experience that begins the relaxation. React, Tailwind, Framer Motion.",
     image: "/images/img10.webp",
-    live: "https://tanea.netlify.app/",
+    live: "https://tania-orcin.vercel.app/",
     code: "https://github.com/Genius-mu/Tania",
-    stacks: ["react", "tailwind CSS", "framer motion"],
+    stacks: [
+      "react",
+      "tailwind CSS",
+      "framer motion",
+      "react-counter-up",
+      "react-router",
+      "framer-motion",
+      "lucide-react",
+    ],
     imgs: ["/images/img60.webp", "/images/img61.webp"],
   },
   {
