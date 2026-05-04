@@ -247,7 +247,7 @@ export default [
     metaDescription:
       "DOM: AI image generation landing page with refined design and live demo integration. Stand out in the crowded AI space. React, Tailwind, image generation API.",
     image: "/images/img11.webp",
-    live: "https://amenadom.netlify.app/",
+    live: "https://aiprof-lac.vercel.app/",
     code: "https://github.com/Genius-mu/-DOM1-",
     stacks: [
       "react",
