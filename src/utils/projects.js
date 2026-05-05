@@ -281,16 +281,16 @@ export default [
     imgs: ["/images/img60.webp", "/images/img61.webp"],
   },
   {
-    id: "Charcoal Website",
+    id: "Omega Hardwood",
     title: "Omega Hardwood — Premium Charcoal Supplier Website",
     description:
       "Omega Hardwood is a fully responsive, multi-page React website built for a premium French charcoal supplier, featuring a polished design system anchored in cinematic hero sections with layered gradient overlays, animated ember particles, and glassmorphic UI elements. The site spans six core pages — Home, About, Blog, Contact, and product flows — each crafted with Framer Motion animations including scroll-triggered reveals, staggered cascades, gradient text highlights, and interactive hover effects. Key functional features include a fully working blog system with live search, category filtering, pagination, an article modal reader, and newsletter subscription with form validation; a contact page with a validated multi-field form, embedded interactive map, expandable FAQ accordion, and animated submission states; and a smart scroll-aware navigation header that morphs between floating and fixed states, with a slide-in mobile drawer, active route detection, and integrated utility bar. Built with React, React Router, Tailwind CSS, Framer Motion, and Lucide icons, the project showcases modern UI patterns, accessibility-conscious interactions, and clean component architecture optimized for both desktop and mobile experiences.",
     metaDescription:
-      "Charcoal Website: refined dark-themed landing page with layered depth, careful contrast, and responsive elegance. React, Tailwind, Framer Motion.",
+      "Omega Hardwood: is a fully responsive, multi-page React website built for a premium French charcoal supplier, featuring a polished design system anchored in cinematic hero sections with layered gradient overlays, animated ember particles, and glassmorphic UI elements. React, Tailwind, Framer Motion.",
     image: "/images/img16.webp",
     live: "https://charcoal-web.vercel.app/",
     code: "https://github.com/Genius-mu/Chakol-web",
-    stacks: ["react", "tailwind CSS", "framer motion"],
+    stacks: ["react", "tailwind CSS", "framer motion", "react-router"],
     imgs: ["/images/img62.webp", "/images/img63.webp"],
   },
   {
