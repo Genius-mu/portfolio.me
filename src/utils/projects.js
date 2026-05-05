@@ -228,7 +228,7 @@ export default [
     metaDescription:
       "Electiz: conversion-focused landing page for electrical services. Clean visuals, mobile-first design, credibility-driven layout. React, Tailwind, Framer Motion.",
     image: "/images/img9.webp",
-    live: "https://electiz.netlify.app/",
+    live: "https://electiz-virid.vercel.app/",
     code: "https://github.com/Genius-mu/Electiz",
     stacks: [
       "react",
