@@ -2,28 +2,79 @@ import { Link } from "react-router-dom";
 import projects from "../utils/products";
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
-import { useContext } from "react";
+import { useContext, useRef } from "react";
 import { ThemeTog } from "../App";
 import { useInView } from "react-intersection-observer";
 
-const Section2 = () => {
-  const { dark } = useContext(ThemeTog);
-  const { ref, inView } = useInView({ threshold: 0.1, triggerOnce: true });
+/* ---------- SpotlightCard ---------- */
+/* Combines spotlight glow with 3D tilt. Spreads any extra props (variants,
+   initial, animate, transition) onto the underlying motion.div so framer
+   animations still work. */
+
+const SpotlightCard = ({
+  children,
+  className = "",
+  spotlightColor = "rgba(255, 255, 255, 0.25)",
+  ...motionProps
+}) => {
+  const divRef = useRef(null);
 
   const handleMouseMove = (e) => {
-    const card = e.currentTarget;
+    const card = divRef.current;
+    if (!card) return;
     const rect = card.getBoundingClientRect();
     const x = e.clientX - rect.left;
     const y = e.clientY - rect.top;
+
+    // Spotlight position
+    card.style.setProperty("--mouse-x", `${x}px`);
+    card.style.setProperty("--mouse-y", `${y}px`);
+    card.style.setProperty("--spotlight-color", spotlightColor);
+
+    // 3D tilt
     const rotateX = (y - rect.height / 2) / 10;
     const rotateY = (rect.width / 2 - x) / 10;
     card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale(1.02)`;
   };
 
-  const handleMouseLeave = (e) => {
-    e.currentTarget.style.transform =
-      "perspective(1000px) rotateX(0) rotateY(0) scale(1)";
+  const handleMouseLeave = () => {
+    const card = divRef.current;
+    if (!card) return;
+    card.style.transform = "perspective(1000px) rotateX(0) rotateY(0) scale(1)";
   };
+
+  return (
+    <motion.div
+      ref={divRef}
+      onMouseMove={handleMouseMove}
+      onMouseLeave={handleMouseLeave}
+      className={`relative overflow-hidden transition-transform duration-200 ease-out group/spot ${className}`}
+      style={{
+        "--mouse-x": "50%",
+        "--mouse-y": "50%",
+        "--spotlight-color": spotlightColor,
+      }}
+      {...motionProps}
+    >
+      {/* Spotlight overlay */}
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute inset-0 rounded-[inherit] opacity-0 transition-opacity duration-500 group-hover/spot:opacity-60 group-focus-within/spot:opacity-60"
+        style={{
+          background:
+            "radial-gradient(circle at var(--mouse-x) var(--mouse-y), var(--spotlight-color), transparent 80%)",
+        }}
+      />
+      {children}
+    </motion.div>
+  );
+};
+
+/* ---------- Section2 ---------- */
+
+const Section2 = () => {
+  const { dark } = useContext(ThemeTog);
+  const { ref, inView } = useInView({ threshold: 0.1, triggerOnce: true });
 
   const cardVariants = {
     hidden: { opacity: 0, y: 30, scale: 0.95 },
@@ -67,20 +118,22 @@ const Section2 = () => {
 
         <div className="md:w-[90%] w-full xl:w-[90%] px-[5%] py-4 overflow-hidden sm:w-full h-full grid grid-cols-1 sm:grid-cols-2 justify-center gap-7 items-center pt-4">
           {projects.map((project, index) => (
-            <motion.div
+            <SpotlightCard
               key={project.id || index}
+              spotlightColor={
+                dark ? "rgba(99, 102, 241, 0.25)" : "rgba(30, 60, 21, 0.4)"
+              }
               variants={cardVariants}
               initial="hidden"
               animate={inView ? "visible" : "hidden"}
               transition={{ delay: index * 0.1 }}
-              onMouseMove={handleMouseMove}
-              onMouseLeave={handleMouseLeave}
-              className={`relative flex flex-col overflow-hidden justify-center items-center gap-y-3 rounded-2xl p-5 w-full h-fit border transition-transform duration-200 ease-out ${
+              className={`flex flex-col justify-center items-center gap-y-3 rounded-2xl p-5 w-full h-fit border ${
                 dark
-                  ? "border-[#f1f1f1] bg-white/5"
+                  ? "border-[#f1f1f1]/30 bg-[#111]"
                   : "border-black/20 bg-white/30"
               }`}
             >
+              {/* Glass effect layers (kept from your original) */}
               <div
                 className="absolute inset-0 backdrop-blur-sm rounded-2xl -z-10"
                 style={{ filter: "url(#glass-distortion)" }}
@@ -128,7 +181,7 @@ const Section2 = () => {
                   </span>
                 </Link>
               </span>
-            </motion.div>
+            </SpotlightCard>
           ))}
         </div>
 

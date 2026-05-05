@@ -4,39 +4,40 @@
   box-sizing: border-box;
   overflow-x: hidden;
 }
-/* h1,
-h2,
-h3 {
-  font-family: "Bricolage Grotesque", sans-serif;
-} */
+
 p {
   font-weight: 400;
   font-family: "Bricolage Grotesque", sans-serif;
 }
+
 body {
   background-color: #fff;
-  cursor: cell;
 }
+
 html {
   scroll-behavior: smooth;
 }
+
 .sec2 h2,
 .sec3 h2 {
-  /* font-family: Stack Sans Headline; */
   font-family: "Bricolage Grotesque", sans-serif;
 }
+
 .footP {
   font-family: Inter;
 }
+
 .sc4Div {
   background: rgba(0, 0, 0, 0.9) url("/src/assets/low-poly-grid-haikei.svg");
   background-blend-mode: darken;
   background-size: cover;
   background-repeat: no-repeat;
 }
+
 h2 {
   overflow: hidden;
 }
+
 @keyframes jelly-pop {
   0% {
     transform: scale(0.95);
