@@ -1,5 +1,4 @@
 import { Moon, Sun, FileBarChart, Github, Home, Mail } from "lucide-react";
-import { Link } from "react-router-dom";
 import {
   useContext,
   useRef,
@@ -138,6 +137,46 @@ function DockIcon({ children, className = "" }) {
   );
 }
 
+/* ---------- Theme Toggle Icon (animated swap) ---------- */
+
+function ThemeIcon({ dark, size }) {
+  return (
+    <div className={`relative ${size}`}>
+      <AnimatePresence mode="wait" initial={false}>
+        {dark ? (
+          <motion.div
+            key="moon"
+            initial={{ rotate: -90, opacity: 0, scale: 0.5 }}
+            animate={{ rotate: 0, opacity: 1, scale: 1 }}
+            exit={{ rotate: 90, opacity: 0, scale: 0.5 }}
+            transition={{ duration: 0.25 }}
+            className="absolute inset-0 overflow-y-hidden overflow-hidden flex items-center justify-center"
+          >
+            <Moon
+              className={`${size} text-indigo-400 overflow-y-hidden`}
+              strokeWidth={2}
+            />
+          </motion.div>
+        ) : (
+          <motion.div
+            key="sun"
+            initial={{ rotate: 90, opacity: 0, scale: 0.5 }}
+            animate={{ rotate: 0, opacity: 1, scale: 1 }}
+            exit={{ rotate: -90, opacity: 0, scale: 0.5 }}
+            transition={{ duration: 0.25 }}
+            className="absolute overflow-y-hidden overflow-hidden inset-0 flex items-center justify-center"
+          >
+            <Sun
+              className={`${size} text-yellow-500 overflow-y-hidden`}
+              strokeWidth={2}
+            />
+          </motion.div>
+        )}
+      </AnimatePresence>
+    </div>
+  );
+}
+
 /* ---------- Dock Container ---------- */
 
 function Dock({
@@ -158,7 +197,7 @@ function Dock({
       onMouseMove={({ pageX }) => mouseX.set(pageX)}
       onMouseLeave={() => mouseX.set(Infinity)}
       style={{ height: panelHeight, gap }}
-      className={`flex items-end rounded-3xl border px-3 sm:px-4 pb-2 pt-2 backdrop-blur-md shadow-xl ${
+      className={`flex items-end rounded-3xl border px-3 sm:px-4 pb-2 pt-2 backdrop-blur-md shadow-[0_0_10px_rgba(0,0,0,0.07)] ${
         dark ? "bg-[#120F17]/80 border-white/10" : "bg-white/60 border-black/10"
       } ${className}`}
       role="toolbar"
@@ -190,7 +229,6 @@ const Header = () => {
   const { dark, setDark } = useContext(ThemeTog);
   const isMobile = useIsMobile();
 
-  // Responsive dock sizing
   const dockConfig = isMobile
     ? {
         baseItemSize: 44,
@@ -201,9 +239,9 @@ const Header = () => {
         iconSize: "w-5 h-5",
       }
     : {
-        baseItemSize: 60,
-        magnification: 88,
-        panelHeight: 76,
+        baseItemSize: 50,
+        magnification: 70,
+        panelHeight: 70,
         distance: 180,
         gap: 14,
         iconSize: "w-6 h-6",
@@ -246,6 +284,12 @@ const Header = () => {
       },
     },
     {
+      icon: <ThemeIcon dark={dark} size={dockConfig.iconSize} />,
+      label: dark ? "Light mode" : "Dark mode",
+      onClick: () => setDark(!dark),
+      // className: "overflow-hidden",
+    },
+    {
       icon: <Mail className={dockConfig.iconSize} strokeWidth={2} />,
       label: "Hire me",
       onClick: handleNav("mailto:adegbitemustapha73@gmail.com"),
@@ -256,9 +300,8 @@ const Header = () => {
   ];
 
   return (
-    <header className="w-full z-50 h-36 sm:h-40 flex justify-center items-center relative">
-      {/* Dock */}
-      <div className="fixed top-4 sm:top-6 z-50">
+    <header className="w-full z-50 h-28 sm:h-32 flex justify-center items-center relative">
+      <div className="fixed top-4 sm:top-6 z-50 py-2 px-1">
         <Dock
           items={items}
           dark={dark}
@@ -268,37 +311,6 @@ const Header = () => {
           distance={dockConfig.distance}
           gap={dockConfig.gap}
         />
-      </div>
-
-      {/* Theme toggle */}
-      <div
-        className={`fixed top-[4.7em] sm:top-[6.2em] px-3 py-1 rounded-b-xl z-50 border backdrop-blur-md ${
-          dark
-            ? "bg-[#120F17]/80 border-white/10"
-            : "bg-white/60 border-black/10"
-        }`}
-      >
-        <button
-          onClick={() => setDark(!dark)}
-          aria-label="Toggle dark mode"
-          className={`relative w-14 h-7 sm:w-16 sm:h-8 rounded-full flex items-center transition-colors duration-300 border border-gray-400 hover:shadow-lg ${
-            dark ? "bg-gray-700" : "bg-gray-200"
-          }`}
-        >
-          <div
-            className={`absolute w-6 h-6 sm:w-7 sm:h-7 rounded-full flex items-center justify-center transition-transform duration-300 shadow-md ${
-              dark
-                ? "translate-x-7 sm:translate-x-8 bg-indigo-500"
-                : "translate-x-0.5 bg-yellow-400"
-            }`}
-          >
-            {dark ? (
-              <Moon className="w-3.5 h-3.5 text-white" />
-            ) : (
-              <Sun className="w-3.5 h-3.5 text-white" />
-            )}
-          </div>
-        </button>
       </div>
     </header>
   );
