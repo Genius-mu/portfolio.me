@@ -4,13 +4,32 @@ import { useContext, useState } from "react";
 import { ThemeTog } from "../App";
 import Modal from "./Modal";
 
+// Particle positions shared by both inputs
+const PARTICLES = [
+  { x: "0.2", y: "-0.4", delay: "0.1s" },
+  { x: "0.5", y: "-0.2", delay: "0.3s" },
+  { x: "0.3", y: "0.3", delay: "0.5s" },
+  { x: "0.7", y: "0.1", delay: "0.2s" },
+  { x: "0.1", y: "-0.7", delay: "0.4s" },
+  { x: "0.6", y: "0.4", delay: "0.6s" },
+];
+
+const NebulaParticles = () =>
+  PARTICLES.map((p, i) => (
+    <div
+      key={i}
+      className="nebula-particle absolute w-1.5 h-1.5 rounded-full pointer-events-none opacity-0 top-1/2 left-10"
+      style={{ "--x": p.x, "--y": p.y, "--delay": p.delay }}
+    />
+  ));
+
+// Accepts any real-looking email, not just Gmail
+const EMAIL_REGEX = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
 const Section5 = () => {
   const [state, formspreeSubmit] = useForm("xldoqyjw");
   const [modalOpen, setModalOpen] = useState(false);
-  const [modalData, setModalData] = useState({
-    title: "",
-    message: "",
-  });
+  const [modalData, setModalData] = useState({ title: "", message: "" });
   const { dark } = useContext(ThemeTog);
 
   return (
@@ -25,7 +44,7 @@ const Section5 = () => {
                 : "text-black/70"
             }`}
           >
-            Let’s Build Something Great
+            Let's Build Something Great
           </h2>
           <p
             className={`max-w-[800px] ${
@@ -46,7 +65,11 @@ const Section5 = () => {
           <Formik
             initialValues={{ fullname: "", email: "", message: "" }}
             onSubmit={async (values, { resetForm }) => {
-              if (!values.fullname.trim()) {
+              const trimmedName = values.fullname.trim();
+              const trimmedEmail = values.email.trim();
+              const trimmedMessage = values.message.trim();
+
+              if (!trimmedName) {
                 setModalData({
                   title: "Hold on! 👀",
                   message:
@@ -55,8 +78,16 @@ const Section5 = () => {
                 setModalOpen(true);
                 return;
               }
-
-              if (!values.email.trim()) {
+              if (trimmedName.length < 3) {
+                setModalData({
+                  title: "That's a short name 🤔",
+                  message:
+                    "Give me at least 3 characters so I know what to call you.",
+                });
+                setModalOpen(true);
+                return;
+              }
+              if (!trimmedEmail) {
                 setModalData({
                   title: "No email? Really? 😄",
                   message:
@@ -65,8 +96,16 @@ const Section5 = () => {
                 setModalOpen(true);
                 return;
               }
-
-              if (!values.message.trim()) {
+              if (!EMAIL_REGEX.test(trimmedEmail)) {
+                setModalData({
+                  title: "That email looks off 📭",
+                  message:
+                    "Double-check the format — something like name@domain.com works.",
+                });
+                setModalOpen(true);
+                return;
+              }
+              if (!trimmedMessage) {
                 setModalData({
                   title: "Say something! 🗣️",
                   message:
@@ -81,18 +120,18 @@ const Section5 = () => {
             }}
           >
             {({ values, touched, handleChange, handleBlur, handleSubmit }) => {
-              // Validation rules
               const isValidName = values.fullname.trim().length >= 3;
-              const isValidEmail =
-                values.email.includes("@gmail.com") && values.email.length > 10;
+              const isValidEmail = EMAIL_REGEX.test(values.email.trim());
               const isValidMessage = values.message.trim().length > 0;
 
               return (
                 <form
                   onSubmit={handleSubmit}
                   className="flex flex-col gap-y-3 relative"
+                  noValidate
                 >
                   <div className="w-full flex flex-col md:flex-row gap-3 py-4">
+                    {/* Name Field */}
                     <div className="nebula-input relative w-full overflow-hidden">
                       <Field
                         type="text"
@@ -101,6 +140,7 @@ const Section5 = () => {
                         onBlur={handleBlur}
                         value={values.fullname}
                         placeholder="Full Name"
+                        aria-label="Full name"
                         className={`input w-full rounded-2xl outline-none pl-8 py-4 bg-black/5 ${
                           dark
                             ? "text-[#f1f1f1] border-white/40"
@@ -113,55 +153,7 @@ const Section5 = () => {
                             : "border-black/20"
                         }`}
                       />
-
-                      <div
-                        className="nebula-particle absolute w-1.5 h-1.5 rounded-full pointer-events-none opacity-0 top-1/2 left-10"
-                        style={{
-                          "--x": "0.2",
-                          "--y": "-0.4",
-                          "--delay": "0.1s",
-                        }}
-                      />
-                      <div
-                        className="nebula-particle absolute w-1.5 h-1.5 rounded-full pointer-events-none opacity-0 top-1/2 left-10"
-                        style={{
-                          "--x": "0.5",
-                          "--y": "-0.2",
-                          "--delay": "0.3s",
-                        }}
-                      />
-                      <div
-                        className="nebula-particle absolute w-1.5 h-1.5 rounded-full pointer-events-none opacity-0 top-1/2 left-10"
-                        style={{
-                          "--x": "0.3",
-                          "--y": "0.3",
-                          "--delay": "0.5s",
-                        }}
-                      />
-                      <div
-                        className="nebula-particle absolute w-1.5 h-1.5 rounded-full pointer-events-none opacity-0 top-1/2 left-10"
-                        style={{
-                          "--x": "0.7",
-                          "--y": "0.1",
-                          "--delay": "0.2s",
-                        }}
-                      />
-                      <div
-                        className="nebula-particle absolute w-1.5 h-1.5 rounded-full pointer-events-none opacity-0 top-1/2 left-10"
-                        style={{
-                          "--x": "0.1",
-                          "--y": "-0.7",
-                          "--delay": "0.4s",
-                        }}
-                      />
-                      <div
-                        className="nebula-particle absolute w-1.5 h-1.5 rounded-full pointer-events-none opacity-0 top-1/2 left-10"
-                        style={{
-                          "--x": "0.6",
-                          "--y": "0.4",
-                          "--delay": "0.6s",
-                        }}
-                      />
+                      <NebulaParticles />
                     </div>
 
                     {/* Email Field */}
@@ -173,6 +165,7 @@ const Section5 = () => {
                         onChange={handleChange}
                         onBlur={handleBlur}
                         value={values.email}
+                        aria-label="Email address"
                         className={`input w-full rounded-2xl outline-none pl-8 py-4 bg-black/5 ${
                           dark
                             ? "text-white border-white/40"
@@ -185,65 +178,7 @@ const Section5 = () => {
                             : "border-black/20"
                         }`}
                       />
-
-                      {/* <label
-                        className={`user-label absolute left-8 top-4 pointer-events-none transition-all duration-300 ease-out px-1 text-sm ${
-                          dark
-                            ? "bg-[#00000f] text-[#6a6a8a]"
-                            : "bg-white text-gray-400"
-                        }`}
-                      >
-                        Email Address
-                      </label> */}
-
-                      <div
-                        className="nebula-particle absolute w-1.5 h-1.5 rounded-full pointer-events-none opacity-0 top-1/2 left-10"
-                        style={{
-                          "--x": "0.2",
-                          "--y": "-0.4",
-                          "--delay": "0.1s",
-                        }}
-                      />
-                      <div
-                        className="nebula-particle absolute w-1.5 h-1.5 rounded-full pointer-events-none opacity-0 top-1/2 left-10"
-                        style={{
-                          "--x": "0.5",
-                          "--y": "-0.2",
-                          "--delay": "0.3s",
-                        }}
-                      />
-                      <div
-                        className="nebula-particle absolute w-1.5 h-1.5 rounded-full pointer-events-none opacity-0 top-1/2 left-10"
-                        style={{
-                          "--x": "0.3",
-                          "--y": "0.3",
-                          "--delay": "0.5s",
-                        }}
-                      />
-                      <div
-                        className="nebula-particle absolute w-1.5 h-1.5 rounded-full pointer-events-none opacity-0 top-1/2 left-10"
-                        style={{
-                          "--x": "0.7",
-                          "--y": "0.1",
-                          "--delay": "0.2s",
-                        }}
-                      />
-                      <div
-                        className="nebula-particle absolute w-1.5 h-1.5 rounded-full pointer-events-none opacity-0 top-1/2 left-10"
-                        style={{
-                          "--x": "0.1",
-                          "--y": "-0.7",
-                          "--delay": "0.4s",
-                        }}
-                      />
-                      <div
-                        className="nebula-particle absolute w-1.5 h-1.5 rounded-full pointer-events-none opacity-0 top-1/2 left-10"
-                        style={{
-                          "--x": "0.6",
-                          "--y": "0.4",
-                          "--delay": "0.6s",
-                        }}
-                      />
+                      <NebulaParticles />
                     </div>
                   </div>
 
@@ -255,6 +190,7 @@ const Section5 = () => {
                     onChange={handleChange}
                     onBlur={handleBlur}
                     value={values.message}
+                    aria-label="Message"
                     className={`w-full h-[10em] resize-none outline-none ${
                       dark
                         ? "text-white [text-shadow:1px_1px_1px_#111] border-white/40"
@@ -269,15 +205,8 @@ const Section5 = () => {
                   />
 
                   {/* Submit Button */}
-                  {/* <button
-                    type="submit"
-                    disabled={state.submitting}
-                    className="mt-4 bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-xl transition-all duration-200"
-                  >
-                    {state.submitting ? "Sending..." : "Send Message"}
-                  </button> */}
                   <button
-                    class="btn1Class"
+                    className="btn1Class"
                     type="submit"
                     disabled={state.submitting}
                   >
@@ -288,10 +217,21 @@ const Section5 = () => {
                     <span></span>
                   </button>
 
-                  {/* Success Message */}
+                  {/* Success / Error feedback */}
                   {state.succeeded && (
-                    <p className="text-green-600 font-semibold text-center mt-4">
-                      Message Sent Successfully!
+                    <p
+                      className="text-green-500 font-semibold text-center mt-4"
+                      role="status"
+                    >
+                      Message sent successfully — I'll get back to you soon!
+                    </p>
+                  )}
+                  {state.errors && state.errors.length > 0 && (
+                    <p
+                      className="text-red-500 font-semibold text-center mt-4"
+                      role="alert"
+                    >
+                      Something went wrong sending that. Try again in a moment.
                     </p>
                   )}
                 </form>
@@ -300,22 +240,23 @@ const Section5 = () => {
           </Formik>
         </div>
       </div>
+
+      {/* Validation Modal */}
       <Modal
         isOpen={modalOpen}
         onClose={() => setModalOpen(false)}
         title={modalData.title}
+        footer={
+          <button
+            onClick={() => setModalOpen(false)}
+            className="relative px-5 py-2 rounded-lg bg-green-600 text-white font-medium overflow-hidden group hover:shadow-lg hover:shadow-green-500/40 transition-all duration-300"
+          >
+            <span className="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-1000 bg-gradient-to-r from-transparent via-white/30 to-transparent" />
+            <span className="relative z-10">Got it</span>
+          </button>
+        }
       >
-        <p className="text-green-500 mb-6">{modalData.message}</p>
-        <button
-          onClick={() => setModalOpen(false)}
-          className="relative bg-green-600 text-white px-4 py-1 rounded-lg font-medium overflow-hidden group hover:scale-105 transition-all duration-300 hover:shadow-lg hover:shadow-green-500/50 flex justify-center items-center"
-        >
-          <div className="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-1000 bg-gradient-to-r from-transparent via-white/30 to-transparent"></div>
-          <div className="absolute inset-0 bg-green-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-          <span className="relative z-10 group-hover:scale-110 inline-block transition-transform duration-300">
-            Close
-          </span>
-        </button>
+        <p className="text-white/80 leading-relaxed">{modalData.message}</p>
       </Modal>
     </section>
   );

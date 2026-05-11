@@ -15,6 +15,7 @@ import {
   AnimatePresence,
 } from "motion/react";
 import { ThemeTog } from "../App";
+import GlassSurface from "./GlassSurface";
 
 const X = ({ className }) => (
   <svg className={className} fill="currentColor" viewBox="0 0 24 24">
@@ -78,7 +79,7 @@ function DockItem({
       onFocus={() => isHovered.set(1)}
       onBlur={() => isHovered.set(0)}
       onClick={onClick}
-      className={`relative inline-flex items-center justify-center rounded-2xl border cursor-pointer outline-none shadow-md transition-colors ${
+      className={`relative inline-flex items-center justify-center rounded-2xl border cursor-pointer outline-none shadow-md transition-colors flex-shrink-0 ${
         dark
           ? "bg-white/5 border-white/10 hover:bg-white/10 text-white"
           : "bg-black/5 border-black/10 hover:bg-black/10 text-black/70 hover:text-black/90"
@@ -117,8 +118,8 @@ function DockLabel({ children, className = "", ...rest }) {
           style={{ x: "-50%" }}
           className={`absolute -top-7 left-1/2 w-fit whitespace-pre rounded-md border px-2 py-1 text-xs sm:text-sm ${
             dark
-              ? "bg-[#120F17] border-white/10 text-white"
-              : "bg-white border-black/10 text-black"
+              ? "bg-[#120F17]/90 border-white/10 text-white"
+              : "bg-white/90 border-black/10 text-black"
           } ${className}`}
           role="tooltip"
         >
@@ -150,12 +151,9 @@ function ThemeIcon({ dark, size }) {
             animate={{ rotate: 0, opacity: 1, scale: 1 }}
             exit={{ rotate: 90, opacity: 0, scale: 0.5 }}
             transition={{ duration: 0.25 }}
-            className="absolute inset-0 overflow-y-hidden overflow-hidden flex items-center justify-center"
+            className="absolute inset-0 flex items-center justify-center"
           >
-            <Moon
-              className={`${size} text-indigo-400 overflow-y-hidden`}
-              strokeWidth={2}
-            />
+            <Moon className={`${size} text-indigo-400`} strokeWidth={2} />
           </motion.div>
         ) : (
           <motion.div
@@ -164,12 +162,9 @@ function ThemeIcon({ dark, size }) {
             animate={{ rotate: 0, opacity: 1, scale: 1 }}
             exit={{ rotate: -90, opacity: 0, scale: 0.5 }}
             transition={{ duration: 0.25 }}
-            className="absolute overflow-y-hidden overflow-hidden inset-0 flex items-center justify-center"
+            className="absolute inset-0 flex items-center justify-center"
           >
-            <Sun
-              className={`${size} text-yellow-500 overflow-y-hidden`}
-              strokeWidth={2}
-            />
+            <Sun className={`${size} text-yellow-500`} strokeWidth={2} />
           </motion.div>
         )}
       </AnimatePresence>
@@ -177,7 +172,7 @@ function ThemeIcon({ dark, size }) {
   );
 }
 
-/* ---------- Dock Container ---------- */
+/* ---------- Dock Inner ---------- */
 
 function Dock({
   items,
@@ -185,7 +180,6 @@ function Dock({
   spring = { mass: 0.1, stiffness: 150, damping: 12 },
   magnification,
   distance,
-  panelHeight,
   baseItemSize,
   gap,
   dark,
@@ -196,10 +190,8 @@ function Dock({
     <motion.div
       onMouseMove={({ pageX }) => mouseX.set(pageX)}
       onMouseLeave={() => mouseX.set(Infinity)}
-      style={{ height: panelHeight, gap }}
-      className={`flex items-end rounded-3xl border px-3 sm:px-4 pb-2 pt-2 backdrop-blur-md shadow-[0_0_10px_rgba(0,0,0,0.07)] ${
-        dark ? "bg-[#120F17]/80 border-white/10" : "bg-white/60 border-black/10"
-      } ${className}`}
+      style={{ gap }}
+      className={`flex items-end justify-center px-2 sm:px-3 ${className}`}
       role="toolbar"
       aria-label="Application dock"
     >
@@ -233,7 +225,6 @@ const Header = () => {
     ? {
         baseItemSize: 44,
         magnification: 60,
-        panelHeight: 60,
         distance: 120,
         gap: 8,
         iconSize: "w-5 h-5",
@@ -241,11 +232,25 @@ const Header = () => {
     : {
         baseItemSize: 50,
         magnification: 70,
-        panelHeight: 70,
         distance: 180,
         gap: 14,
         iconSize: "w-6 h-6",
       };
+
+  // Glass wrapper sizing.
+  // Width: items + gaps + inner Dock padding (px-2/px-3 = 16/24) + glass content padding (16 from p-0.5rem on both sides) + a little slack
+  // Height: largest icon size at rest + glass content padding (16) + a little vertical slack
+  const itemCount = 6;
+  const dockInnerPadding = isMobile ? 16 : 24; // px-2 or px-3
+  const glassContentPadding = 16; // 0.5rem * 2
+  const glassWidth =
+    itemCount * dockConfig.baseItemSize +
+    (itemCount - 1) * dockConfig.gap +
+    dockInnerPadding +
+    glassContentPadding +
+    8;
+  const glassHeight =
+    dockConfig.baseItemSize + glassContentPadding + (isMobile ? 8 : 12);
 
   const handleNav =
     (path, external = false) =>
@@ -287,7 +292,6 @@ const Header = () => {
       icon: <ThemeIcon dark={dark} size={dockConfig.iconSize} />,
       label: dark ? "Light mode" : "Dark mode",
       onClick: () => setDark(!dark),
-      // className: "overflow-hidden",
     },
     {
       icon: <Mail className={dockConfig.iconSize} strokeWidth={2} />,
@@ -301,16 +305,33 @@ const Header = () => {
 
   return (
     <header className="w-full z-50 h-28 sm:h-32 flex justify-center items-center relative">
-      <div className="fixed top-4 sm:top-6 z-50 py-2 px-1">
-        <Dock
-          items={items}
-          dark={dark}
-          baseItemSize={dockConfig.baseItemSize}
-          magnification={dockConfig.magnification}
-          panelHeight={dockConfig.panelHeight}
-          distance={dockConfig.distance}
-          gap={dockConfig.gap}
-        />
+      <div className="fixed top-4 sm:top-6 z-50">
+        <GlassSurface
+          width={glassWidth}
+          height={glassHeight}
+          borderRadius={28}
+          backgroundOpacity={dark ? 0.35 : 0.45}
+          brightness={dark ? 60 : 80}
+          opacity={0.9}
+          blur={12}
+          saturation={1.4}
+          displace={0.4}
+          distortionScale={-160}
+          redOffset={0}
+          greenOffset={8}
+          blueOffset={16}
+          mixBlendMode="difference"
+          className="shadow-[0_8px_32px_rgba(0,0,0,0.18)]"
+        >
+          <Dock
+            items={items}
+            dark={dark}
+            baseItemSize={dockConfig.baseItemSize}
+            magnification={dockConfig.magnification}
+            distance={dockConfig.distance}
+            gap={dockConfig.gap}
+          />
+        </GlassSurface>
       </div>
     </header>
   );
