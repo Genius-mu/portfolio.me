@@ -113,9 +113,9 @@ export default [
     description:
       "Small teams don't fail because they lack tools — they fail because their tools have ten features they don't need and miss the three they do. Ticket-MA strips ticket management down to what actually moves work forward: create, assign, track, resolve. I built it for teams that want Jira's clarity without Jira's learning curve. Real-time updates keep everyone aligned without Slack pings, and the interface is intuitive enough that a new team member is productive in under five minutes. Architecturally, I separated state management from rendering logic so the app stays snappy even as ticket volume grows, and animations are tuned to communicate state changes (assigned, in-progress, resolved) without distracting from the work itself. A reminder that good software gets out of the way.",
     metaDescription:
-      "Ticket-MA: lightweight team task and issue tracker with real-time updates and intuitive UX. Boost team productivity without Jira's complexity. Built with React.",
+      "Relay: lightweight team task and issue tracker with real-time updates and intuitive UX. Boost team productivity without Jira's complexity. Built with React.",
     image: "/images/img6.webp",
-    live: "https://ticket-m-app.netlify.app/",
+    live: "https://relay-alpha-three.vercel.app/",
     code: "https://github.com/Genius-mu/Ticket-Management-App",
     stacks: [
       "react",
