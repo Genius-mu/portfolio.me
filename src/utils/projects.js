@@ -135,7 +135,7 @@ export default [
       "We all know we waste time — but until you put a dollar amount on it, it doesn't sting enough to change. TimeDrip translates time-wasting habits into hard financial losses, then gives you a personalized action plan to recover them. Log your daily activities, and the app calculates exactly how much your scrolling, context-switching, and unproductive meetings are costing you per day, week, and year. The recommendations engine adapts to your patterns instead of giving generic advice. I built persistence with localStorage so your data stays yours — no account, no backend, no privacy trade-offs — and obsessed over the input flow so logging an activity takes three seconds, not thirty. Because a productivity app you don't open is just another time-waster.",
     metaDescription:
       "TimeDrip: productivity app that calculates the financial cost of wasted time and delivers personalized recommendations. Optimize your day. React, Tailwind, localStorage.",
-    image: "/images/img21.webp",
+    image: "/images/img32.webp",
     live: "https://time-drip.vercel.app/",
     code: "https://github.com/Genius-mu/TimeDrip",
     stacks: [
