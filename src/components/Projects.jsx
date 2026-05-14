@@ -115,7 +115,7 @@ const Section2 = () => {
           </h2>
         </div>
 
-        <div className="md:w-[90%] pt-4 xl:w-[90%] px-[5%] sm:w-full h-full grid grid-cols-1 sm:grid-cols-2 justify-center gap-8 items-center">
+        <div className="md:w-[90%] pt-4 overflow-hidden pb-4 xl:w-[90%] px-[5%] sm:w-full h-full grid grid-cols-1 sm:grid-cols-2 justify-center gap-8 items-center">
           {projects.map((project, index) => (
             <SpotlightCard
               key={project.id || index}
@@ -127,7 +127,7 @@ const Section2 = () => {
               animate={inView ? "visible" : "hidden"}
               transition={{ delay: index * 0.1 }}
               whileHover={{ y: -4 }}
-              className={`flex flex-col gap-y-3 rounded-2xl p-5 w-full h-fit border ${
+              className={`flex flex-col gap-y-3 overflow-hidden rounded-2xl p-5 w-full h-fit border ${
                 dark
                   ? "border-[#f1f1f1]/30 bg-[#111]"
                   : "border-black/40 bg-white/30"
