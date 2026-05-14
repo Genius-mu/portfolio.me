@@ -108,8 +108,8 @@ export default [
     imgs: ["/images/img28.webp", "/images/img29.webp"],
   },
   {
-    id: "Ticket-MA",
-    title: "Ticket-MA - Team Task & Issue Tracking Software",
+    id: "Relay",
+    title: "Relay - Team Task & Issue Tracking Software",
     description:
       "Small teams don't fail because they lack tools — they fail because their tools have ten features they don't need and miss the three they do. Ticket-MA strips ticket management down to what actually moves work forward: create, assign, track, resolve. I built it for teams that want Jira's clarity without Jira's learning curve. Real-time updates keep everyone aligned without Slack pings, and the interface is intuitive enough that a new team member is productive in under five minutes. Architecturally, I separated state management from rendering logic so the app stays snappy even as ticket volume grows, and animations are tuned to communicate state changes (assigned, in-progress, resolved) without distracting from the work itself. A reminder that good software gets out of the way.",
     metaDescription:
