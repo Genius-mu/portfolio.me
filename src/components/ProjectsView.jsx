@@ -49,11 +49,11 @@ const ProjectsView = () => {
 
   return (
     <div
-      className={`min-h-screen transition-colors duration-300 ${dark ? "bg-gray-900" : "bg-gray-50"}`}
+      className={`min-h-screen transition-colors duration-300 ${dark ? "bg-transparent" : "bg-gray-50"}`}
     >
       {/* Header with back button */}
       <div
-        className={`sticky top-0 z-10 backdrop-blur-md ${dark ? "bg-gray-900/80" : "bg-gray-50/80"} border-b ${dark ? "border-gray-800" : "border-gray-200"}`}
+        className={`sticky top-0 z-10 backdrop-blur-md ${dark ? "bg-transparent" : "bg-gray-50/80"} border-b ${dark ? "border-gray-800" : "border-gray-200"}`}
       >
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
           <Link
