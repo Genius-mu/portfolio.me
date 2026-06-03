@@ -129,6 +129,28 @@ export default [
     imgs: ["/images/img30.webp", "/images/img31.webp"],
   },
   {
+    id: "Rarely",
+    title: "Rarely - Multi-Page SaaS Marketing Site & Design System",
+    description:
+      "Marketing sites for dev tools all blur together — the same gradient, the same three feature cards, the same stock dashboard screenshot. Rarely is a multi-page SaaS marketing site built to feel like a product, not a template. Across six routes — landing, pricing, about, resources, case studies, and a 404 — I built one cohesive dark, atmospheric design system: layered red/orange aurora gradients with hand-drawn SVG ridge silhouettes backlighting a chart-style 'skyline' of data labels, a monospace-plus-pixel type pairing, and motion that's entirely CSS keyframes and IntersectionObserver instead of a heavyweight animation library. The header is a single scroll-aware component that morphs from a transparent overlay into a blurred fixed bar, shrinking on scroll, with an animated hamburger drawer and active-route detection via React Router. The interactive pieces earn their place: a monthly/annual billing toggle that drives live pricing, a feature-comparison table, an accordion FAQ, scroll-triggered count-up stats, and filterable resource and case-study grids with live text search. Brand logos are real SVG paths (lucide-react where it has them, react-icons for the marks it dropped, hand-rolled for the socials), and every animation respects prefers-reduced-motion. The lesson: a design system isn't a color palette — it's a hundred small decisions made once and reused everywhere, so five pages feel like one product.",
+    metaDescription:
+      "Rarely: a multi-page SaaS marketing site and design system — atmospheric dark UI, scroll-aware header, billing toggle, comparison table, filterable resource and case-study grids. Built with React, React Router, Tailwind, and CSS/IntersectionObserver motion.",
+    image: "/images/img74.webp",
+    live: "https://rarely-web.vercel.app/",
+    code: "https://github.com/Genius-mu/rarely",
+    stacks: [
+      "react",
+      "vite",
+      "tailwind CSS",
+      "react-router",
+      "lucide-react",
+      "react-icons",
+      "intersection observer API",
+      "CSS animations",
+    ],
+    imgs: ["/images/img74.webp", "/images/img75.webp"],
+  },
+  {
     id: "TimeDrip",
     title: "TimeDrip - Calculate & Eliminate Time Wastage",
     description:
