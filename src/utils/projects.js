@@ -136,7 +136,7 @@ export default [
     metaDescription:
       "Rarely: a multi-page SaaS marketing site and design system — atmospheric dark UI, scroll-aware header, billing toggle, comparison table, filterable resource and case-study grids. Built with React, React Router, Tailwind, and CSS/IntersectionObserver motion.",
     image: "/images/img75.webp",
-    live: "https://rarely-web.vercel.app/",
+    live: "https://rarely-nine.vercel.app/",
     code: "https://github.com/Genius-mu/rarely",
     stacks: [
       "react",
