@@ -1,10 +1,6 @@
 import { motion } from "framer-motion";
-import { useContext } from "react";
-import { ThemeTog } from "../App";
 
 const Section3 = () => {
-  const { dark } = useContext(ThemeTog);
-
   const cardVariants = {
     hiddenLeft: { opacity: 0, x: -100, scale: 0.9 },
     hiddenRight: { opacity: 0, x: 100, scale: 0.9 },
@@ -23,11 +19,7 @@ const Section3 = () => {
       <section className="sec3 w-full h-fit pt-[6%] pb-[6%] flex justify-center items-center">
         <div className="w-[90%] sm:w-[65%] h-full flex flex-col justify-center gap-y-6 items-start">
           <h2
-            className={`font-semibold text-4xl tracking-[1px] text-center ${
-              dark
-                ? "text-[#f1f1f1] [text-shadow:1px_1px_1px_#111]"
-                : "text-black/90"
-            }`}
+            className={`font-semibold text-4xl tracking-[1px] text-center text-black/90`}
           >
             About Me
           </h2>
@@ -37,21 +29,11 @@ const Section3 = () => {
             whileInView="visible"
             viewport={{ once: false, amount: 0.2 }}
             transition={{ delay: 0.1 }}
-            className={`max-w-[800px] pl-5 border-l-3 rounded-l-[3px] border-gray-400 text-[14px] hover:border-green-400 my-3 hover:my-0 hover:py-3 hover:bg-green-600/10 transition duration-200 sm:text-[16px] ${
-              dark
-                ? "text-[#f1f1f1] [text-shadow:1px_1px_1px_#111]"
-                : "text-black/70"
-            } sm:line-clamp-7 line-clamp-3`}
+            className={`max-w-[800px] pl-5 border-l-3 rounded-l-[3px] border-gray-400 text-[14px] hover:border-green-400 my-3 hover:my-0 hover:py-3 hover:bg-green-600/10 transition duration-200 sm:text-[16px] text-black/70 sm:line-clamp-7 line-clamp-3`}
           >
             I'm Mustapha Adegbite, a Frontend Developer who builds fast,
             responsive, and visually engaging web experiences with{" "}
-            <span
-              className={`${
-                dark
-                  ? "text-white/50 font-semibold [text-shadow:1px_1px_1px_#111]"
-                  : "text-black"
-              }`}
-            >
+            <span className={`text-black`}>
               {" "}
               React, Next.js, and modern JavaScript (ES6+).
             </span>{" "}
@@ -65,21 +47,11 @@ const Section3 = () => {
             whileInView="visible"
             viewport={{ once: false, amount: 0.2 }}
             transition={{ delay: 0.3 }}
-            className={`max-w-[800px] pl-5 border-l-3 rounded-l-[3px] border-gray-400 text-[14px] hover:border-green-400 my-3 hover:my-0 hover:py-3 hover:bg-green-600/10 transition duration-200 sm:text-[16px] ${
-              dark
-                ? "text-[#f1f1f1] [text-shadow:1px_1px_1px_#111]"
-                : "text-black/70"
-            } sm:line-clamp-7 line-clamp-3`}
+            className={`max-w-[800px] pl-5 border-l-3 rounded-l-[3px] border-gray-400 text-[14px] hover:border-green-400 my-3 hover:my-0 hover:py-3 hover:bg-green-600/10 transition duration-200 sm:text-[16px] text-black/70 sm:line-clamp-7 line-clamp-3`}
           >
             My journey into frontend development grew from curiosity into
             shipped products.{" "}
-            <span
-              className={`${
-                dark
-                  ? "text-white/50 font-semibold [text-shadow:1px_1px_1px_#111]"
-                  : "text-black"
-              }`}
-            >
+            <span className={`text-black`}>
               I built Saim — an embeddable AI sales agent that qualifies leads
               and captures contacts 24/7, a reusable React component library
               built for consistency and scale, and Padi — a multilingual,
@@ -95,11 +67,7 @@ const Section3 = () => {
             whileInView="visible"
             viewport={{ once: false, amount: 0.2 }}
             transition={{ delay: 0.1 }}
-            className={`max-w-[800px] pl-5 border-l-3 rounded-l-[3px] border-gray-400 hover:border-green-400 my-3 hover:my-0 hover:py-3 hover:bg-green-600/10 transition duration-200 text-[14px] sm:text-[16px] ${
-              dark
-                ? "text-[#f1f1f1] [text-shadow:1px_1px_1px_#111]"
-                : "text-black/70"
-            } sm:line-clamp-7 line-clamp-3`}
+            className={`max-w-[800px] pl-5 border-l-3 rounded-l-[3px] border-gray-400 hover:border-green-400 my-3 hover:my-0 hover:py-3 hover:bg-green-600/10 transition duration-200 text-[14px] sm:text-[16px] text-black/70 sm:line-clamp-7 line-clamp-3`}
             // style={{
             //   display: "-webkit-box",
             //   overflow: "hidden",
@@ -110,13 +78,7 @@ const Section3 = () => {
           >
             Great web experiences live at the intersection of performance,
             accessibility, and emotion — fast load times, inclusive design, and{" "}
-            <span
-              className={`${
-                dark
-                  ? "text-white/50 font-semibold [text-shadow:1px_1px_1px_#111]"
-                  : "text-black"
-              }`}
-            >
+            <span className={`text-black`}>
               interactions that feel human, not just functional.
             </span>{" "}
             When I'm not shipping, I'm studying what the best builders do
@@ -125,11 +87,7 @@ const Section3 = () => {
           </motion.p>
 
           <h2
-            className={`font-semibold text-2xl tracking-[1px] text-center ${
-              dark
-                ? "text-[#f1f1f1] [text-shadow:1px_1px_1px_#111]"
-                : "text-black/90"
-            }`}
+            className={`font-semibold text-2xl tracking-[1px] text-center text-black/90`}
           >
             Let’s connect and create something amazing.
           </h2>

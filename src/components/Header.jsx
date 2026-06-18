@@ -1,12 +1,5 @@
 import { Moon, Sun, FileBarChart, Github, Home, Mail } from "lucide-react";
-import {
-  useContext,
-  useRef,
-  useState,
-  useEffect,
-  Children,
-  cloneElement,
-} from "react";
+import { useRef, useState, useEffect, Children, cloneElement } from "react";
 import {
   motion,
   useMotionValue,
@@ -14,7 +7,6 @@ import {
   useTransform,
   AnimatePresence,
 } from "motion/react";
-import { ThemeTog } from "../App";
 
 const X = ({ className }) => (
   <svg className={className} fill="currentColor" viewBox="0 0 24 24">
@@ -78,11 +70,7 @@ function DockItem({
       onFocus={() => isHovered.set(1)}
       onBlur={() => isHovered.set(0)}
       onClick={onClick}
-      className={`relative inline-flex items-center justify-center rounded-2xl border cursor-pointer outline-none shadow-md transition-colors flex-shrink-0 ${
-        dark
-          ? "bg-white/5 border-white/10 hover:bg-white/10 text-white"
-          : "bg-black/5 border-black/10 hover:bg-black/10 text-black/70 hover:text-black/90"
-      } ${className}`}
+      className={`relative inline-flex items-center justify-center rounded-2xl border cursor-pointer outline-none shadow-md transition-colors flex-shrink-0 bg-black/5 border-black/10 hover:bg-black/10 text-black/70 hover:text-black/90 ${className}`}
       tabIndex={0}
       role="button"
       aria-haspopup="true"
@@ -95,7 +83,7 @@ function DockItem({
 }
 
 function DockLabel({ children, className = "", ...rest }) {
-  const { isHovered, dark } = rest;
+  const { isHovered } = rest;
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
@@ -115,11 +103,7 @@ function DockLabel({ children, className = "", ...rest }) {
           exit={{ opacity: 0, y: 0 }}
           transition={{ duration: 0.2 }}
           style={{ x: "-50%" }}
-          className={`absolute -top-7 left-1/2 w-fit whitespace-pre rounded-md border px-2 py-1 text-xs sm:text-sm ${
-            dark
-              ? "bg-[#120F17]/90 border-white/10 text-white"
-              : "bg-white/90 border-black/10 text-black"
-          } ${className}`}
+          className={`absolute -top-7 left-1/2 w-fit whitespace-pre rounded-md border px-2 py-1 text-xs sm:text-sm bg-white/90 border-black/10 text-black z-50 ${className}`}
           role="tooltip"
         >
           {children}
@@ -133,40 +117,6 @@ function DockIcon({ children, className = "" }) {
   return (
     <div className={`flex items-center justify-center ${className}`}>
       {children}
-    </div>
-  );
-}
-
-/* ---------- Theme Toggle Icon (animated swap) ---------- */
-
-function ThemeIcon({ dark, size }) {
-  return (
-    <div className={`relative ${size}`}>
-      <AnimatePresence mode="wait" initial={false}>
-        {dark ? (
-          <motion.div
-            key="moon"
-            initial={{ rotate: -90, opacity: 0, scale: 0.5 }}
-            animate={{ rotate: 0, opacity: 1, scale: 1 }}
-            exit={{ rotate: 90, opacity: 0, scale: 0.5 }}
-            transition={{ duration: 0.25 }}
-            className="absolute inset-0 flex items-center justify-center"
-          >
-            <Moon className={`${size} text-indigo-400`} strokeWidth={2} />
-          </motion.div>
-        ) : (
-          <motion.div
-            key="sun"
-            initial={{ rotate: 90, opacity: 0, scale: 0.5 }}
-            animate={{ rotate: 0, opacity: 1, scale: 1 }}
-            exit={{ rotate: -90, opacity: 0, scale: 0.5 }}
-            transition={{ duration: 0.25 }}
-            className="absolute inset-0 flex items-center justify-center"
-          >
-            <Sun className={`${size} text-yellow-500`} strokeWidth={2} />
-          </motion.div>
-        )}
-      </AnimatePresence>
     </div>
   );
 }
@@ -222,7 +172,6 @@ function Dock({
 /* ---------- Header ---------- */
 
 const Header = () => {
-  const { dark, setDark } = useContext(ThemeTog);
   const isMobile = useIsMobile();
 
   const dockConfig = isMobile
@@ -280,26 +229,18 @@ const Header = () => {
       },
     },
     {
-      icon: <ThemeIcon dark={dark} size={dockConfig.iconSize} />,
-      label: dark ? "Light mode" : "Dark mode",
-      onClick: () => setDark(!dark),
-    },
-    {
       icon: <Mail className={dockConfig.iconSize} strokeWidth={2} />,
       label: "Hire me",
       onClick: handleNav("mailto:adegbitemustapha73@gmail.com"),
-      className: dark
-        ? "!bg-white !text-black hover:!bg-white/90"
-        : "!bg-black !text-white hover:!bg-black/80",
+      className: "!bg-black !text-white hover:!bg-black/80",
     },
   ];
 
   return (
-    <header className="w-full z-50 h-28 sm:h-32 flex justify-center items-center relative">
+    <header className="w-full h-28 sm:h-32 flex justify-center items-center relative">
       <div className="fixed top-4 sm:top-6 z-50">
         <Dock
           items={items}
-          dark={dark}
           baseItemSize={dockConfig.baseItemSize}
           magnification={dockConfig.magnification}
           panelHeight={dockConfig.panelHeight}

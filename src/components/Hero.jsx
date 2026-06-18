@@ -1,6 +1,5 @@
 import { motion } from "motion/react";
-import { useContext, useEffect, useRef, useState, useMemo } from "react";
-import { ThemeTog } from "../App";
+import { useEffect, useRef, useState, useMemo } from "react";
 
 /* ---------- BlurText component ---------- */
 
@@ -115,11 +114,7 @@ const BlurText = ({
 /* ---------- Hero ---------- */
 
 const Hero = () => {
-  const { dark } = useContext(ThemeTog);
-
-  const headingClass = `font-bold sm:text-center md:text-left ${
-    dark ? "text-[#f1f1f1] [text-shadow:1px_1px_1px_#111]" : "text-black"
-  } text-xl sm:text-4xl tracking-[1px] overflow-hidden`;
+  const headingClass = `font-bold sm:text-center md:text-left text-black text-xl sm:text-4xl tracking-[1px] overflow-hidden`;
 
   return (
     <section className="sec2 w-full h-fit pt-[6%] pb-[6%] flex justify-center items-center">
@@ -148,11 +143,7 @@ const Hero = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 1 }}
             viewport={{ once: false, amount: 0.3 }}
-            className={`max-w-[500px] sm:text-center md:text-left ${
-              dark
-                ? "text-[#f1f1f1] [text-shadow:1px_1px_1px_#111]"
-                : "text-black/60"
-            }`}
+            className={`max-w-[500px] sm:text-center md:text-left text-black/60`}
           >
             Most websites lose leads silently — I built Saim to fix that. It's
             an embeddable AI sales agent that qualifies visitors, captures
@@ -165,9 +156,7 @@ const Hero = () => {
               href="mailto:adegbitemustapha73@gmail.com"
               target="_blank"
               rel="noopener noreferrer"
-              className={`text-white w-full sm:w-fit text-[16px] bg-black py-3 rounded-2xl px-5 hover:px-6 ${
-                dark ? "text-[#f1f1f1] shadow-2xl" : "text-black"
-              } disCD flex justify-center items-center hover:bg-black/80 overflow-hidden z-10 transition-all duration-300 ease-in-out group/cta relative`}
+              className={`w-full sm:w-fit text-[16px] bg-black py-3 rounded-2xl px-5 hover:px-6 text-white disCD flex justify-center items-center hover:bg-black/80 overflow-hidden z-10 transition-all duration-300 ease-in-out group/cta relative`}
             >
               <div className="absolute inset-0 -translate-x-full group-hover/cta:translate-x-full transition-transform duration-1000 bg-gradient-to-r from-transparent via-white/20 to-transparent"></div>
               <span className="relative z-10">Hire me</span>
@@ -176,11 +165,7 @@ const Hero = () => {
             <ul
               className={`text-white w-fit backdrop-blur-md border border-green-600/30 bg-green-600/10 py-3 rounded-3xl px-8 hover:[box-shadow:1px_1px_5px_rgba(0,0,0,.1)] transition-all duration-300 ease-in-out`}
             >
-              <li
-                className={`text-[14px] sm:text-[16px] ${
-                  dark ? "text-white" : "text-green-600"
-                }`}
-              >
+              <li className={`text-[14px] sm:text-[16px] text-green-600`}>
                 Available for work
               </li>
             </ul>

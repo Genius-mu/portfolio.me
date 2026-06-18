@@ -2,9 +2,8 @@ import { Link } from "react-router-dom";
 import projects from "../utils/products";
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
-import { useContext, useRef } from "react";
-import { ThemeTog } from "../App";
 import { useInView } from "react-intersection-observer";
+import { useRef } from "react";
 
 /* ---------- SpotlightCard ---------- */
 /* Combines spotlight glow with 3D tilt. Spreads any extra props (variants,
@@ -73,7 +72,6 @@ const SpotlightCard = ({
 /* ---------- Section2 ---------- */
 
 const Section2 = () => {
-  const { dark } = useContext(ThemeTog);
   const { ref, inView } = useInView({ threshold: 0.1, triggerOnce: true });
 
   const cardVariants = {
@@ -108,9 +106,7 @@ const Section2 = () => {
       <div className="w-[90%] xl:w-[80%] sm:w-full h-full flex flex-col justify-center gap-y-9 items-center">
         <div className="w-full h-full flex justify-center items-center">
           <h2
-            className={`font-semibold text-4xl tracking-[1px] text-center ${
-              dark ? "text-[#f1f1f1]" : "text-black/90"
-            }`}
+            className={`font-semibold text-4xl tracking-[1px] text-center text-black/90`}
           >
             Projects That Speak for Me
           </h2>
@@ -120,18 +116,12 @@ const Section2 = () => {
           {projects.map((project, index) => (
             <SpotlightCard
               key={project.id || index}
-              spotlightColor={
-                dark ? "rgba(99, 102, 241, 0.25)" : "rgba(30, 60, 21, 0.4)"
-              }
+              spotlightColor={"rgba(30, 60, 21, 0.4)"}
               variants={cardVariants}
               initial="hidden"
               animate={inView ? "visible" : "hidden"}
               transition={{ delay: index * 0.1 }}
-              className={`flex flex-col justify-center items-center gap-y-3 rounded-2xl p-5 w-full h-fit border ${
-                dark
-                  ? "border-[#f1f1f1]/30 bg-[#111]"
-                  : "border-black/20 bg-white/30"
-              }`}
+              className={`flex flex-col justify-center items-center gap-y-3 rounded-2xl p-5 w-full h-fit border border-black/20 bg-white/30`}
             >
               {/* Glass effect layers (kept from your original) */}
               <div
@@ -150,18 +140,12 @@ const Section2 = () => {
               </div>
 
               <h2
-                className={`font-bold w-full text-left text-xl tracking-[1px] z-10 ${
-                  dark ? "text-[#f1f1f1]" : "text-black/90 line-clamp-1"
-                }`}
+                className={`font-bold w-full text-left text-xl tracking-[1px] z-10 -black/90 line-clamp-1`}
               >
                 {project.title}
               </h2>
 
-              <p
-                className={`${
-                  dark ? "text-white" : "text-black/90"
-                } text-base line-clamp-3 z-10`}
-              >
+              <p className={`text-black/90 text-base line-clamp-3 z-10`}>
                 {project.description}
               </p>
 
@@ -169,11 +153,7 @@ const Section2 = () => {
                 <Link
                   to={`/project/${project.id}`}
                   rel="noopener noreferrer"
-                  className={`font-semibold overflow-hidden ${
-                    dark
-                      ? "text-[#f1f1f1] bg-white/10 shadow-lg"
-                      : "text-black/90 bg-black/10"
-                  } w-[40%] text-base py-3 rounded-2xl px-4 flex items-center gap-x-2 transition-all group duration-300 ease-in-out hover:bg-black/30`}
+                  className={`font-semibold overflow-hidden text-black/90 bg-black/10 w-[40%] text-base py-3 rounded-2xl px-4 flex items-center gap-x-2 transition-all group duration-300 ease-in-out hover:bg-black/30`}
                 >
                   View{" "}
                   <span>
