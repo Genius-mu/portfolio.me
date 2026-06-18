@@ -129,7 +129,7 @@ const Section5 = () => {
                         value={values.fullname}
                         placeholder="Full Name"
                         aria-label="Full name"
-                        className={`input w-full rounded-2xl outline-none pl-8 py-4 bg-black/5 text-black/90 border transition-all duration-200 ${
+                        className={`input w-full rounded-2xl outline-none pl-8 py-4 bg-black/5 backdrop-blur-2xl text-black/90 border transition-all duration-200 ${
                           touched.fullname
                             ? isValidName
                               ? "border-green-500"
@@ -150,7 +150,7 @@ const Section5 = () => {
                         onBlur={handleBlur}
                         value={values.email}
                         aria-label="Email address"
-                        className={`input w-full rounded-2xl outline-none pl-8 py-4 bg-black/5 text-black/90 border-black/20 border transition-all duration-200 ${
+                        className={`input w-full rounded-2xl outline-none pl-8 py-4 bg-black/5 backdrop-blur-2xl text-black/90 border-black/20 border transition-all duration-200 ${
                           touched.email
                             ? isValidEmail
                               ? "border-green-500"
@@ -171,7 +171,7 @@ const Section5 = () => {
                     onBlur={handleBlur}
                     value={values.message}
                     aria-label="Message"
-                    className={`w-full h-[10em] resize-none outline-none text-black/90 border-black/20 rounded-2xl pl-6 py-3 bg-black/5 border transition-all duration-200 ${
+                    className={`w-full h-[10em] resize-none outline-none text-black/90 border-black/20 rounded-2xl pl-6 py-3 bg-black/5 backdrop-blur-2xl border transition-all duration-200 ${
                       touched.message
                         ? isValidMessage
                           ? "border-green-500"
