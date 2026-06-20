@@ -2,7 +2,12 @@
 
 * {
   box-sizing: border-box;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
+}
+
+html,
+body {
+  overflow-x: clip;
 }
 
 p {

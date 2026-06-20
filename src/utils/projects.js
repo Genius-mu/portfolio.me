@@ -3,7 +3,7 @@ export default [
     id: "Inkly",
     title: "Inkly - Infinite Canvas Drawing App",
     description:
-      "Inkly is an infinite-canvas drawing app — think Figma's whiteboard or tldraw, scaled down to portfolio size but built with the same architectural ideas. Users draw freehand or with geometric tools, pan and zoom across an unbounded surface, undo/redo any action, erase objects, and export their work as PNG — all with full pan/zoom on desktop (mouse, keyboard, scroll wheel) and mobile (single-finger draw, two-finger pinch/pan). The app is built around a `Drawable` discriminated union: every mark on the canvas is a typed object stored in world-space coordinates, rendered through a view transform that handles hi-DPI scaling, zoom-to-cursor math, and pinch gestures. Zoom preserves the world point under the cursor — the same trick Figma and Procreate use. Strokes are smoothed via quadratic curves through midpoints, killing the jaggedness of raw pointer samples at zero latency cost. Pointer Events unify mouse, touch, and pen input through a single `Map<pointerId, Point>` — the map's size distinguishes single-finger draw from two-finger pan/pinch, so pan and zoom happen in the same frame without jerks. Single-player today, multiplayer-ready by design: a Supabase wrapper exposes a domain API (saveStroke, subscribeToRoom, broadcastAction) that falls back to no-ops until credentials are added, with deterministic ordering by (createdAt, userId) so every client converges to the same canvas.",
+      "An infinite-canvas drawing app in the spirit of Figma's whiteboard or tldraw. Draw freehand or with shapes, pan and zoom across an unbounded surface, undo/redo, erase, and export to PNG — on desktop and touch alike. Every mark is a typed object in world-space coordinates, rendered with zoom-to-cursor math and hi-DPI scaling. Pointer Events unify mouse, touch, and pen so draw and pinch/pan happen in the same frame, and a Supabase domain API makes it multiplayer-ready by design.",
     metaDescription:
       "Inkly: infinite-canvas drawing app with world-space coordinates, zoom-to-cursor, unified pointer input, and realtime-ready architecture. Built with React, TypeScript, Canvas API, Zustand, and Supabase.",
     image: "/images/img71.webp",
@@ -25,7 +25,7 @@ export default [
     id: "CodeFlow",
     title: "CodeFlow - GitHub Analytics Dashboard",
     description:
-      "CodeFlow is a single-page GitHub analytics dashboard that takes any GitHub username and surfaces a year-long contribution heatmap, language distribution, top-starred repos, a 30-day commit timeline, and a sortable, filterable, CSV-exportable repos table — all wrapped in a clean dark/light theme. Built fully client-side with React, TypeScript, Tailwind v4, TanStack Query, Zustand, Zod, and Recharts. Zod validates every API response at the boundary so broken data fails loudly instead of silently corrupting charts. The data layer is fully decoupled from the UI, which made adding features like CSV export trivial. Debouncing filter inputs turned a stuttery experience into a smooth one — a reminder that performance is felt, not just measured.",
+      "A single-page GitHub analytics dashboard: enter any username and get a year-long contribution heatmap, language breakdown, top-starred repos, a 30-day commit timeline, and a sortable, filterable, CSV-exportable repos table — in a clean dark/light theme. Built fully client-side, with Zod validating every API response at the boundary so broken data fails loudly, and debounced filters keeping it smooth.",
     metaDescription:
       "CodeFlow: a GitHub analytics dashboard with contribution heatmaps, language stats, commit timelines, and exportable repo data. Built with React, TypeScript, TanStack Query, and Recharts.",
     image: "/images/img67.webp",
@@ -48,7 +48,7 @@ export default [
     id: "Mordyn",
     title: "Mordyn - Modern E-commerce Storefront",
     description:
-      "Most e-commerce frontends die the same death: filters that reload the page, carts that lose state on refresh, and product grids that feel sluggish the moment you have more than 20 items. Mordyn is a modern storefront built to dodge all three. Users can browse a full product catalog, filter by category and price, sort listings, and manage a shopping cart — all with zero full-page reloads and instant feedback on every interaction. I architected the state layer so the cart persists across sessions without a backend, and decoupled filter logic from the product grid so adding new filter dimensions (size, color, rating) takes minutes instead of a rewrite. Framer Motion animations are tuned to communicate state — adding to cart should feel like something happened, not just look like it. Fully responsive from a 320px phone to a widescreen monitor, because shopping happens everywhere except where you expect it to.",
+      "A modern storefront built to dodge the usual e-commerce pain: filters that reload the page, carts that lose state, and grids that lag past 20 items. Browse the catalog, filter by category and price, sort, and manage a cart — all with zero reloads and instant feedback. The cart persists across sessions without a backend, filter logic is decoupled from the grid, and Framer Motion is tuned to make every action feel like something actually happened.",
     metaDescription:
       "Mordyn: modern, responsive e-commerce storefront with instant filtering, persistent cart, and smooth product browsing. Built with React, Vite, Tailwind, and Framer Motion.",
     image: "/images/img68.webp",
@@ -69,7 +69,7 @@ export default [
     id: "Alubarika",
     title: "Alubarika - FX Trading Platform & Client Management",
     description:
-      "Most independent forex traders lose deals not because of skill, but because their online presence looks like an afterthought — scattered WhatsApp screenshots, no clear service breakdown, and no way for serious clients to verify legitimacy. Alubarika solves that. I built a centralized FX trading platform that lets currency traders showcase services, educate prospects on forex fundamentals, and handle client communication from one polished interface. The result is a website that converts skeptical visitors into trusting clients — with conversion-focused layouts, smooth Framer Motion transitions that feel premium without being slow, and a fully responsive design that holds up from a 320px Android to a 27-inch monitor. Engineered with reusable React components so adding a new service section takes minutes, not hours.",
+      "A centralized platform for independent forex traders to showcase services, educate prospects, and handle client communication from one polished interface — replacing scattered WhatsApp screenshots with something that reads as legitimate. Conversion-focused layouts, smooth Framer Motion transitions, and a fully responsive design from a 320px phone to a 27-inch monitor, built on reusable React components so new service sections drop in fast.",
     metaDescription:
       "Alubarika: professional FX trading platform helping forex traders showcase services, educate clients, and convert prospects. Built with React, Tailwind CSS, and Framer Motion.",
     image: "/images/img24.webp",
@@ -89,7 +89,7 @@ export default [
     id: "ClarityQ",
     title: "ClarityQ - AI-Powered Knowledge Organization & Search",
     description:
-      "Everyone hoards bookmarks, screenshots, and PDFs they swear they'll revisit — and then can't find them when it actually matters. ClarityQ is my answer to that problem. It's an AI-powered resource manager that lets you search your saved content the way you'd describe it to a friend: 'that article about React hooks I read last month' instead of digging through folders. Under the hood, it pairs natural language search with AI-driven categorization and contextual recommendations, so the app surfaces what you need before you finish typing. I designed the architecture so the AI layer is completely decoupled from the UI — meaning the search engine could be swapped or upgraded without touching a single component. Smooth, responsive, and built to make knowledge management feel effortless instead of like a second job.",
+      "An AI-powered resource manager that lets you search saved content the way you'd describe it to a friend — 'that article about React hooks I read last month' — instead of digging through folders. It pairs natural-language search with AI categorization and contextual recommendations, with the AI layer fully decoupled from the UI so the search engine can be swapped or upgraded without touching a single component.",
     metaDescription:
       "ClarityQ: AI-powered knowledge management app with natural language search and smart recommendations. Find any saved resource instantly. React, Tailwind, AI API.",
     image: "/images/img15.webp",
@@ -111,7 +111,7 @@ export default [
     id: "Relay",
     title: "Relay - Team Task & Issue Tracking Software",
     description:
-      "Small teams don't fail because they lack tools — they fail because their tools have ten features they don't need and miss the three they do. Ticket-MA strips ticket management down to what actually moves work forward: create, assign, track, resolve. I built it for teams that want Jira's clarity without Jira's learning curve. Real-time updates keep everyone aligned without Slack pings, and the interface is intuitive enough that a new team member is productive in under five minutes. Architecturally, I separated state management from rendering logic so the app stays snappy even as ticket volume grows, and animations are tuned to communicate state changes (assigned, in-progress, resolved) without distracting from the work itself. A reminder that good software gets out of the way.",
+      "A task and issue tracker stripped to what moves work forward: create, assign, track, resolve — Jira's clarity without its learning curve. Real-time updates keep everyone aligned without Slack pings, and a new teammate is productive in minutes. State management is separated from rendering so it stays snappy as ticket volume grows, with animations tuned to signal status changes (assigned, in-progress, resolved).",
     metaDescription:
       "Relay: lightweight team task and issue tracker with real-time updates and intuitive UX. Boost team productivity without Jira's complexity. Built with React.",
     image: "/images/img6.webp",
@@ -132,7 +132,7 @@ export default [
     id: "Rarely",
     title: "Rarely - Multi-Page SaaS Marketing Site & Design System",
     description:
-      "Marketing sites for dev tools all blur together — the same gradient, the same three feature cards, the same stock dashboard screenshot. Rarely is a multi-page SaaS marketing site built to feel like a product, not a template. Across six routes — landing, pricing, about, resources, case studies, and a 404 — I built one cohesive dark, atmospheric design system: layered red/orange aurora gradients with hand-drawn SVG ridge silhouettes backlighting a chart-style 'skyline' of data labels, a monospace-plus-pixel type pairing, and motion that's entirely CSS keyframes and IntersectionObserver instead of a heavyweight animation library. The header is a single scroll-aware component that morphs from a transparent overlay into a blurred fixed bar, shrinking on scroll, with an animated hamburger drawer and active-route detection via React Router. The interactive pieces earn their place: a monthly/annual billing toggle that drives live pricing, a feature-comparison table, an accordion FAQ, scroll-triggered count-up stats, and filterable resource and case-study grids with live text search. Brand logos are real SVG paths (lucide-react where it has them, react-icons for the marks it dropped, hand-rolled for the socials), and every animation respects prefers-reduced-motion. The lesson: a design system isn't a color palette — it's a hundred small decisions made once and reused everywhere, so five pages feel like one product.",
+      "A multi-page SaaS marketing site built to feel like a product, not a template. Across six routes — landing, pricing, about, resources, case studies, and a 404 — one cohesive dark, atmospheric design system: layered red/orange aurora gradients, hand-drawn SVG ridges, and a monospace-plus-pixel type pairing, with motion done entirely in CSS keyframes and IntersectionObserver. A scroll-aware header morphs from transparent overlay to blurred fixed bar, a billing toggle drives live pricing, and filterable resource and case-study grids add live search — all respecting prefers-reduced-motion.",
     metaDescription:
       "Rarely: a multi-page SaaS marketing site and design system — atmospheric dark UI, scroll-aware header, billing toggle, comparison table, filterable resource and case-study grids. Built with React, React Router, Tailwind, and CSS/IntersectionObserver motion.",
     image: "/images/img75.webp",
@@ -154,7 +154,7 @@ export default [
     id: "TimeDrip",
     title: "TimeDrip - Calculate & Eliminate Time Wastage",
     description:
-      "We all know we waste time — but until you put a dollar amount on it, it doesn't sting enough to change. TimeDrip translates time-wasting habits into hard financial losses, then gives you a personalized action plan to recover them. Log your daily activities, and the app calculates exactly how much your scrolling, context-switching, and unproductive meetings are costing you per day, week, and year. The recommendations engine adapts to your patterns instead of giving generic advice. I built persistence with localStorage so your data stays yours — no account, no backend, no privacy trade-offs — and obsessed over the input flow so logging an activity takes three seconds, not thirty. Because a productivity app you don't open is just another time-waster.",
+      "A productivity app that turns time-wasting habits into hard numbers: log your day and see exactly what scrolling, context-switching, and pointless meetings cost you per day, week, and year — then get a personalized plan to recover them. Recommendations adapt to your patterns, localStorage keeps your data yours (no account, no backend), and logging an activity takes three seconds, not thirty.",
     metaDescription:
       "TimeDrip: productivity app that calculates the financial cost of wasted time and delivers personalized recommendations. Optimize your day. React, Tailwind, localStorage.",
     image: "/images/img32.webp",
@@ -175,7 +175,7 @@ export default [
     id: "HabitXP",
     title: "HabitXP - Build Lasting Habits with Streak Tracking",
     description:
-      "Habit apps fail for one reason: they treat habit-building like data entry instead of identity-building. HabitXP flips that. Every habit logged, every streak extended, every milestone hit is visualized in a way that makes you feel the progress — not just record it. I engineered the persistence layer with both localStorage and IndexedDB so streaks survive offline use, browser crashes, and device migrations (the kind of edge cases that quietly kill user trust in tracker apps). The streak visualizations are tuned for emotional payoff: the moment you log day 30 should feel different from day 3. Fully responsive, smoothly animated, and built around a simple thesis — what you measure, you improve, but what you celebrate, you sustain.",
+      "A habit tracker that treats habit-building as identity, not data entry. Every streak and milestone is visualized for emotional payoff — day 30 should feel different from day 3. Persistence runs on both localStorage and IndexedDB so streaks survive offline use, browser crashes, and device migrations. Built on a simple thesis: what you measure you improve, but what you celebrate you sustain.",
     metaDescription:
       "HabitXP: habit tracker app with streak visualizations and offline-first persistence. Build consistency, celebrate progress. React, Tailwind, IndexedDB.",
     image: "/images/img34.webp",
@@ -197,7 +197,7 @@ export default [
     id: "Padi",
     title: "Padi - Multilingual Voice Assistant for African Languages",
     description:
-      "Voice assistants work flawlessly — if you speak the five languages Silicon Valley considers worth supporting. For the millions of Africans who speak Pidgin, Hausa, or Igbo at home, technology becomes something you adapt to rather than something that adapts to you. Padi changes that. It's a voice assistant that speaks Pidgin with Mama, Hausa with Papa, and Igbo with Grandma — bringing AI into homes that have been excluded from the conversation. Built during a hackathon under tight time constraints (and ranked among the winners), Padi integrates yarnGPT for African-language understanding and was architected so additional dialects can be added without rewriting core logic. The deeper lesson: inclusive technology isn't a feature, it's a design decision made at the start.",
+      "A voice assistant that speaks Pidgin, Hausa, and Igbo — bringing AI into homes excluded from the mainstream, five-language world of Silicon Valley assistants. Built during a hackathon (and ranked among the winners), it integrates yarnGPT for African-language understanding and is architected so new dialects can be added without rewriting core logic. Inclusive tech as a decision made at the start, not a feature bolted on.",
     metaDescription:
       "Padi: hackathon-winning voice assistant for Pidgin, Hausa, and Igbo. Bringing AI to African languages. Built with Flutter and yarnGPT.",
     image: "/images/img20.webp",
@@ -220,7 +220,7 @@ export default [
     id: "Invoice Generator",
     title: "Invoice Generator - Fast Professional Invoice Creator",
     description:
-      "Freelancers don't need another bloated SaaS with monthly fees to send a $200 invoice. They need to type the details, hit download, and get back to work. That's exactly what Invoice Generator does. No signup, no subscription, no upsell — just a clean form, instant PDF generation, and a professional-looking invoice in under 60 seconds. I handled PDF generation entirely client-side, which means client data never touches a server (a real concern for freelancers handling sensitive client info). Field validation prevents the common errors that get invoices rejected by accounting departments, and the layout was designed to look credible whether the recipient is a startup founder or a Fortune 500 procurement officer. Sometimes the best product is the one that respects the user's time.",
+      "A no-signup, no-subscription invoice creator for freelancers: type the details, hit download, and get a professional PDF in under 60 seconds. PDF generation is fully client-side, so client data never touches a server, and field validation prevents the errors that get invoices bounced by accounting. Sometimes the best product is the one that respects the user's time.",
     metaDescription:
       "Invoice Generator: free, fast, client-side invoice creator for freelancers. No signup, instant PDF download, professional templates. React, Tailwind.",
     image: "/images/img8.webp",
@@ -242,7 +242,7 @@ export default [
     id: "Spelling Game",
     title: "Spelling Game - Interactive Spelling Improvement Tool",
     description:
-      "Learning apps usually pick a side: either they're fun and forget the learning, or they're educational and forget the fun. Spelling Game refuses the trade-off. It's a fast, animated, instantly-rewarding spelling trainer that gives feedback the moment you commit to an answer — keeping the dopamine loop tight enough to make practice addictive. I tuned the game loop so wrong answers teach instead of punish, and the score system is calibrated to reward consistency over streaks (because real learning is showing up daily, not getting one perfect run). Smooth Framer Motion animations make every interaction feel alive without slowing the pace. A small project that taught me a big lesson: in education tech, friction is the enemy of learning.",
+      "A fast, animated spelling trainer that gives feedback the moment you commit to an answer, keeping the dopamine loop tight enough to make practice addictive. Wrong answers teach instead of punish, and the score system rewards consistency over lucky streaks. Smooth Framer Motion keeps every interaction alive without slowing the pace — because in education tech, friction is the enemy of learning.",
     metaDescription:
       "Spelling Game: interactive spelling trainer with instant feedback, score tracking, and addictive game loop. Make learning effortless. React, Framer Motion.",
     image: "/images/img38.webp",
@@ -262,7 +262,7 @@ export default [
     id: "HeB",
     title: "Heart Breaking - Creative Emotional Design Portfolio",
     description:
-      "Most portfolios prove you can build. Heart Breaking proves you can feel. It's a deliberately atmospheric, dark-themed creative piece that uses pacing, motion, and restraint to communicate emotion the way a short film would — through what's shown and what's withheld. I built it as a deliberate exercise in using technical tools (Framer Motion choreography, custom timing functions, layered typography) to create something that lingers after the tab closes. The challenge wasn't the code — it was knowing when to stop adding. Every animation curve, every fade duration, every silence between sections was chosen. The takeaway: technical skill becomes craft when you know what to leave out.",
+      "A deliberately atmospheric, dark-themed creative piece that uses pacing, motion, and restraint to communicate emotion the way a short film would — through what's shown and what's withheld. Built as an exercise in using technical tools (Framer Motion choreography, custom timing functions, layered typography) to make something that lingers after the tab closes. The hard part wasn't the code; it was knowing when to stop adding.",
     metaDescription:
       "Heart Breaking: atmospheric, emotionally-driven creative portfolio piece. Dark aesthetic, choreographed motion, cinematic pacing. React, Framer Motion.",
     image: "/images/img18.webp",
@@ -275,7 +275,7 @@ export default [
     id: "CryptoEn",
     title: "CryptoEn - Modern Cryptocurrency Payment Platform",
     description:
-      "Crypto interfaces have a trust problem. Most look either intimidatingly technical or suspiciously cartoonish — and both kill conversion for new users. CryptoEn was my attempt at the third path: a sleek, dark-themed payment platform that looks like fintech, not like a meme coin. I designed every interaction around reducing the cognitive load that makes first-time crypto users freeze — clear visual hierarchy, predictable patterns, status indicators that explain what's happening before the user has to ask. The result is an interface that feels familiar to anyone who's used a banking app, while still respecting the technical realities of blockchain transactions. Sometimes the most innovative work is making unfamiliar things feel obvious.",
+      "A sleek, dark-themed crypto payment platform designed to look like fintech, not a meme coin. Every interaction is built to reduce the cognitive load that makes first-time crypto users freeze — clear visual hierarchy, predictable patterns, and status indicators that explain what's happening before you have to ask. Familiar to anyone who's used a banking app, while still respecting the realities of blockchain.",
     metaDescription:
       "CryptoEn: sleek dark-themed crypto payment platform designed to onboard first-time users with fintech-grade UX. React, Tailwind, Framer Motion.",
     image: "/images/img17.webp",
@@ -295,7 +295,7 @@ export default [
     id: "CrossChain",
     title: "CrossChain - Multi-Chain Asset Bridge & Transfer",
     description:
-      "Cross-chain bridges have a brutal UX reputation — and a worse security one. Users have lost millions to bridges that prioritized speed over safety, or hid critical confirmation steps behind confusing flows. CrossChain is my take on getting both right. It enables secure asset transfers across Ethereum, Polygon, and Arbitrum with an interface that surfaces transaction risks before users sign, not after. I integrated smart contract interactions with web3.js and engineered the confirmation flow so users always know exactly what they're approving, what it costs, and what could go wrong. The technical challenge was real — async chain interactions, gas estimation, error recovery — but the UX challenge was harder: making blockchain feel as predictable as Venmo.",
+      "A multi-chain bridge for secure asset transfers across Ethereum, Polygon, and Arbitrum, with an interface that surfaces transaction risks before users sign — not after. Smart-contract interactions run through web3.js, and the confirmation flow always shows what you're approving, what it costs, and what could go wrong. The real challenge wasn't the async chain logic — it was making blockchain feel as predictable as Venmo.",
     metaDescription:
       "CrossChain: secure multi-chain bridge for Ethereum, Polygon, and Arbitrum with transparent risk surfacing. Built with React, web3.js, and smart contracts.",
     image: "/images/img22.webp",
@@ -319,7 +319,7 @@ export default [
     id: "web3Q",
     title: "web3Q - Web3 Asset Transfer & Blockchain Bridge",
     description:
-      "Web3 onboarding is where most users quit. Wallet popups, gas warnings, network switches — every step is a chance to lose someone forever. web3Q is built to keep them. It's a streamlined asset transfer platform across Ethereum, Polygon, and Arbitrum that treats every interaction as a moment of trust to be earned. I integrated wallet connection, network detection, and transaction signing into a single coherent flow, with clear feedback at each step so users never feel stranded mid-transaction. Animations weren't decoration — they were communication, signaling progress on operations that take 15-60 seconds (an eternity in UI time). The deeper engineering challenge was handling chain reorgs, RPC failures, and dropped transactions gracefully. The deeper UX challenge was making all of that invisible.",
+      "A streamlined asset-transfer platform across Ethereum, Polygon, and Arbitrum that treats every step as trust to be earned. Wallet connection, network detection, and transaction signing live in one coherent flow with clear feedback so users never feel stranded mid-transaction, and animations signal progress on operations that take 15–60 seconds. Under the hood it handles chain reorgs, RPC failures, and dropped transactions gracefully.",
     metaDescription:
       "web3Q: streamlined Web3 asset transfer across Ethereum, Polygon, and Arbitrum with onboarding-first UX. React, web3.js, Tailwind, Framer Motion.",
     image: "/images/img23.webp",
@@ -342,7 +342,7 @@ export default [
     id: "Vektor",
     title: "Vektor - Professional Business Website & Brand Builder",
     description:
-      "A business with a weak website doesn't lose customers — it loses them silently, before any conversation can happen. Vektor is a modern business website template engineered to fix the two killers I see most often: confusing navigation and a brand identity that whispers when it should speak. Clean section hierarchy guides visitors from curiosity to contact without making them think. Smooth, purposeful interactions build the kind of subconscious trust that makes people pick up the phone. I built the layout system to be modular, so swapping in new services, testimonials, or case studies takes minutes — meaning the site stays fresh as the business grows instead of becoming a relic the team's afraid to touch.",
+      "A modern business website template engineered to fix the two killers I see most: confusing navigation and a brand identity that whispers when it should speak. Clean section hierarchy moves visitors from curiosity to contact without making them think, and purposeful interactions build quiet trust. The layout system is modular, so swapping in new services, testimonials, or case studies takes minutes — keeping the site fresh as the business grows.",
     metaDescription:
       "Vektor: modern business website template with clean navigation, strong brand identity, and modular content sections. React, Tailwind, Framer Motion.",
     image: "/images/img13.webp",
@@ -362,7 +362,7 @@ export default [
     id: "Special Todo",
     title: "Special Todo - Elegant Task Management App",
     description:
-      "The todo app is a developer cliché — and that's exactly why I rebuilt it. Not to add features, but to study the boring fundamentals: how does a task feel as you complete it? How does the app behave when you reload after losing internet? What's the right animation curve for an item being deleted versus checked off? Special Todo is the result of obsessing over those tiny details. localStorage persistence means your tasks survive refreshes and offline use without a single backend call. Smooth, intentional animations make checking off a task quietly satisfying. It's a small app, but every interaction was deliberate — because the difference between forgettable software and software people actually use lives in the details no one would think to ask for.",
+      "The todo app is a developer cliché — which is exactly why I rebuilt it, not for features but to study the fundamentals: how a task feels as you complete it, how the app behaves offline, the right curve for deleting versus checking off. localStorage persistence survives refreshes and offline use with zero backend calls, and every animation is deliberate. The difference between forgettable and used software lives in those details.",
     metaDescription:
       "Special Todo: elegant React task manager with offline persistence and intentional micro-interactions. Productivity that respects the user. React, Tailwind, localStorage.",
     image: "/images/img52.webp",
@@ -382,7 +382,7 @@ export default [
     id: "Electiz",
     title: "Electiz - Electrical Services Professional Landing Page",
     description:
-      "Electricians are some of the most skilled tradespeople around — and some of the worst-served by web design. Most electrical service sites look like they were built in 2009 and never updated, costing real businesses real customers. Electiz is what a modern electrical services landing page should look like: confident visuals, clear service breakdowns, prominent calls-to-action, and a layout structured around how customers actually decide to hire (credibility first, then services, then contact). I built it fully responsive because the customer searching for an emergency electrician is on their phone, not at a desk. The conversion-focused architecture means every section earns its place by either building trust or driving action. No fluff, no filler.",
+      "A modern landing page for electrical services — an industry mostly stuck with sites that look built in 2009. Confident visuals, clear service breakdowns, and prominent calls-to-action, structured around how customers actually decide to hire: credibility first, then services, then contact. Fully responsive, because the person searching for an emergency electrician is on their phone, not at a desk.",
     metaDescription:
       "Electiz: conversion-focused landing page for electrical services. Clean visuals, mobile-first design, credibility-driven layout. React, Tailwind, Framer Motion.",
     image: "/images/img57.webp",
@@ -402,7 +402,7 @@ export default [
     id: "DOM",
     title: "DOM - AI Image Generation Landing Page",
     description:
-      "AI image generation is one of the most exciting tech shifts in years — but most products selling it look indistinguishable from each other. DOM is my refined take on standing out in a crowded space. I started from an existing design concept and rebuilt it with sharper visual hierarchy, smoother interactions, and a layout that actually showcases what the AI can do instead of burying it under marketing copy. Integrated with an image generation API so the demos are real outputs, not stock illustrations — because nothing kills credibility in the AI space faster than fake examples. The takeaway from this build: when everyone is shouting about AI, the differentiator is no longer the model — it's the experience wrapped around it.",
+      "A refined take on the AI image-generation landing page, in a space where most products look identical. Rebuilt from an existing concept with sharper visual hierarchy, smoother interactions, and a layout that actually showcases what the AI can do instead of burying it under copy. Wired to a real image-generation API so the demos are actual outputs — because nothing kills credibility in AI faster than fake examples.",
     metaDescription:
       "DOM: AI image generation landing page with refined design and live demo integration. Stand out in the crowded AI space. React, Tailwind, image generation API.",
     image: "/images/img11.webp",
@@ -423,7 +423,7 @@ export default [
     id: "Tania",
     title: "Tania - Wellness & Massage Service Landing Page",
     description:
-      "Wellness brands sell a feeling, not a service — and most websites in the space completely miss that. Loud colors, cluttered layouts, and aggressive CTAs in an industry that exists to help people slow down. Tania is the opposite. Refined from an original design concept, it uses calming palettes, generous whitespace, and softly-paced animations to make the booking experience feel like the start of the relaxation, not an interruption to it. Every spacing decision was tuned to feel like a deep breath. The responsive flow holds that calm from desktop to mobile without compromise. A reminder that great UX isn't always about efficiency — sometimes it's about emotional alignment with what the product actually delivers.",
+      "A wellness and massage landing page that sells a feeling, not a service. Where the industry tends toward loud colors and aggressive CTAs, Tania uses calming palettes, generous whitespace, and softly-paced animations so booking feels like the start of the relaxation, not an interruption to it. Every spacing decision was tuned to feel like a deep breath, holding that calm from desktop to mobile.",
     metaDescription:
       "Tania: wellness and massage service landing page with calming, emotionally-aligned design. Booking experience that begins the relaxation. React, Tailwind, Framer Motion.",
     image: "/images/img72.webp",
@@ -444,7 +444,7 @@ export default [
     id: "Omega Hardwood",
     title: "Omega Hardwood — Premium Charcoal Supplier Website",
     description:
-      "Omega Hardwood is a fully responsive, multi-page React website built for a premium French charcoal supplier, featuring a polished design system anchored in cinematic hero sections with layered gradient overlays, animated ember particles, and glassmorphic UI elements. The site spans six core pages — Home, About, Blog, Contact, and product flows — each crafted with Framer Motion animations including scroll-triggered reveals, staggered cascades, gradient text highlights, and interactive hover effects. Key functional features include a fully working blog system with live search, category filtering, pagination, an article modal reader, and newsletter subscription with form validation; a contact page with a validated multi-field form, embedded interactive map, expandable FAQ accordion, and animated submission states; and a smart scroll-aware navigation header that morphs between floating and fixed states, with a slide-in mobile drawer, active route detection, and integrated utility bar. Built with React, React Router, Tailwind CSS, Framer Motion, and Lucide icons, the project showcases modern UI patterns, accessibility-conscious interactions, and clean component architecture optimized for both desktop and mobile experiences.",
+      "A fully responsive, multi-page React site for a premium French charcoal supplier, anchored by cinematic hero sections with layered gradient overlays, animated ember particles, and glassmorphic UI. Six pages of Framer Motion work — scroll-triggered reveals, staggered cascades, gradient text — plus a working blog with live search, category filtering, pagination, and a modal reader; a validated contact form with embedded map and FAQ accordion; and a scroll-aware header that morphs between floating and fixed states with a slide-in mobile drawer.",
     metaDescription:
       "Omega Hardwood: is a fully responsive, multi-page React website built for a premium French charcoal supplier, featuring a polished design system anchored in cinematic hero sections with layered gradient overlays, animated ember particles, and glassmorphic UI elements. React, Tailwind, Framer Motion.",
     image: "/images/img62.webp",
@@ -464,7 +464,7 @@ export default [
     id: "Estate Zoom",
     title: "Estate Zoom - Real Estate Property Search Platform",
     description:
-      "Real estate platforms are some of the most-used and worst-designed apps people interact with — clunky filters, slow maps, and contact forms that disappear into the void. Estate Zoom is my answer to all three. It's a modern property search platform where listings load fast, the map and list views stay synchronized, and contacting an agent feels as direct as texting a friend. I integrated a map API to power location-based discovery and engineered the filter logic to update results without reloading the page, because every reload is a moment users mentally check out. The deeper goal was emotional: house-hunting is stressful, and the product that respects that stress wins. Buying a home is the biggest decision most people make — the platform that helps them shouldn't make it harder.",
+      "A modern property-search platform built to fix the three things real-estate apps get wrong: clunky filters, slow maps, and contact forms that vanish into the void. Listings load fast, map and list views stay synchronized, and contacting an agent feels as direct as texting a friend. A map API powers location-based discovery and filters update without reloading — because every reload is a moment users mentally check out.",
     metaDescription:
       "Estate Zoom: modern real estate platform with synchronized map search, instant filters, and direct agent contact. Property search that respects users. React, Tailwind, map API.",
     image: "/images/img65.webp",
