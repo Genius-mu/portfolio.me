@@ -64,12 +64,44 @@ const ProjectsView = () => {
           <h1 className="text-3xl font-bold tracking-[1px] text-black/90 sm:text-4xl xl:text-5xl">
             {project.title}
           </h1>
-          {project.metaDescription && (
-            <p className="mt-3 max-w-[680px] text-base text-black/55 sm:text-lg">
-              {project.metaDescription}
-            </p>
-          )}
         </motion.div>
+
+        {/* Description */}
+        <motion.section
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.3 }}
+          transition={{ duration: 0.5 }}
+          className="mb-12"
+        >
+          <h2 className={labelClass}>Description</h2>
+          <p className="max-w-[760px] text-[15px] leading-relaxed text-black/70 sm:text-base">
+            {project.description}
+          </p>
+        </motion.section>
+
+        {/* Technologies */}
+        {project.stacks && project.stacks.length > 0 && (
+          <motion.section
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.3 }}
+            transition={{ duration: 0.5 }}
+            className="mb-14"
+          >
+            <h2 className={labelClass}>Technologies</h2>
+            <div className="flex flex-wrap gap-3">
+              {project.stacks.map((tech, i) => (
+                <span
+                  key={i}
+                  className="rounded-full border border-green-600/40 bg-green-600/10 px-4 py-1 text-sm font-medium text-green-700 transition-colors duration-200 hover:bg-green-600/20"
+                >
+                  {tech}
+                </span>
+              ))}
+            </div>
+          </motion.section>
+        )}
 
         {/* Actions */}
         <div className="mb-14 flex flex-wrap gap-3">
@@ -100,43 +132,6 @@ const ProjectsView = () => {
               loading="lazy"
             />
           </motion.div>
-        )}
-
-        {/* Description */}
-        <motion.section
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, amount: 0.3 }}
-          transition={{ duration: 0.5 }}
-          className="mb-12"
-        >
-          <h2 className={labelClass}>Description</h2>
-          <p className="max-w-[760px] text-[15px] leading-relaxed text-black/70 sm:text-base">
-            {project.description}
-          </p>
-        </motion.section>
-
-        {/* Technologies */}
-        {project.stacks && project.stacks.length > 0 && (
-          <motion.section
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, amount: 0.3 }}
-            transition={{ duration: 0.5 }}
-            className="mb-14"
-          >
-            <h2 className={labelClass}>Technologies</h2>
-            <div className="flex flex-wrap gap-3">
-              {project.stacks.map((tech, i) => (
-                <span
-                  key={i}
-                  className="rounded-full border border-green-600/30 bg-green-600/10 px-4 py-2 text-sm font-medium text-green-700 transition-colors duration-200 hover:bg-green-600/20"
-                >
-                  {tech}
-                </span>
-              ))}
-            </div>
-          </motion.section>
         )}
 
         {/* Gallery */}
@@ -172,17 +167,17 @@ const ProjectsView = () => {
           {prevProject ? (
             <Link
               to={`/project/${prevProject.id}`}
-              className="group flex items-center gap-2 text-black/60 transition-colors hover:text-black"
+              className="group flex min-w-0 items-center gap-2 text-black/60 transition-colors hover:text-black"
             >
               <ArrowLeft
                 size={20}
-                className="transition-transform duration-200 group-hover:-translate-x-1"
+                className="shrink-0 transition-transform duration-200 group-hover:-translate-x-1"
               />
-              <span className="text-left">
+              <span className="min-w-0 text-left">
                 <span className="block text-xs uppercase tracking-wide opacity-60">
                   Previous
                 </span>
-                <span className="block font-medium line-clamp-1">
+                <span className="hidden sm:block font-medium truncate">
                   {prevProject.title}
                 </span>
               </span>
@@ -194,19 +189,19 @@ const ProjectsView = () => {
           {nextProject ? (
             <Link
               to={`/project/${nextProject.id}`}
-              className="group flex items-center gap-2 text-right text-black/60 transition-colors hover:text-black"
+              className="group flex min-w-0 items-center gap-2 text-right text-black/60 transition-colors hover:text-black"
             >
-              <span>
+              <span className="min-w-0 text-right">
                 <span className="block text-xs uppercase tracking-wide opacity-60">
                   Next
                 </span>
-                <span className="block font-medium line-clamp-1">
+                <span className="hidden sm:block font-medium truncate">
                   {nextProject.title}
                 </span>
               </span>
               <ArrowRight
                 size={20}
-                className="transition-transform duration-200 group-hover:translate-x-1"
+                className="shrink-0 transition-transform duration-200 group-hover:translate-x-1"
               />
             </Link>
           ) : (
