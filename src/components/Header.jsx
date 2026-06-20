@@ -98,12 +98,12 @@ function DockLabel({ children, className = "", ...rest }) {
     <AnimatePresence>
       {isVisible && (
         <motion.div
-          initial={{ opacity: 0, y: 0 }}
-          animate={{ opacity: 1, y: -10 }}
-          exit={{ opacity: 0, y: 0 }}
+          initial={{ opacity: 0, y: -4 }}
+          animate={{ opacity: 1, y: 0 }}
+          exit={{ opacity: 0, y: -4 }}
           transition={{ duration: 0.2 }}
           style={{ x: "-50%" }}
-          className={`absolute -top-7 left-1/2 w-fit whitespace-pre rounded-md border px-2 py-1 text-xs sm:text-sm bg-white/90 border-black/10 text-black z-50 ${className}`}
+          className={`absolute top-full mt-2 left-1/2 w-fit whitespace-pre rounded-md border px-2 py-1 text-xs sm:text-sm bg-white/90 border-black/10 text-black z-50 ${className}`}
           role="tooltip"
         >
           {children}
@@ -176,19 +176,19 @@ const Header = () => {
 
   const dockConfig = isMobile
     ? {
-        baseItemSize: 44,
-        magnification: 60,
-        panelHeight: 60,
+        baseItemSize: 47,
+        magnification: 55,
+        panelHeight: 65,
         distance: 120,
         gap: 8,
         iconSize: "w-5 h-5",
       }
     : {
         baseItemSize: 50,
-        magnification: 70,
+        magnification: 60,
         panelHeight: 70,
-        distance: 180,
-        gap: 14,
+        distance: 70,
+        gap: 8,
         iconSize: "w-6 h-6",
       };
 
