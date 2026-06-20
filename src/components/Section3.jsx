@@ -29,7 +29,7 @@ const Section3 = () => {
             whileInView="visible"
             viewport={{ once: false, amount: 0.2 }}
             transition={{ delay: 0.1 }}
-            className={`max-w-[800px] pl-5 border-l-3 rounded-l-[3px] border-gray-400 text-[14px] hover:border-green-400 my-3 hover:my-0 hover:py-3 hover:bg-green-600/10 transition duration-200 sm:text-[16px] text-black/70 sm:line-clamp-7 line-clamp-3`}
+            className={`max-w-[800px] pl-5 border-l-3 rounded-l-[3px] border-gray-400 text-[14px] hover:border-green-400 my-3 hover:my-0 hover:py-3 hover:bg-green-600/10 transition duration-200 sm:text-[16px] text-black/70 sm:line-clamp-7 line-clamp-4`}
           >
             I'm Mustapha Adegbite, a Frontend Developer who builds fast,
             responsive, and visually engaging web experiences with{" "}
@@ -47,7 +47,7 @@ const Section3 = () => {
             whileInView="visible"
             viewport={{ once: false, amount: 0.2 }}
             transition={{ delay: 0.3 }}
-            className={`max-w-[800px] pl-5 border-l-3 rounded-l-[3px] border-gray-400 text-[14px] hover:border-green-400 my-3 hover:my-0 hover:py-3 hover:bg-green-600/10 transition duration-200 sm:text-[16px] text-black/70 sm:line-clamp-7 line-clamp-3`}
+            className={`max-w-[800px] pl-5 border-l-3 rounded-l-[3px] border-gray-400 text-[14px] hover:border-green-400 my-3 hover:my-0 hover:py-3 hover:bg-green-600/10 transition duration-200 sm:text-[16px] text-black/70 sm:line-clamp-7 line-clamp-4`}
           >
             My journey into frontend development grew from curiosity into
             shipped products.{" "}
@@ -67,7 +67,7 @@ const Section3 = () => {
             whileInView="visible"
             viewport={{ once: false, amount: 0.2 }}
             transition={{ delay: 0.1 }}
-            className={`max-w-[800px] pl-5 border-l-3 rounded-l-[3px] border-gray-400 hover:border-green-400 my-3 hover:my-0 hover:py-3 hover:bg-green-600/10 transition duration-200 text-[14px] sm:text-[16px] text-black/70 sm:line-clamp-7 line-clamp-3`}
+            className={`max-w-[800px] pl-5 border-l-3 rounded-l-[3px] border-gray-400 hover:border-green-400 my-3 hover:my-0 hover:py-3 hover:bg-green-600/10 transition duration-200 text-[14px] sm:text-[16px] text-black/70 sm:line-clamp-7 line-clamp-4`}
             // style={{
             //   display: "-webkit-box",
             //   overflow: "hidden",
