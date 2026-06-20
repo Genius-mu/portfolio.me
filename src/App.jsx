@@ -8,8 +8,8 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import ProjectsView from "./components/ProjectsView";
 import DotField from "./components/DotField";
-// import SplashCursor from "./components/SplashCursor";
-// import CustomCursor from "./components/CustomCu";
+import SplashCursor from "./components/SplashCursor";
+import CustomCursor from "./components/CustomCu";
 
 function App() {
   const location = useLocation();
@@ -48,8 +48,8 @@ function App() {
         <Footer />
       </main>
 
-      {/* <SplashCursor /> */}
-      {/* <CustomCursor /> */}
+      <SplashCursor />
+      <CustomCursor />
     </div>
   );
 }

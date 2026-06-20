@@ -3,7 +3,7 @@ import projects from "../utils/projects";
 import { motion } from "framer-motion";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 import { useRef } from "react";
-import { useInView } from "react-intersection-observer";
+// import { useInView } from "react-intersection-observer";
 
 const SpotlightCard = ({
   children,
@@ -67,7 +67,7 @@ const SpotlightCard = ({
 /* ---------- Section2 ---------- */
 
 const Section2 = () => {
-  const { ref, inView } = useInView({ threshold: 0.1, triggerOnce: true });
+  // const { ref, inView } = useInView({ threshold: 0.1, triggerOnce: true });
 
   const cardVariants = {
     hidden: { opacity: 0, y: 30, scale: 0.95 },
@@ -81,7 +81,7 @@ const Section2 = () => {
 
   return (
     <section
-      ref={ref}
+      // ref={ref}
       className="sec3 z-50 w-full h-fit pt-[6%] pb-[6%] flex justify-center items-center"
     >
       {/* SVG Filter for Glass Effect */}
@@ -114,7 +114,9 @@ const Section2 = () => {
               spotlightColor={"rgba(0, 0, 0, 0.4)"}
               variants={cardVariants}
               initial="hidden"
-              animate={inView ? "visible" : "hidden"}
+              // animate={inView ? "visible" : "hidden"}
+              whileInView="visible"
+              viewport={{ once: true, amount: 0.2 }}
               transition={{ delay: index * 0.1 }}
               whileHover={{ y: -4 }}
               className={`flex flex-col gap-y-3 overflow-hidden rounded-2xl p-5 w-full h-fit border border-black/40 bg-white/30`}
