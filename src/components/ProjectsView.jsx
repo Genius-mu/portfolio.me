@@ -177,7 +177,7 @@ const ProjectsView = () => {
                 <span className="block text-xs uppercase tracking-wide opacity-60">
                   Previous
                 </span>
-                <span className="hidden sm:block font-medium truncate">
+                <span className="hidden md:block font-medium truncate">
                   {prevProject.title}
                 </span>
               </span>
@@ -195,7 +195,7 @@ const ProjectsView = () => {
                 <span className="block text-xs uppercase tracking-wide opacity-60">
                   Next
                 </span>
-                <span className="hidden sm:block font-medium truncate">
+                <span className="hidden md:block font-medium truncate">
                   {nextProject.title}
                 </span>
               </span>
