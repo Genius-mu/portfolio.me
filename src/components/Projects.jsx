@@ -42,7 +42,7 @@ const SpotlightCard = ({
       ref={divRef}
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}
-      className={`relative overflow-hidden transition-transform duration-200 ease-out group/spot ${className}`}
+      className={`relative isolate overflow-hidden transition-transform duration-200 ease-out group/spot ${className}`}
       style={{
         "--mouse-x": "50%",
         "--mouse-y": "50%",
@@ -82,7 +82,7 @@ const Section2 = () => {
   return (
     <section
       ref={ref}
-      className="sec3 w-full h-fit pt-[6%] pb-[6%] flex justify-center items-center"
+      className="sec3 z-50 w-full h-fit pt-[6%] pb-[6%] flex justify-center items-center"
     >
       {/* SVG Filter for Glass Effect */}
       <svg className="absolute w-0 h-0">
@@ -90,7 +90,7 @@ const Section2 = () => {
           <filter id="glass-distortion">
             <feTurbulence
               type="fractalNoise"
-  git            baseFrequency="0.01"
+              baseFrequency="0.01"
               numOctaves="3"
             />
             <feDisplacementMap in="SourceGraphic" scale="5" />

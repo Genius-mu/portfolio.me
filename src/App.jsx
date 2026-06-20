@@ -1,17 +1,19 @@
 import "./App.css";
 // import "boxicons";
 import { AnimatePresence } from "framer-motion";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, useLocation } from "react-router-dom";
 import Home from "./Home";
 import Projects from "./components/Projects";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import ProjectsView from "./components/ProjectsView";
 import DotField from "./components/DotField";
-import SplashCursor from "./components/SplashCursor";
-import CustomCursor from "./components/CustomCu";
+// import SplashCursor from "./components/SplashCursor";
+// import CustomCursor from "./components/CustomCu";
 
 function App() {
+  const location = useLocation();
+
   return (
     <div className="relative min-h-screen bg-gray-50 text-black">
       <div className="fixed inset-0 z-0">
@@ -36,17 +38,18 @@ function App() {
 
       <main className="relative z-10">
         <AnimatePresence mode="wait">
-          <Routes>
+          <Routes location={location} key={location.pathname}>
             <Route path="/" element={<Home />} />
             <Route path="/projects" element={<Projects />} />
             <Route path="/project/:id" element={<ProjectsView />} />
           </Routes>
-          <Footer />
         </AnimatePresence>
+
+        <Footer />
       </main>
 
-      <SplashCursor />
-      <CustomCursor />
+      {/* <SplashCursor /> */}
+      {/* <CustomCursor /> */}
     </div>
   );
 }
