@@ -29,7 +29,7 @@ function App() {
           bulgeOnly
           gradientFrom="#A855F7"
           gradientTo="#B497CF"
-          glowColor="rgba(0,0,0,.8)"
+          glowColor="rgba(0,0,0,.5)"
         />
       </div>
 
