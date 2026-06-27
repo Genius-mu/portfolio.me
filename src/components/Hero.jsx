@@ -114,7 +114,7 @@ const BlurText = ({
 /* ---------- Hero ---------- */
 
 const Hero = () => {
-  const headingClass = `font-bold sm:text-center md:text-left text-black text-xl sm:text-4xl tracking-[1px] overflow-hidden`;
+  const headingClass = `font-bold sm:text-center md:text-center text-black text-xl sm:text-4xl tracking-[1px] overflow-hidden`;
 
   return (
     <section className="sec2 w-full h-fit pt-[6%] pb-[6%] flex justify-center items-center">
