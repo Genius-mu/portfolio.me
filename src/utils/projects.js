@@ -1,25 +1,23 @@
 export default [
   {
-    id: "Inkly",
-    title: "Inkly - Infinite Canvas Drawing App",
+    id: "NIO",
+    title: "NIO - Electric Vehicle Brand Experience",
     description:
-      "An infinite-canvas drawing app in the spirit of Figma's whiteboard or tldraw. Draw freehand or with shapes, pan and zoom across an unbounded surface, undo/redo, erase, and export to PNG — on desktop and touch alike. Every mark is a typed object in world-space coordinates, rendered with zoom-to-cursor math and hi-DPI scaling. Pointer Events unify mouse, touch, and pen so draw and pinch/pan happen in the same frame, and a Supabase domain API makes it multiplayer-ready by design.",
+      "A multi-page brand site for an electric-vehicle marque, built to read like a high-end showroom instead of a template — dark, editorial, and motion-led across Home, About, Our Power, Products, and Contact. The Products page runs a category-filtered vehicle grid that reflows with animated layout transitions, and every section shares one reusable scroll-triggered reveal that slides content in from the top-right. Tailwind v4 design tokens drive a condensed display type system and a strict greyscale palette, and the whole thing honors prefers-reduced-motion — the restraint was the hard part, not the motion.",
     metaDescription:
-      "Inkly: infinite-canvas drawing app with world-space coordinates, zoom-to-cursor, unified pointer input, and realtime-ready architecture. Built with React, TypeScript, Canvas API, Zustand, and Supabase.",
-    image: "/images/img71.webp",
-    live: "https://inklyma.vercel.app/",
-    code: "https://github.com/Genius-mu/Inkly",
+      "NIO: a multi-page electric-vehicle brand experience with a filterable model grid, battery-swap storytelling, and signature scroll-triggered reveals. Built with React, Vite, Tailwind CSS v4, Framer Motion, and React Router.",
+    image: "/images/img76.webp",
+    live: "https://nio-khaki.vercel.app/",
+    code: "https://github.com/Genius-mu/nio",
     stacks: [
       "react",
-      "typescript",
       "vite",
       "tailwind CSS",
-      "zustand",
-      "canvas API",
-      "pointer events API",
-      "supabase",
+      "framer motion",
+      "react-router",
+      "react-icons",
     ],
-    imgs: ["/images/img70.webp", "/images/img71.webp"],
+    imgs: ["/images/img76.webp", "/images/img77.webp"],
   },
   {
     id: "CodeFlow",
@@ -66,6 +64,28 @@ export default [
     imgs: ["/images/img68.webp", "/images/img69.webp"],
   },
   {
+    id: "Inkly",
+    title: "Inkly - Infinite Canvas Drawing App",
+    description:
+      "An infinite-canvas drawing app in the spirit of Figma's whiteboard or tldraw. Draw freehand or with shapes, pan and zoom across an unbounded surface, undo/redo, erase, and export to PNG — on desktop and touch alike. Every mark is a typed object in world-space coordinates, rendered with zoom-to-cursor math and hi-DPI scaling. Pointer Events unify mouse, touch, and pen so draw and pinch/pan happen in the same frame, and a Supabase domain API makes it multiplayer-ready by design.",
+    metaDescription:
+      "Inkly: infinite-canvas drawing app with world-space coordinates, zoom-to-cursor, unified pointer input, and realtime-ready architecture. Built with React, TypeScript, Canvas API, Zustand, and Supabase.",
+    image: "/images/img71.webp",
+    live: "https://inklyma.vercel.app/",
+    code: "https://github.com/Genius-mu/Inkly",
+    stacks: [
+      "react",
+      "typescript",
+      "vite",
+      "tailwind CSS",
+      "zustand",
+      "canvas API",
+      "pointer events API",
+      "supabase",
+    ],
+    imgs: ["/images/img70.webp", "/images/img71.webp"],
+  },
+  {
     id: "Alubarika",
     title: "Alubarika - FX Trading Platform & Client Management",
     description:
@@ -107,27 +127,27 @@ export default [
     ],
     imgs: ["/images/img28.webp", "/images/img29.webp"],
   },
-  {
-    id: "Relay",
-    title: "Relay - Team Task & Issue Tracking Software",
-    description:
-      "A task and issue tracker stripped to what moves work forward: create, assign, track, resolve — Jira's clarity without its learning curve. Real-time updates keep everyone aligned without Slack pings, and a new teammate is productive in minutes. State management is separated from rendering so it stays snappy as ticket volume grows, with animations tuned to signal status changes (assigned, in-progress, resolved).",
-    metaDescription:
-      "Relay: lightweight team task and issue tracker with real-time updates and intuitive UX. Boost team productivity without Jira's complexity. Built with React.",
-    image: "/images/img6.webp",
-    live: "https://relay-alpha-three.vercel.app/",
-    code: "https://github.com/Genius-mu/Ticket-Management-App",
-    stacks: [
-      "react",
-      "vite",
-      "tailwind CSS",
-      "framer motion",
-      "react-router",
-      "lucide-react",
-      "localStorage",
-    ],
-    imgs: ["/images/img30.webp", "/images/img31.webp"],
-  },
+  // {
+  //   id: "Relay",
+  //   title: "Relay - Team Task & Issue Tracking Software",
+  //   description:
+  //     "A task and issue tracker stripped to what moves work forward: create, assign, track, resolve — Jira's clarity without its learning curve. Real-time updates keep everyone aligned without Slack pings, and a new teammate is productive in minutes. State management is separated from rendering so it stays snappy as ticket volume grows, with animations tuned to signal status changes (assigned, in-progress, resolved).",
+  //   metaDescription:
+  //     "Relay: lightweight team task and issue tracker with real-time updates and intuitive UX. Boost team productivity without Jira's complexity. Built with React.",
+  //   image: "/images/img6.webp",
+  //   live: "https://relay-alpha-three.vercel.app/",
+  //   code: "https://github.com/Genius-mu/Ticket-Management-App",
+  //   stacks: [
+  //     "react",
+  //     "vite",
+  //     "tailwind CSS",
+  //     "framer motion",
+  //     "react-router",
+  //     "lucide-react",
+  //     "localStorage",
+  //   ],
+  //   imgs: ["/images/img30.webp", "/images/img31.webp"],
+  // },
   {
     id: "Rarely",
     title: "Rarely - Multi-Page SaaS Marketing Site & Design System",
