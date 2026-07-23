@@ -130,7 +130,8 @@ const Hero = () => {
           />
           <BlurText
             as="h2"
-            text="Frontend Engineer"
+            // text="Frontend Engineer"
+            text="Frontend Developer"
             delay={150}
             animateBy="words"
             direction="top"
