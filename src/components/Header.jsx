@@ -223,8 +223,8 @@ const Header = () => {
       label: "Resume",
       onClick: () => {
         const link = document.createElement("a");
-        link.href = "/resume.pdf";
-        link.download = "mustapha adegbite's resume.pdf";
+        link.href = "/Mustapha_Adegbite_Resume.pdf";
+        link.download = "Mustapha_Adegbite_Resume.pdf";
         link.click();
       },
     },
