@@ -122,7 +122,7 @@ const Hero = () => {
         <div className="flex flex-col sm:items-center md:items-start gap-y-1 sm:gap-y-3">
           <BlurText
             as="h2"
-            text="Hey, I’m Mustapha Adegbite."
+            text="Hey, I'm Mustapha Adegbite."
             delay={120}
             animateBy="words"
             direction="top"
@@ -130,8 +130,7 @@ const Hero = () => {
           />
           <BlurText
             as="h2"
-            // text="Frontend Engineer"
-            text="Frontend Developer"
+            text="Full Stack Developer"
             delay={150}
             animateBy="words"
             direction="top"
@@ -144,12 +143,9 @@ const Hero = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 1 }}
             viewport={{ once: false, amount: 0.3 }}
-            className={`max-w-[500px] sm:text-center md:text-left text-black/60`}
+            className={`max-w-[500px] sm:text-center md:text-justify text-black/60`}
           >
-            Most websites lose leads silently — I built Saim to fix that. It's
-            an embeddable AI sales agent that qualifies visitors, captures
-            contacts, and works 24/7. I don't just write React code; I ship
-            products that solve real problems.
+            I build complete web solutions — from scalable APIs and database design to pixel-perfect frontends. Most companies struggle connecting their backend with great UX; I ship full-stack products that solve real problems, 24/7. Whether it's architecting a REST API or building responsive interfaces, I deliver end-to-end.
           </motion.p>
 
           <div className="mt-1 flex flex-col sm:flex-row gap-y-2 w-fit gap-x-2">

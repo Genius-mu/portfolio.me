@@ -29,17 +29,18 @@ const Section3 = () => {
             whileInView="visible"
             viewport={{ once: false, amount: 0.2 }}
             transition={{ delay: 0.1 }}
-            className={`max-w-[800px] pl-5 border-l-3 rounded-l-[3px] border-gray-400 text-[14px] hover:border-green-400 my-3 hover:my-0 hover:py-3 hover:bg-green-600/10 transition duration-200 sm:text-[16px] text-black/70 sm:line-clamp-7 line-clamp-4`}
+            className={`max-w-[800px] pl-5 border-l-3 rounded-l-[3px] border-gray-400 text-[14px] hover:border-green-400 transition duration-200 sm:text-[16px] text-black/70 sm:line-clamp-7 line-clamp-4 text-justify`}
           >
-            I'm Mustapha Adegbite, a Frontend Developer who builds fast,
-            responsive, and visually engaging web experiences with{" "}
-            <span className={`text-black`}>
-              {" "}
-              React, Next.js, and modern JavaScript (ES6+).
+            I'm Mustapha Adegbite, a Full Stack Developer who builds complete
+            web solutions with{" "}
+            <span className={`text-black bg-blue-500/20`}>
+              React, Next.js, Node.js, and modern databases (MongoDB,
+              PostgreSQL).
             </span>{" "}
-            I don't just implement designs — I engineer interfaces that feel
-            alive. Clean component architecture, precise Tailwind styling, and
-            micro-interactions that turn good UIs into great products.
+            I don't just implement designs or write backend code in isolation —
+            I architect end-to-end systems where scalable APIs meet
+            pixel-perfect frontends. Clean architecture, optimized databases,
+            and interfaces that feel alive.
           </motion.p>
           <motion.p
             variants={cardVariants}
@@ -47,19 +48,22 @@ const Section3 = () => {
             whileInView="visible"
             viewport={{ once: false, amount: 0.2 }}
             transition={{ delay: 0.3 }}
-            className={`max-w-[800px] pl-5 border-l-3 rounded-l-[3px] border-gray-400 text-[14px] hover:border-green-400 my-3 hover:my-0 hover:py-3 hover:bg-green-600/10 transition duration-200 sm:text-[16px] text-black/70 sm:line-clamp-7 line-clamp-4`}
+            className={`max-w-[800px] pl-5 border-l-3 rounded-l-[3px] border-gray-400 text-[14px] hover:border-green-400 transition duration-200 sm:text-[16px] text-black/70 sm:line-clamp-7 line-clamp-4 text-justify`}
           >
-            My journey into frontend development grew from curiosity into
-            shipped products.{" "}
+            My journey into full-stack development grew from shipping products
+            end-to-end.{" "}
             <span className={`text-black`}>
-              I built Saim — an embeddable AI sales agent that qualifies leads
-              and captures contacts 24/7, a reusable React component library
-              built for consistency and scale, and Padi — a multilingual,
-              offline-first voice assistant designed for Nigerian senior
-              citizens, built during a hackathon with accessibility at its core.
+              I built Saim — an embeddable AI sales agent with a <span className="bg-green-500/20">React frontend,
+              Express backend, and MongoDB database that qualifies leads and
+              captures contacts 24/7; </span> a reusable React component library with
+              API integrations; and Padi — a multilingual, offline-first voice
+              assistant with both frontend UI and backend NLP processing,
+              designed for Nigerian senior citizens and built during a hackathon
+              with accessibility at its core.
             </span>{" "}
-            Every project pushed me to think beyond visuals — obsessing over
-            structure, performance, and real human impact.
+            Every project pushed me to think beyond isolated layers — connecting
+            databases to APIs to user interfaces, obsessing over performance,
+            scalability, and real human impact.
           </motion.p>
           <motion.p
             variants={cardVariants}
@@ -67,29 +71,24 @@ const Section3 = () => {
             whileInView="visible"
             viewport={{ once: false, amount: 0.2 }}
             transition={{ delay: 0.1 }}
-            className={`max-w-[800px] pl-5 border-l-3 rounded-l-[3px] border-gray-400 hover:border-green-400 my-3 hover:my-0 hover:py-3 hover:bg-green-600/10 transition duration-200 text-[14px] sm:text-[16px] text-black/70 sm:line-clamp-7 line-clamp-4`}
-            // style={{
-            //   display: "-webkit-box",
-            //   overflow: "hidden",
-            //   WebkitBoxOrient: "vertical",
-            //   WebkitLineClamp: "2",
-            //   WebkitLineBreak: "2",
-            // }}
+            className={`max-w-[800px] pl-5 border-l-3 rounded-l-[3px] border-gray-400 hover:border-green-400 transition duration-200 text-[14px] sm:text-[16px] text-black/70 sm:line-clamp-7 line-clamp-4 text-justify`}
           >
-            Great web experiences live at the intersection of performance,
-            accessibility, and emotion — fast load times, inclusive design, and{" "}
-            <span className={`text-black`}>
-              interactions that feel human, not just functional.
+            Great products live at the intersection of{" "}
+            <span className={`text-black bg-red-500/20`}>
+              robust APIs, optimal database queries, performance, accessibility,
+              and emotion
             </span>{" "}
-            When I'm not shipping, I'm studying what the best builders do
-            differently — then applying it. I document what I build, what
-            breaks, and how I grow.
+            — fast response times, efficient data handling, inclusive design,
+            and interactions that feel human, not just functional. When I'm not
+            shipping, I'm studying architecture patterns, database optimization,
+            and what great builders do differently — then applying it across the
+            stack.
           </motion.p>
 
           <h2
             className={`font-semibold text-2xl tracking-[1px] text-center text-black/90`}
           >
-            Let’s connect and create something amazing.
+            Let's connect and build something amazing together.
           </h2>
         </div>
       </section>

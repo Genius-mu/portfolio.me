@@ -48,7 +48,7 @@ function App() {
         <Footer />
       </main>
 
-      <SplashCursor />
+      {/* <SplashCursor /> */}
       <CustomCursor />
     </div>
   );
