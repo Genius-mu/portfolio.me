@@ -18,7 +18,7 @@ const X = ({ className }) => (
 const Footer = () => {
   return (
     <>
-      <footer className="w-full relative pt-5 pb-19 flex flex-col gap-y-1 justify-center items-center z-50">
+      <footer className="w-full relative pt-5 pb-19 flex flex-col gap-y-1 justify-center items-center z-50 bg-gray-100">
         {/* Top gradient line */}
         <hr
           className={`absolute top-0 left-0 right-0 border-0 h-px bg-gradient-to-r from-transparent via-black/30 to-transparent z-10`}

@@ -31,8 +31,8 @@ const Section3 = () => {
             transition={{ delay: 0.1 }}
             className={`max-w-[800px] pl-5 border-l-3 rounded-l-[3px] border-gray-400 text-[14px] hover:border-green-400 transition duration-200 sm:text-[16px] text-black/70 sm:line-clamp-7 line-clamp-4 text-justify`}
           >
-            I'm Mustapha Adegbite, a Full Stack Developer who builds complete
-            web solutions with{" "}
+            I'm Mustapha Adegbite, a Frontend Engineer who builds complete web
+            solutions with{" "}
             <span className={`text-black bg-blue-500/20`}>
               React, Next.js, Node.js, and modern databases (MongoDB,
               PostgreSQL).
@@ -53,13 +53,16 @@ const Section3 = () => {
             My journey into full-stack development grew from shipping products
             end-to-end.{" "}
             <span className={`text-black`}>
-              I built Saim — an embeddable AI sales agent with a <span className="bg-green-500/20">React frontend,
-              Express backend, and MongoDB database that qualifies leads and
-              captures contacts 24/7; </span> a reusable React component library with
-              API integrations; and Padi — a multilingual, offline-first voice
-              assistant with both frontend UI and backend NLP processing,
-              designed for Nigerian senior citizens and built during a hackathon
-              with accessibility at its core.
+              I built Saim — an embeddable AI sales agent with a{" "}
+              <span className="bg-green-500/20">
+                React frontend, Express backend, and MongoDB database that
+                qualifies leads and captures contacts 24/7;{" "}
+              </span>{" "}
+              a reusable React component library with API integrations; and Padi
+              — a multilingual, offline-first voice assistant with both frontend
+              UI and backend NLP processing, designed for Nigerian senior
+              citizens and built during a hackathon with accessibility at its
+              core.
             </span>{" "}
             Every project pushed me to think beyond isolated layers — connecting
             databases to APIs to user interfaces, obsessing over performance,

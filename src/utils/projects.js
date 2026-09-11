@@ -64,6 +64,30 @@ export default [
     imgs: ["/images/img68.webp", "/images/img69.webp"],
   },
   {
+    id: "Navilag",
+    title: "Navilag",
+    description:
+      "NaviLag is a campus survival platform built to end the sheer panic of being a lost student at the University of Lagos. I built it because I vividly remember the frustration of wandering under the scorching sun, missing crucial classes, and relying on confusing directions just to find a lecture hall. By combining interactive campus routing, dynamic timetables, and a past-question archive, it acts as the ultimate digital upperclassman. Architecturally, I paired a Next.js frontend and Supabase backend with custom spatial routing to keep map interactions lightning-fast even on patchy campus networks, proving that good software should instantly get you where you need to be without adding to your stress.",
+    metaDescription:
+      "NaviLag: The ultimate campus navigation and student survival app for the University of Lagos. Find real-time shortcuts, dynamic timetables, and past questions instantly. Built with React.",
+    image: "/images/img80.webp",
+    live: "https://navilag.vercel.app/",
+    code: "https://github.com/Genius-mu/[navilag-repo]",
+    stacks: [
+      "React",
+      "Next.js",
+      "TypeScript",
+      "Node.js",
+      "Supabase",
+      "PostgreSQL",
+      "Leaflet",
+      "Framer Motion",
+      "Tailwind CSS",
+      "Vercel",
+    ],
+    imgs: ["/images/img78.webp", "/images/img79.webp"],
+  },
+  {
     id: "Inkly",
     title: "Inkly - Infinite Canvas Drawing App",
     description:
@@ -105,28 +129,28 @@ export default [
     ],
     imgs: ["/images/img25.webp", "/images/img26.webp"],
   },
-  {
-    id: "ClarityQ",
-    title: "ClarityQ - AI-Powered Knowledge Organization & Search",
-    description:
-      "An AI-powered resource manager that lets you search saved content the way you'd describe it to a friend — 'that article about React hooks I read last month' — instead of digging through folders. It pairs natural-language search with AI categorization and contextual recommendations, with the AI layer fully decoupled from the UI so the search engine can be swapped or upgraded without touching a single component.",
-    metaDescription:
-      "ClarityQ: AI-powered knowledge management app with natural language search and smart recommendations. Find any saved resource instantly. React, Tailwind, AI API.",
-    image: "/images/img15.webp",
-    live: "https://clarity-q.vercel.app/",
-    code: "https://github.com/Genius-mu/ClarityQ",
-    stacks: [
-      "react",
-      "vite",
-      "tailwind CSS",
-      "framer motion",
-      "AI API",
-      "react-router",
-      "lucide-react",
-      "localStorage",
-    ],
-    imgs: ["/images/img28.webp", "/images/img29.webp"],
-  },
+  // {
+  //   id: "ClarityQ",
+  //   title: "ClarityQ - AI-Powered Knowledge Organization & Search",
+  //   description:
+  //     "An AI-powered resource manager that lets you search saved content the way you'd describe it to a friend — 'that article about React hooks I read last month' — instead of digging through folders. It pairs natural-language search with AI categorization and contextual recommendations, with the AI layer fully decoupled from the UI so the search engine can be swapped or upgraded without touching a single component.",
+  //   metaDescription:
+  //     "ClarityQ: AI-powered knowledge management app with natural language search and smart recommendations. Find any saved resource instantly. React, Tailwind, AI API.",
+  //   image: "/images/img15.webp",
+  //   live: "https://clarity-q.vercel.app/",
+  //   code: "https://github.com/Genius-mu/ClarityQ",
+  //   stacks: [
+  //     "react",
+  //     "vite",
+  //     "tailwind CSS",
+  //     "framer motion",
+  //     "AI API",
+  //     "react-router",
+  //     "lucide-react",
+  //     "localStorage",
+  //   ],
+  //   imgs: ["/images/img28.webp", "/images/img29.webp"],
+  // },
   // {
   //   id: "Relay",
   //   title: "Relay - Team Task & Issue Tracking Software",
@@ -278,19 +302,19 @@ export default [
     ],
     imgs: ["/images/img38.webp", "/images/img39.webp"],
   },
-  {
-    id: "HeB",
-    title: "Heart Breaking - Creative Emotional Design Portfolio",
-    description:
-      "A deliberately atmospheric, dark-themed creative piece that uses pacing, motion, and restraint to communicate emotion the way a short film would — through what's shown and what's withheld. Built as an exercise in using technical tools (Framer Motion choreography, custom timing functions, layered typography) to make something that lingers after the tab closes. The hard part wasn't the code; it was knowing when to stop adding.",
-    metaDescription:
-      "Heart Breaking: atmospheric, emotionally-driven creative portfolio piece. Dark aesthetic, choreographed motion, cinematic pacing. React, Framer Motion.",
-    image: "/images/img18.webp",
-    live: "https://heart-breaking.vercel.app/",
-    code: "https://github.com/Genius-mu/heart-breaking",
-    stacks: ["react", "vite", "tailwind CSS", "framer motion", "lucide-react"],
-    imgs: ["/images/img40.webp", "/images/img41.webp"],
-  },
+  // {
+  //   id: "HeB",
+  //   title: "Heart Breaking - Creative Emotional Design Portfolio",
+  //   description:
+  //     "A deliberately atmospheric, dark-themed creative piece that uses pacing, motion, and restraint to communicate emotion the way a short film would — through what's shown and what's withheld. Built as an exercise in using technical tools (Framer Motion choreography, custom timing functions, layered typography) to make something that lingers after the tab closes. The hard part wasn't the code; it was knowing when to stop adding.",
+  //   metaDescription:
+  //     "Heart Breaking: atmospheric, emotionally-driven creative portfolio piece. Dark aesthetic, choreographed motion, cinematic pacing. React, Framer Motion.",
+  //   image: "/images/img18.webp",
+  //   live: "https://heart-breaking.vercel.app/",
+  //   code: "https://github.com/Genius-mu/heart-breaking",
+  //   stacks: ["react", "vite", "tailwind CSS", "framer motion", "lucide-react"],
+  //   imgs: ["/images/img40.webp", "/images/img41.webp"],
+  // },
   {
     id: "CryptoEn",
     title: "CryptoEn - Modern Cryptocurrency Payment Platform",
@@ -335,29 +359,29 @@ export default [
     ],
     imgs: ["/images/img44.webp", "/images/img45.webp"],
   },
-  {
-    id: "web3Q",
-    title: "web3Q - Web3 Asset Transfer & Blockchain Bridge",
-    description:
-      "A streamlined asset-transfer platform across Ethereum, Polygon, and Arbitrum that treats every step as trust to be earned. Wallet connection, network detection, and transaction signing live in one coherent flow with clear feedback so users never feel stranded mid-transaction, and animations signal progress on operations that take 15–60 seconds. Under the hood it handles chain reorgs, RPC failures, and dropped transactions gracefully.",
-    metaDescription:
-      "web3Q: streamlined Web3 asset transfer across Ethereum, Polygon, and Arbitrum with onboarding-first UX. React, web3.js, Tailwind, Framer Motion.",
-    image: "/images/img23.webp",
-    live: "https://web3-gm.vercel.app/",
-    code: "https://github.com/Genius-mu/web3",
-    stacks: [
-      "react",
-      "vite",
-      "tailwind CSS",
-      "framer motion",
-      "web3.js",
-      "ethers.js",
-      "metamask",
-      "react-router",
-      "lucide-react",
-    ],
-    imgs: ["/images/img46.webp", "/images/img47.webp"],
-  },
+  // {
+  //   id: "web3Q",
+  //   title: "web3Q - Web3 Asset Transfer & Blockchain Bridge",
+  //   description:
+  //     "A streamlined asset-transfer platform across Ethereum, Polygon, and Arbitrum that treats every step as trust to be earned. Wallet connection, network detection, and transaction signing live in one coherent flow with clear feedback so users never feel stranded mid-transaction, and animations signal progress on operations that take 15–60 seconds. Under the hood it handles chain reorgs, RPC failures, and dropped transactions gracefully.",
+  //   metaDescription:
+  //     "web3Q: streamlined Web3 asset transfer across Ethereum, Polygon, and Arbitrum with onboarding-first UX. React, web3.js, Tailwind, Framer Motion.",
+  //   image: "/images/img23.webp",
+  //   live: "https://web3-gm.vercel.app/",
+  //   code: "https://github.com/Genius-mu/web3",
+  //   stacks: [
+  //     "react",
+  //     "vite",
+  //     "tailwind CSS",
+  //     "framer motion",
+  //     "web3.js",
+  //     "ethers.js",
+  //     "metamask",
+  //     "react-router",
+  //     "lucide-react",
+  //   ],
+  //   imgs: ["/images/img46.webp", "/images/img47.webp"],
+  // },
   {
     id: "Vektor",
     title: "Vektor - Professional Business Website & Brand Builder",
@@ -378,26 +402,26 @@ export default [
     ],
     imgs: ["/images/img48.webp", "/images/img49.webp"],
   },
-  {
-    id: "Special Todo",
-    title: "Special Todo - Elegant Task Management App",
-    description:
-      "The todo app is a developer cliché — which is exactly why I rebuilt it, not for features but to study the fundamentals: how a task feels as you complete it, how the app behaves offline, the right curve for deleting versus checking off. localStorage persistence survives refreshes and offline use with zero backend calls, and every animation is deliberate. The difference between forgettable and used software lives in those details.",
-    metaDescription:
-      "Special Todo: elegant React task manager with offline persistence and intentional micro-interactions. Productivity that respects the user. React, Tailwind, localStorage.",
-    image: "/images/img52.webp",
-    live: "https://todap.vercel.app/",
-    code: "https://github.com/Genius-mu/to-do",
-    stacks: [
-      "react",
-      "vite",
-      "tailwind CSS",
-      "framer motion",
-      "lucide-react",
-      "localStorage",
-    ],
-    imgs: ["/images/img52.webp", "/images/img53.webp"],
-  },
+  // {
+  //   id: "Special Todo",
+  //   title: "Special Todo - Elegant Task Management App",
+  //   description:
+  //     "The todo app is a developer cliché — which is exactly why I rebuilt it, not for features but to study the fundamentals: how a task feels as you complete it, how the app behaves offline, the right curve for deleting versus checking off. localStorage persistence survives refreshes and offline use with zero backend calls, and every animation is deliberate. The difference between forgettable and used software lives in those details.",
+  //   metaDescription:
+  //     "Special Todo: elegant React task manager with offline persistence and intentional micro-interactions. Productivity that respects the user. React, Tailwind, localStorage.",
+  //   image: "/images/img52.webp",
+  //   live: "https://todap.vercel.app/",
+  //   code: "https://github.com/Genius-mu/to-do",
+  //   stacks: [
+  //     "react",
+  //     "vite",
+  //     "tailwind CSS",
+  //     "framer motion",
+  //     "lucide-react",
+  //     "localStorage",
+  //   ],
+  //   imgs: ["/images/img52.webp", "/images/img53.webp"],
+  // },
   {
     id: "Electiz",
     title: "Electiz - Electrical Services Professional Landing Page",

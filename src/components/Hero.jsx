@@ -130,7 +130,7 @@ const Hero = () => {
           />
           <BlurText
             as="h2"
-            text="Full Stack Developer"
+            text="Frontend Engineer"
             delay={150}
             animateBy="words"
             direction="top"
@@ -145,7 +145,11 @@ const Hero = () => {
             viewport={{ once: false, amount: 0.3 }}
             className={`max-w-[500px] sm:text-center md:text-justify text-black/60`}
           >
-            I build complete web solutions — from scalable APIs and database design to pixel-perfect frontends. Most companies struggle connecting their backend with great UX; I ship full-stack products that solve real problems, 24/7. Whether it's architecting a REST API or building responsive interfaces, I deliver end-to-end.
+            I build complete web solutions — from scalable APIs and database
+            design to pixel-perfect frontends. Most companies struggle
+            connecting their backend with great UX; I ship full-stack products
+            that solve real problems, 24/7. Whether it's architecting a REST API
+            or building responsive interfaces, I deliver end-to-end.
           </motion.p>
 
           <div className="mt-1 flex flex-col sm:flex-row gap-y-2 w-fit gap-x-2">

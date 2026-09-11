@@ -16,7 +16,7 @@ function App() {
 
   return (
     <div className="relative min-h-screen bg-gray-50 text-black">
-      <div className="fixed inset-0 z-0">
+      {/* <div className="fixed inset-0 z-0">
         <DotField
           dotRadius={1.5}
           dotSpacing={14}
@@ -31,7 +31,7 @@ function App() {
           gradientTo="#B497CF"
           glowColor="rgba(0,0,0,.5)"
         />
-      </div>
+      </div> */}
 
       {/* Header lives OUTSIDE main now → its fixed dock sits in the root stacking context */}
       <Header />
