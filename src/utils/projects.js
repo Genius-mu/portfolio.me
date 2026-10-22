@@ -114,7 +114,7 @@ export default [
   },
   {
     id: "Inkly",
-    title: "Inkly - Infinite Canvas Drawing App",
+    title: "Inkly",
     description:
       "An infinite-canvas drawing app in the spirit of Figma's whiteboard or tldraw. Draw freehand or with shapes, pan and zoom across an unbounded surface, undo/redo, erase, and export to PNG — on desktop and touch alike. Every mark is a typed object in world-space coordinates, rendered with zoom-to-cursor math and hi-DPI scaling. Pointer Events unify mouse, touch, and pen so draw and pinch/pan happen in the same frame, and a Supabase domain API makes it multiplayer-ready by design.",
     metaDescription:
@@ -136,7 +136,7 @@ export default [
   },
   {
     id: "Alubarika",
-    title: "Alubarika - FX Trading Platform & Client Management",
+    title: "Alubarika",
     description:
       "A centralized platform for independent forex traders to showcase services, educate prospects, and handle client communication from one polished interface — replacing scattered WhatsApp screenshots with something that reads as legitimate. Conversion-focused layouts, smooth Framer Motion transitions, and a fully responsive design from a 320px phone to a 27-inch monitor, built on reusable React components so new service sections drop in fast.",
     metaDescription:
@@ -242,7 +242,7 @@ export default [
   // },
   {
     id: "HabitXP",
-    title: "HabitXP - Build Lasting Habits with Streak Tracking",
+    title: "HabitXP",
     description:
       "A habit tracker that treats habit-building as identity, not data entry. Every streak and milestone is visualized for emotional payoff — day 30 should feel different from day 3. Persistence runs on both localStorage and IndexedDB so streaks survive offline use, browser crashes, and device migrations. Built on a simple thesis: what you measure you improve, but what you celebrate you sustain.",
     metaDescription:
@@ -287,7 +287,7 @@ export default [
   // },
   {
     id: "Invoice Generator",
-    title: "Invoice Generator - Fast Professional Invoice Creator",
+    title: "Invoice Generator",
     description:
       "A no-signup, no-subscription invoice creator for freelancers: type the details, hit download, and get a professional PDF in under 60 seconds. PDF generation is fully client-side, so client data never touches a server, and field validation prevents the errors that get invoices bounced by accounting. Sometimes the best product is the one that respects the user's time.",
     metaDescription:
@@ -469,7 +469,7 @@ export default [
   },
   {
     id: "DOM",
-    title: "DOM - AI Image Generation Landing Page",
+    title: "DOM - AI Image Generation website",
     description:
       "A refined take on the AI image-generation website, in a space where most products look identical. Rebuilt from an existing concept with sharper visual hierarchy, smoother interactions, and a layout that actually showcases what the AI can do instead of burying it under copy. Wired to a real image-generation API so the demos are actual outputs — because nothing kills credibility in AI faster than fake examples.",
     metaDescription:
@@ -490,7 +490,7 @@ export default [
   },
   {
     id: "Tania",
-    title: "Tania - Wellness & Massage Service Landing Page",
+    title: "Tania",
     description:
       "A wellness and massage landing page that sells a feeling, not a service. Where the industry tends toward loud colors and aggressive CTAs, Tania uses calming palettes, generous whitespace, and softly-paced animations so booking feels like the start of the relaxation, not an interruption to it. Every spacing decision was tuned to feel like a deep breath, holding that calm from desktop to mobile.",
     metaDescription:
@@ -511,7 +511,7 @@ export default [
   },
   {
     id: "Omega Hardwood",
-    title: "Omega Hardwood — Premium Charcoal Supplier Website",
+    title: "Omega Hardwood",
     description:
       "A fully responsive, multi-page React site for a premium French charcoal supplier, anchored by cinematic hero sections with layered gradient overlays, animated ember particles, and glassmorphic UI. Six pages of Framer Motion work — scroll-triggered reveals, staggered cascades, gradient text — plus a working blog with live search, category filtering, pagination, and a modal reader; a validated contact form with embedded map and FAQ accordion; and a scroll-aware header that morphs between floating and fixed states with a slide-in mobile drawer.",
     metaDescription:
@@ -529,26 +529,26 @@ export default [
     ],
     imgs: ["/images/img62.webp", "/images/img63.webp"],
   },
-  {
-    id: "Estate Zoom",
-    title: "Estate Zoom - Real Estate Property Search Platform",
-    description:
-      "A modern property-search platform built to fix the three things real-estate apps get wrong: clunky filters, slow maps, and contact forms that vanish into the void. Listings load fast, map and list views stay synchronized, and contacting an agent feels as direct as texting a friend. A map API powers location-based discovery and filters update without reloading — because every reload is a moment users mentally check out.",
-    metaDescription:
-      "Estate Zoom: modern real estate platform with synchronized map search, instant filters, and direct agent contact. Property search that respects users. React, Tailwind, map API.",
-    image: "/images/img65.webp",
-    live: "https://estate-zoom.vercel.app/",
-    code: "https://github.com/Genius-mu/Chakol-web",
-    stacks: [
-      "react",
-      "vite",
-      "tailwind CSS",
-      "framer motion",
-      "map API",
-      "leaflet",
-      "react-router",
-      "lucide-react",
-    ],
-    imgs: ["/images/img65.webp", "/images/img64.webp"],
-  },
+  // {
+  //   id: "Estate Zoom",
+  //   title: "Estate Zoom - Real Estate Property Search Platform",
+  //   description:
+  //     "A modern property-search platform built to fix the three things real-estate apps get wrong: clunky filters, slow maps, and contact forms that vanish into the void. Listings load fast, map and list views stay synchronized, and contacting an agent feels as direct as texting a friend. A map API powers location-based discovery and filters update without reloading — because every reload is a moment users mentally check out.",
+  //   metaDescription:
+  //     "Estate Zoom: modern real estate platform with synchronized map search, instant filters, and direct agent contact. Property search that respects users. React, Tailwind, map API.",
+  //   image: "/images/img65.webp",
+  //   live: "https://estate-zoom.vercel.app/",
+  //   code: "https://github.com/Genius-mu/Chakol-web",
+  //   stacks: [
+  //     "react",
+  //     "vite",
+  //     "tailwind CSS",
+  //     "framer motion",
+  //     "map API",
+  //     "leaflet",
+  //     "react-router",
+  //     "lucide-react",
+  //   ],
+  //   imgs: ["/images/img65.webp", "/images/img64.webp"],
+  // },
 ];
