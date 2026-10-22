@@ -1,5 +1,30 @@
 export default [
   {
+    id: "Aurea",
+    title: "AUREA",
+    description:
+      "Most luxury real estate websites make the same mistake: they treat exceptional architecture as just another property listing. AUREA takes a different approach. It is a premium private-brokerage experience built around architecturally significant residences, where the property, its materials, and its design matter as much as its price. Visitors can explore a carefully curated collection of luxury homes, discover architectural details, compare property specifications, and enquire about private acquisitions or discreet sales. The experience features editorial-style typography, immersive architectural photography, generous whitespace, and a restrained visual hierarchy that gives each residence room to speak for itself. Rather than overwhelming visitors with endless listings, the interface emphasizes exclusivity through a deliberately selective property collection, detailed residence presentations, and private enquiry calls to action. The experience also includes a private client register for visitors interested in receiving information about off-market residences. I designed the experience to feel closer to an exclusive architecture publication than a conventional real estate portal, using considered spacing, refined content layouts, and a consistent visual language to communicate discretion and sophistication. Fully responsive across desktop and mobile, AUREA demonstrates how thoughtful frontend design can transform property discovery into a more immersive, editorial, and premium digital experience.",
+    metaDescription:
+      "AUREA is a premium luxury real estate website showcasing architecturally significant residences, curated property listings, immersive photography, and private client enquiries through an elegant, responsive interface.",
+    image: "/images/aurea.webp",
+    live: "https://aurea-ruddy.vercel.app/",
+    code: "https://github.com/Genius-mu/aurea",
+    stacks: [
+      "next.js",
+      "react",
+      "typescript",
+      "tailwind CSS",
+      "framer motion",
+      "lucide-react",
+      "three.js",
+      "embla-carousel",
+      "number-flow",
+      "resend",
+      "clsx",
+    ],
+    imgs: ["/images/aurea-1.webp", "/images/aurea-2.webp"],
+  },
+  {
     id: "NIO",
     title: "NIO - Electric Vehicle Brand Experience",
     description:
@@ -172,49 +197,49 @@ export default [
   //   ],
   //   imgs: ["/images/img30.webp", "/images/img31.webp"],
   // },
-  {
-    id: "Rarely",
-    title: "Rarely - Multi-Page SaaS Marketing Site & Design System",
-    description:
-      "A multi-page SaaS marketing site built to feel like a product, not a template. Across six routes — landing, pricing, about, resources, case studies, and a 404 — one cohesive dark, atmospheric design system: layered red/orange aurora gradients, hand-drawn SVG ridges, and a monospace-plus-pixel type pairing, with motion done entirely in CSS keyframes and IntersectionObserver. A scroll-aware header morphs from transparent overlay to blurred fixed bar, a billing toggle drives live pricing, and filterable resource and case-study grids add live search — all respecting prefers-reduced-motion.",
-    metaDescription:
-      "Rarely: a multi-page SaaS marketing site and design system — atmospheric dark UI, scroll-aware header, billing toggle, comparison table, filterable resource and case-study grids. Built with React, React Router, Tailwind, and CSS/IntersectionObserver motion.",
-    image: "/images/img75.webp",
-    live: "https://rarely-nine.vercel.app/",
-    code: "https://github.com/Genius-mu/rarely",
-    stacks: [
-      "react",
-      "vite",
-      "tailwind CSS",
-      "react-router",
-      "lucide-react",
-      "react-icons",
-      "intersection observer API",
-      "CSS animations",
-    ],
-    imgs: ["/images/img74.webp", "/images/img75.webp"],
-  },
-  {
-    id: "TimeDrip",
-    title: "TimeDrip - Calculate & Eliminate Time Wastage",
-    description:
-      "A productivity app that turns time-wasting habits into hard numbers: log your day and see exactly what scrolling, context-switching, and pointless meetings cost you per day, week, and year — then get a personalized plan to recover them. Recommendations adapt to your patterns, localStorage keeps your data yours (no account, no backend), and logging an activity takes three seconds, not thirty.",
-    metaDescription:
-      "TimeDrip: productivity app that calculates the financial cost of wasted time and delivers personalized recommendations. Optimize your day. React, Tailwind, localStorage.",
-    image: "/images/img32.webp",
-    live: "https://time-drip.vercel.app/",
-    code: "https://github.com/Genius-mu/TimeDrip",
-    stacks: [
-      "react",
-      "vite",
-      "tailwind CSS",
-      "framer motion",
-      "react-router",
-      "lucide-react",
-      "localStorage",
-    ],
-    imgs: ["/images/img32.webp", "/images/img33.webp"],
-  },
+  // {
+  //   id: "Rarely",
+  //   title: "Rarely - Multi-Page SaaS Marketing Site & Design System",
+  //   description:
+  //     "A multi-page SaaS marketing site built to feel like a product, not a template. Across six routes — landing, pricing, about, resources, case studies, and a 404 — one cohesive dark, atmospheric design system: layered red/orange aurora gradients, hand-drawn SVG ridges, and a monospace-plus-pixel type pairing, with motion done entirely in CSS keyframes and IntersectionObserver. A scroll-aware header morphs from transparent overlay to blurred fixed bar, a billing toggle drives live pricing, and filterable resource and case-study grids add live search — all respecting prefers-reduced-motion.",
+  //   metaDescription:
+  //     "Rarely: a multi-page SaaS marketing site and design system — atmospheric dark UI, scroll-aware header, billing toggle, comparison table, filterable resource and case-study grids. Built with React, React Router, Tailwind, and CSS/IntersectionObserver motion.",
+  //   image: "/images/img75.webp",
+  //   live: "https://rarely-nine.vercel.app/",
+  //   code: "https://github.com/Genius-mu/rarely",
+  //   stacks: [
+  //     "react",
+  //     "vite",
+  //     "tailwind CSS",
+  //     "react-router",
+  //     "lucide-react",
+  //     "react-icons",
+  //     "intersection observer API",
+  //     "CSS animations",
+  //   ],
+  //   imgs: ["/images/img74.webp", "/images/img75.webp"],
+  // },
+  // {
+  //   id: "TimeDrip",
+  //   title: "TimeDrip - Calculate & Eliminate Time Wastage",
+  //   description:
+  //     "A productivity app that turns time-wasting habits into hard numbers: log your day and see exactly what scrolling, context-switching, and pointless meetings cost you per day, week, and year — then get a personalized plan to recover them. Recommendations adapt to your patterns, localStorage keeps your data yours (no account, no backend), and logging an activity takes three seconds, not thirty.",
+  //   metaDescription:
+  //     "TimeDrip: productivity app that calculates the financial cost of wasted time and delivers personalized recommendations. Optimize your day. React, Tailwind, localStorage.",
+  //   image: "/images/img32.webp",
+  //   live: "https://time-drip.vercel.app/",
+  //   code: "https://github.com/Genius-mu/TimeDrip",
+  //   stacks: [
+  //     "react",
+  //     "vite",
+  //     "tailwind CSS",
+  //     "framer motion",
+  //     "react-router",
+  //     "lucide-react",
+  //     "localStorage",
+  //   ],
+  //   imgs: ["/images/img32.webp", "/images/img33.webp"],
+  // },
   {
     id: "HabitXP",
     title: "HabitXP - Build Lasting Habits with Streak Tracking",
@@ -237,29 +262,29 @@ export default [
     ],
     imgs: ["/images/img34.webp", "/images/img35.webp"],
   },
-  {
-    id: "Padi",
-    title: "Padi - Multilingual Voice Assistant for African Languages",
-    description:
-      "A voice assistant that speaks Pidgin, Hausa, and Igbo — bringing AI into homes excluded from the mainstream, five-language world of Silicon Valley assistants. Built during a hackathon (and ranked among the winners), it integrates yarnGPT for African-language understanding and is architected so new dialects can be added without rewriting core logic. Inclusive tech as a decision made at the start, not a feature bolted on.",
-    metaDescription:
-      "Padi: hackathon-winning voice assistant for Pidgin, Hausa, and Igbo. Bringing AI to African languages. Built with Flutter and yarnGPT.",
-    image: "/images/img20.webp",
-    live: "https://padi-hackathon.vercel.app/",
-    code: "https://github.com/Genius-mu/padi-hackathon",
-    stacks: [
-      "react",
-      "vite",
-      "tailwind CSS",
-      "framer motion",
-      "yarnGPT",
-      "AI API",
-      "react-router",
-      "lucide-react",
-      "web speech API",
-    ],
-    imgs: ["/images/img36.webp", "/images/img37.webp"],
-  },
+  // {
+  //   id: "Padi",
+  //   title: "Padi - Multilingual Voice Assistant for African Languages",
+  //   description:
+  //     "A voice assistant that speaks Pidgin, Hausa, and Igbo — bringing AI into homes excluded from the mainstream, five-language world of Silicon Valley assistants. Built during a hackathon (and ranked among the winners), it integrates yarnGPT for African-language understanding and is architected so new dialects can be added without rewriting core logic. Inclusive tech as a decision made at the start, not a feature bolted on.",
+  //   metaDescription:
+  //     "Padi: hackathon-winning voice assistant for Pidgin, Hausa, and Igbo. Bringing AI to African languages. Built with Flutter and yarnGPT.",
+  //   image: "/images/img20.webp",
+  //   live: "https://padi-hackathon.vercel.app/",
+  //   code: "https://github.com/Genius-mu/padi-hackathon",
+  //   stacks: [
+  //     "react",
+  //     "vite",
+  //     "tailwind CSS",
+  //     "framer motion",
+  //     "yarnGPT",
+  //     "AI API",
+  //     "react-router",
+  //     "lucide-react",
+  //     "web speech API",
+  //   ],
+  //   imgs: ["/images/img36.webp", "/images/img37.webp"],
+  // },
   {
     id: "Invoice Generator",
     title: "Invoice Generator - Fast Professional Invoice Creator",
@@ -282,26 +307,26 @@ export default [
     ],
     imgs: ["/images/img54.webp", "/images/img55.webp"],
   },
-  {
-    id: "Spelling Game",
-    title: "Spelling Game - Interactive Spelling Improvement Tool",
-    description:
-      "A fast, animated spelling trainer that gives feedback the moment you commit to an answer, keeping the dopamine loop tight enough to make practice addictive. Wrong answers teach instead of punish, and the score system rewards consistency over lucky streaks. Smooth Framer Motion keeps every interaction alive without slowing the pace — because in education tech, friction is the enemy of learning.",
-    metaDescription:
-      "Spelling Game: interactive spelling trainer with instant feedback, score tracking, and addictive game loop. Make learning effortless. React, Framer Motion.",
-    image: "/images/img38.webp",
-    live: "https://spell-goat.vercel.app/",
-    code: "https://github.com/Genius-mu/Spell-Goat",
-    stacks: [
-      "react",
-      "vite",
-      "tailwind CSS",
-      "framer motion",
-      "lucide-react",
-      "localStorage",
-    ],
-    imgs: ["/images/img38.webp", "/images/img39.webp"],
-  },
+  // {
+  //   id: "Spelling Game",
+  //   title: "Spelling Game - Interactive Spelling Improvement Tool",
+  //   description:
+  //     "A fast, animated spelling trainer that gives feedback the moment you commit to an answer, keeping the dopamine loop tight enough to make practice addictive. Wrong answers teach instead of punish, and the score system rewards consistency over lucky streaks. Smooth Framer Motion keeps every interaction alive without slowing the pace — because in education tech, friction is the enemy of learning.",
+  //   metaDescription:
+  //     "Spelling Game: interactive spelling trainer with instant feedback, score tracking, and addictive game loop. Make learning effortless. React, Framer Motion.",
+  //   image: "/images/img38.webp",
+  //   live: "https://spell-goat.vercel.app/",
+  //   code: "https://github.com/Genius-mu/Spell-Goat",
+  //   stacks: [
+  //     "react",
+  //     "vite",
+  //     "tailwind CSS",
+  //     "framer motion",
+  //     "lucide-react",
+  //     "localStorage",
+  //   ],
+  //   imgs: ["/images/img38.webp", "/images/img39.webp"],
+  // },
   // {
   //   id: "HeB",
   //   title: "Heart Breaking - Creative Emotional Design Portfolio",
@@ -315,50 +340,50 @@ export default [
   //   stacks: ["react", "vite", "tailwind CSS", "framer motion", "lucide-react"],
   //   imgs: ["/images/img40.webp", "/images/img41.webp"],
   // },
-  {
-    id: "CryptoEn",
-    title: "CryptoEn - Modern Cryptocurrency Payment Platform",
-    description:
-      "A sleek, dark-themed crypto payment platform designed to look like fintech, not a meme coin. Every interaction is built to reduce the cognitive load that makes first-time crypto users freeze — clear visual hierarchy, predictable patterns, and status indicators that explain what's happening before you have to ask. Familiar to anyone who's used a banking app, while still respecting the realities of blockchain.",
-    metaDescription:
-      "CryptoEn: sleek dark-themed crypto payment platform designed to onboard first-time users with fintech-grade UX. React, Tailwind, Framer Motion.",
-    image: "/images/img17.webp",
-    live: "https://cryptoen.vercel.app/",
-    code: "https://github.com/Genius-mu/crypto.me",
-    stacks: [
-      "react",
-      "vite",
-      "tailwind CSS",
-      "framer motion",
-      "react-router",
-      "lucide-react",
-    ],
-    imgs: ["/images/img42.webp", "/images/img43.webp"],
-  },
-  {
-    id: "CrossChain",
-    title: "CrossChain - Multi-Chain Asset Bridge & Transfer",
-    description:
-      "A multi-chain bridge for secure asset transfers across Ethereum, Polygon, and Arbitrum, with an interface that surfaces transaction risks before users sign — not after. Smart-contract interactions run through web3.js, and the confirmation flow always shows what you're approving, what it costs, and what could go wrong. The real challenge wasn't the async chain logic — it was making blockchain feel as predictable as Venmo.",
-    metaDescription:
-      "CrossChain: secure multi-chain bridge for Ethereum, Polygon, and Arbitrum with transparent risk surfacing. Built with React, web3.js, and smart contracts.",
-    image: "/images/img22.webp",
-    live: "https://cross4chain.vercel.app/",
-    code: "https://github.com/Genius-mu/CrossChain",
-    stacks: [
-      "react",
-      "vite",
-      "tailwind CSS",
-      "framer motion",
-      "web3.js",
-      "ethers.js",
-      "smart contracts",
-      "metamask",
-      "react-router",
-      "lucide-react",
-    ],
-    imgs: ["/images/img44.webp", "/images/img45.webp"],
-  },
+  // {
+  //   id: "CryptoEn",
+  //   title: "CryptoEn - Modern Cryptocurrency Payment Platform",
+  //   description:
+  //     "A sleek, dark-themed crypto payment platform designed to look like fintech, not a meme coin. Every interaction is built to reduce the cognitive load that makes first-time crypto users freeze — clear visual hierarchy, predictable patterns, and status indicators that explain what's happening before you have to ask. Familiar to anyone who's used a banking app, while still respecting the realities of blockchain.",
+  //   metaDescription:
+  //     "CryptoEn: sleek dark-themed crypto payment platform designed to onboard first-time users with fintech-grade UX. React, Tailwind, Framer Motion.",
+  //   image: "/images/img17.webp",
+  //   live: "https://cryptoen.vercel.app/",
+  //   code: "https://github.com/Genius-mu/crypto.me",
+  //   stacks: [
+  //     "react",
+  //     "vite",
+  //     "tailwind CSS",
+  //     "framer motion",
+  //     "react-router",
+  //     "lucide-react",
+  //   ],
+  //   imgs: ["/images/img42.webp", "/images/img43.webp"],
+  // },
+  // {
+  //   id: "CrossChain",
+  //   title: "CrossChain - Multi-Chain Asset Bridge & Transfer",
+  //   description:
+  //     "A multi-chain bridge for secure asset transfers across Ethereum, Polygon, and Arbitrum, with an interface that surfaces transaction risks before users sign — not after. Smart-contract interactions run through web3.js, and the confirmation flow always shows what you're approving, what it costs, and what could go wrong. The real challenge wasn't the async chain logic — it was making blockchain feel as predictable as Venmo.",
+  //   metaDescription:
+  //     "CrossChain: secure multi-chain bridge for Ethereum, Polygon, and Arbitrum with transparent risk surfacing. Built with React, web3.js, and smart contracts.",
+  //   image: "/images/img22.webp",
+  //   live: "https://cross4chain.vercel.app/",
+  //   code: "https://github.com/Genius-mu/CrossChain",
+  //   stacks: [
+  //     "react",
+  //     "vite",
+  //     "tailwind CSS",
+  //     "framer motion",
+  //     "web3.js",
+  //     "ethers.js",
+  //     "smart contracts",
+  //     "metamask",
+  //     "react-router",
+  //     "lucide-react",
+  //   ],
+  //   imgs: ["/images/img44.webp", "/images/img45.webp"],
+  // },
   // {
   //   id: "web3Q",
   //   title: "web3Q - Web3 Asset Transfer & Blockchain Bridge",
@@ -382,26 +407,26 @@ export default [
   //   ],
   //   imgs: ["/images/img46.webp", "/images/img47.webp"],
   // },
-  {
-    id: "Vektor",
-    title: "Vektor - Professional Business Website & Brand Builder",
-    description:
-      "A modern business website template engineered to fix the two killers I see most: confusing navigation and a brand identity that whispers when it should speak. Clean section hierarchy moves visitors from curiosity to contact without making them think, and purposeful interactions build quiet trust. The layout system is modular, so swapping in new services, testimonials, or case studies takes minutes — keeping the site fresh as the business grows.",
-    metaDescription:
-      "Vektor: modern business website template with clean navigation, strong brand identity, and modular content sections. React, Tailwind, Framer Motion.",
-    image: "/images/img13.webp",
-    live: "https://vektor-phi.vercel.app/",
-    code: "https://github.com/Genius-mu/Vektor",
-    stacks: [
-      "react",
-      "vite",
-      "tailwind CSS",
-      "framer motion",
-      "react-router",
-      "lucide-react",
-    ],
-    imgs: ["/images/img48.webp", "/images/img49.webp"],
-  },
+  // {
+  //   id: "Vektor",
+  //   title: "Vektor - Professional Business Website & Brand Builder",
+  //   description:
+  //     "A modern business website template engineered to fix the two killers I see most: confusing navigation and a brand identity that whispers when it should speak. Clean section hierarchy moves visitors from curiosity to contact without making them think, and purposeful interactions build quiet trust. The layout system is modular, so swapping in new services, testimonials, or case studies takes minutes — keeping the site fresh as the business grows.",
+  //   metaDescription:
+  //     "Vektor: modern business website template with clean navigation, strong brand identity, and modular content sections. React, Tailwind, Framer Motion.",
+  //   image: "/images/img13.webp",
+  //   live: "https://vektor-phi.vercel.app/",
+  //   code: "https://github.com/Genius-mu/Vektor",
+  //   stacks: [
+  //     "react",
+  //     "vite",
+  //     "tailwind CSS",
+  //     "framer motion",
+  //     "react-router",
+  //     "lucide-react",
+  //   ],
+  //   imgs: ["/images/img48.webp", "/images/img49.webp"],
+  // },
   // {
   //   id: "Special Todo",
   //   title: "Special Todo - Elegant Task Management App",
@@ -423,12 +448,12 @@ export default [
   //   imgs: ["/images/img52.webp", "/images/img53.webp"],
   // },
   {
-    id: "Electiz",
-    title: "Electiz - Electrical Services Professional Landing Page",
+    id: "Electriz",
+    title: "Electriz",
     description:
-      "A modern landing page for electrical services — an industry mostly stuck with sites that look built in 2009. Confident visuals, clear service breakdowns, and prominent calls-to-action, structured around how customers actually decide to hire: credibility first, then services, then contact. Fully responsive, because the person searching for an emergency electrician is on their phone, not at a desk.",
+      "A modern website for electrical services — an industry mostly stuck with sites that look built in 2009. Confident visuals, clear service breakdowns, and prominent calls-to-action, structured around how customers actually decide to hire: credibility first, then services, then contact. Fully responsive, because the person searching for an emergency electrician is on their phone, not at a desk.",
     metaDescription:
-      "Electiz: conversion-focused landing page for electrical services. Clean visuals, mobile-first design, credibility-driven layout. React, Tailwind, Framer Motion.",
+      "Electiz: conversion-focused website for electrical services. Clean visuals, mobile-first design, credibility-driven layout. React, Tailwind, Framer Motion.",
     image: "/images/img57.webp",
     live: "https://electiz-virid.vercel.app/",
     code: "https://github.com/Genius-mu/Electiz",
@@ -446,9 +471,9 @@ export default [
     id: "DOM",
     title: "DOM - AI Image Generation Landing Page",
     description:
-      "A refined take on the AI image-generation landing page, in a space where most products look identical. Rebuilt from an existing concept with sharper visual hierarchy, smoother interactions, and a layout that actually showcases what the AI can do instead of burying it under copy. Wired to a real image-generation API so the demos are actual outputs — because nothing kills credibility in AI faster than fake examples.",
+      "A refined take on the AI image-generation website, in a space where most products look identical. Rebuilt from an existing concept with sharper visual hierarchy, smoother interactions, and a layout that actually showcases what the AI can do instead of burying it under copy. Wired to a real image-generation API so the demos are actual outputs — because nothing kills credibility in AI faster than fake examples.",
     metaDescription:
-      "DOM: AI image generation landing page with refined design and live demo integration. Stand out in the crowded AI space. React, Tailwind, image generation API.",
+      "DOM: AI image generation website with refined design and live demo integration. Stand out in the crowded AI space. React, Tailwind, image generation API.",
     image: "/images/img11.webp",
     live: "https://aiprof-lac.vercel.app/",
     code: "https://github.com/Genius-mu/-DOM1-",
