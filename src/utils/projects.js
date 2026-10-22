@@ -26,7 +26,7 @@ export default [
   },
   {
     id: "NIO",
-    title: "NIO - Electric Vehicle Brand Experience",
+    title: "NIO",
     description:
       "A multi-page brand site for an electric-vehicle marque, built to read like a high-end showroom instead of a template — dark, editorial, and motion-led across Home, About, Our Power, Products, and Contact. The Products page runs a category-filtered vehicle grid that reflows with animated layout transitions, and every section shares one reusable scroll-triggered reveal that slides content in from the top-right. Tailwind v4 design tokens drive a condensed display type system and a strict greyscale palette, and the whole thing honors prefers-reduced-motion — the restraint was the hard part, not the motion.",
     metaDescription:
@@ -46,7 +46,7 @@ export default [
   },
   {
     id: "CodeFlow",
-    title: "CodeFlow - GitHub Analytics Dashboard",
+    title: "CodeFlow",
     description:
       "A single-page GitHub analytics dashboard: enter any username and get a year-long contribution heatmap, language breakdown, top-starred repos, a 30-day commit timeline, and a sortable, filterable, CSV-exportable repos table — in a clean dark/light theme. Built fully client-side, with Zod validating every API response at the boundary so broken data fails loudly, and debounced filters keeping it smooth.",
     metaDescription:
@@ -69,9 +69,9 @@ export default [
   },
   {
     id: "Mordyn",
-    title: "Mordyn - Modern E-commerce Storefront",
+    title: "Mordyn",
     description:
-      "A modern storefront built to dodge the usual e-commerce pain: filters that reload the page, carts that lose state, and grids that lag past 20 items. Browse the catalog, filter by category and price, sort, and manage a cart — all with zero reloads and instant feedback. The cart persists across sessions without a backend, filter logic is decoupled from the grid, and Framer Motion is tuned to make every action feel like something actually happened.",
+      "A modern E-commerce storefront built to dodge the usual e-commerce pain: filters that reload the page, carts that lose state, and grids that lag past 20 items. Browse the catalog, filter by category and price, sort, and manage a cart — all with zero reloads and instant feedback. The cart persists across sessions without a backend, filter logic is decoupled from the grid, and Framer Motion is tuned to make every action feel like something actually happened.",
     metaDescription:
       "Mordyn: modern, responsive e-commerce storefront with instant filtering, persistent cart, and smooth product browsing. Built with React, Vite, Tailwind, and Framer Motion.",
     image: "/images/img68.webp",
