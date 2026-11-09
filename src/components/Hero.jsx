@@ -122,7 +122,7 @@ const Hero = () => {
         <div className="flex flex-col sm:items-center md:items-start gap-y-1 sm:gap-y-3">
           <BlurText
             as="h2"
-            text="Hey, I'm Mustapha Adegbite."
+            text="Hi, I'm Mustapha Adegbite."
             delay={120}
             animateBy="words"
             direction="top"
