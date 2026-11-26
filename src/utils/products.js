@@ -1,27 +1,15 @@
 export default [
   {
-    id: "Mordyn",
-    title: "Mordyn",
+    id: "Ile",
+    title: "Ilé",
     description:
-      "Most e-commerce frontends die the same death: filters that reload the page, carts that lose state on refresh, and product grids that feel sluggish the moment you have more than 20 items. Mordyn is a modern storefront built to dodge all three. Users can browse a full product catalog, filter by category and price, sort listings, and manage a shopping cart — all with zero full-page reloads and instant feedback on every interaction. I architected the state layer so the cart persists across sessions without a backend, and decoupled filter logic from the product grid so adding new filter dimensions (size, color, rating) takes minutes instead of a rewrite. Framer Motion animations are tuned to communicate state — adding to cart should feel like something happened, not just look like it. Fully responsive from a 320px phone to a widescreen monitor, because shopping happens everywhere except where you expect it to.",
-    metaDescription:
-      "Mordyn: modern, responsive e-commerce storefront with instant filtering, persistent cart, and smooth product browsing. Built with React, Vite, Tailwind, and Framer Motion.",
-    image: "/images/img68.webp",
-    thumb: "/images/thumbs/img68.webp",
+      "A premium listings site for private homes across Lagos, with full-bleed photography, oversized type and scroll-driven reveals.",
+    image: "/images/ile.webp",
+    thumb: "/images/thumbs/ile.webp",
     summary:
-      "An e-commerce storefront with instant filtering and sorting, a cart that persists across sessions, and no full-page reloads.",
-    live: "https://mordyn.vercel.app/",
-    code: "https://github.com/Genius-mu/mordyn",
-    stacks: [
-      "react",
-      "vite",
-      "tailwind CSS",
-      "framer motion",
-      "react-router",
-      "lucide-react",
-      "localStorage",
-    ],
-    imgs: ["/images/img68.webp", "/images/img69.webp"],
+      "A premium listings site for private homes across Lagos, with full-bleed photography, oversized type and scroll-driven reveals.",
+    live: "https://ile-six.vercel.app/",
+    imgs: ["/images/ile-1.webp", "/images/ile-2.webp"],
   },
   {
     id: "Aurea",

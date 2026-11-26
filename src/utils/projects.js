@@ -1,5 +1,16 @@
 export default [
   {
+    id: "Ile",
+    title: "Ilé",
+    description:
+      "Ilé is a listings site for a small, hand-picked set of private homes across Lagos: lagoon villas, garden flats and penthouses in Ikoyi, Banana Island, Eko Atlantic, Lekki and Victoria Island. The idea is fewer homes, known properly, so the design leans on full-bleed photography, oversized type and scroll-driven reveals instead of a dense grid of listings. Each home has its own page with key details, a viewing request form and WhatsApp contact, and flows straight into the next home so browsing feels like turning pages rather than filtering a database.",
+    metaDescription:
+      "Ilé: a premium Lagos real estate website for private residences, with full-bleed photography, scroll-driven animation and viewing requests.",
+    image: "/images/ile.webp",
+    live: "https://ile-six.vercel.app/",
+    imgs: ["/images/ile-1.webp", "/images/ile-2.webp"],
+  },
+  {
     id: "Aurea",
     title: "AUREA",
     description:
@@ -134,26 +145,26 @@ export default [
     ],
     imgs: ["/images/img70.webp", "/images/img71.webp"],
   },
-  {
-    id: "Alubarika",
-    title: "Alubarika",
-    description:
-      "A centralized platform for independent forex traders to showcase services, educate prospects, and handle client communication from one polished interface — replacing scattered WhatsApp screenshots with something that reads as legitimate. Conversion-focused layouts, smooth Framer Motion transitions, and a fully responsive design from a 320px phone to a 27-inch monitor, built on reusable React components so new service sections drop in fast.",
-    metaDescription:
-      "Alubarika: professional FX trading platform helping forex traders showcase services, educate clients, and convert prospects. Built with React, Tailwind CSS, and Framer Motion.",
-    image: "/images/img24.webp",
-    live: "https://alubarika.vercel.app/",
-    code: "https://github.com/Genius-mu/Alubarika",
-    stacks: [
-      "react",
-      "vite",
-      "tailwind CSS",
-      "framer motion",
-      "react-router",
-      "lucide-react",
-    ],
-    imgs: ["/images/img25.webp", "/images/img26.webp"],
-  },
+  // {
+  //   id: "Alubarika",
+  //   title: "Alubarika",
+  //   description:
+  //     "A centralized platform for independent forex traders to showcase services, educate prospects, and handle client communication from one polished interface — replacing scattered WhatsApp screenshots with something that reads as legitimate. Conversion-focused layouts, smooth Framer Motion transitions, and a fully responsive design from a 320px phone to a 27-inch monitor, built on reusable React components so new service sections drop in fast.",
+  //   metaDescription:
+  //     "Alubarika: professional FX trading platform helping forex traders showcase services, educate clients, and convert prospects. Built with React, Tailwind CSS, and Framer Motion.",
+  //   image: "/images/img24.webp",
+  //   live: "https://alubarika.vercel.app/",
+  //   code: "https://github.com/Genius-mu/Alubarika",
+  //   stacks: [
+  //     "react",
+  //     "vite",
+  //     "tailwind CSS",
+  //     "framer motion",
+  //     "react-router",
+  //     "lucide-react",
+  //   ],
+  //   imgs: ["/images/img25.webp", "/images/img26.webp"],
+  // },
   // {
   //   id: "ClarityQ",
   //   title: "ClarityQ - AI-Powered Knowledge Organization & Search",
@@ -240,28 +251,28 @@ export default [
   //   ],
   //   imgs: ["/images/img32.webp", "/images/img33.webp"],
   // },
-  {
-    id: "HabitXP",
-    title: "HabitXP",
-    description:
-      "A habit tracker that treats habit-building as identity, not data entry. Every streak and milestone is visualized for emotional payoff — day 30 should feel different from day 3. Persistence runs on both localStorage and IndexedDB so streaks survive offline use, browser crashes, and device migrations. Built on a simple thesis: what you measure you improve, but what you celebrate you sustain.",
-    metaDescription:
-      "HabitXP: habit tracker app with streak visualizations and offline-first persistence. Build consistency, celebrate progress. React, Tailwind, IndexedDB.",
-    image: "/images/img34.webp",
-    live: "https://habit-gx29.vercel.app/",
-    code: "https://github.com/Genius-mu/HabitXP",
-    stacks: [
-      "react",
-      "vite",
-      "tailwind CSS",
-      "framer motion",
-      "react-router",
-      "lucide-react",
-      "localStorage",
-      "indexedDB",
-    ],
-    imgs: ["/images/img34.webp", "/images/img35.webp"],
-  },
+  // {
+  //   id: "HabitXP",
+  //   title: "HabitXP",
+  //   description:
+  //     "A habit tracker that treats habit-building as identity, not data entry. Every streak and milestone is visualized for emotional payoff — day 30 should feel different from day 3. Persistence runs on both localStorage and IndexedDB so streaks survive offline use, browser crashes, and device migrations. Built on a simple thesis: what you measure you improve, but what you celebrate you sustain.",
+  //   metaDescription:
+  //     "HabitXP: habit tracker app with streak visualizations and offline-first persistence. Build consistency, celebrate progress. React, Tailwind, IndexedDB.",
+  //   image: "/images/img34.webp",
+  //   live: "https://habit-gx29.vercel.app/",
+  //   code: "https://github.com/Genius-mu/HabitXP",
+  //   stacks: [
+  //     "react",
+  //     "vite",
+  //     "tailwind CSS",
+  //     "framer motion",
+  //     "react-router",
+  //     "lucide-react",
+  //     "localStorage",
+  //     "indexedDB",
+  //   ],
+  //   imgs: ["/images/img34.webp", "/images/img35.webp"],
+  // },
   // {
   //   id: "Padi",
   //   title: "Padi - Multilingual Voice Assistant for African Languages",
@@ -447,88 +458,88 @@ export default [
   //   ],
   //   imgs: ["/images/img52.webp", "/images/img53.webp"],
   // },
-  {
-    id: "Electriz",
-    title: "Electriz",
-    description:
-      "A modern website for electrical services — an industry mostly stuck with sites that look built in 2009. Confident visuals, clear service breakdowns, and prominent calls-to-action, structured around how customers actually decide to hire: credibility first, then services, then contact. Fully responsive, because the person searching for an emergency electrician is on their phone, not at a desk.",
-    metaDescription:
-      "Electiz: conversion-focused website for electrical services. Clean visuals, mobile-first design, credibility-driven layout. React, Tailwind, Framer Motion.",
-    image: "/images/img57.webp",
-    live: "https://electiz-virid.vercel.app/",
-    code: "https://github.com/Genius-mu/Electiz",
-    stacks: [
-      "react",
-      "vite",
-      "tailwind CSS",
-      "framer motion",
-      "react-router",
-      "lucide-react",
-    ],
-    imgs: ["/images/img56.webp", "/images/img57.webp"],
-  },
-  {
-    id: "DOM",
-    title: "DOM - AI Image Generation website",
-    description:
-      "A refined take on the AI image-generation website, in a space where most products look identical. Rebuilt from an existing concept with sharper visual hierarchy, smoother interactions, and a layout that actually showcases what the AI can do instead of burying it under copy. Wired to a real image-generation API so the demos are actual outputs — because nothing kills credibility in AI faster than fake examples.",
-    metaDescription:
-      "DOM: AI image generation website with refined design and live demo integration. Stand out in the crowded AI space. React, Tailwind, image generation API.",
-    image: "/images/img11.webp",
-    live: "https://aiprof-lac.vercel.app/",
-    code: "https://github.com/Genius-mu/-DOM1-",
-    stacks: [
-      "react",
-      "vite",
-      "tailwind CSS",
-      "framer motion",
-      "image generation API",
-      "react-router",
-      "lucide-react",
-    ],
-    imgs: ["/images/img58.webp", "/images/img59.webp"],
-  },
-  {
-    id: "Tania",
-    title: "Tania",
-    description:
-      "A wellness and massage landing page that sells a feeling, not a service. Where the industry tends toward loud colors and aggressive CTAs, Tania uses calming palettes, generous whitespace, and softly-paced animations so booking feels like the start of the relaxation, not an interruption to it. Every spacing decision was tuned to feel like a deep breath, holding that calm from desktop to mobile.",
-    metaDescription:
-      "Tania: wellness and massage service landing page with calming, emotionally-aligned design. Booking experience that begins the relaxation. React, Tailwind, Framer Motion.",
-    image: "/images/img72.webp",
-    live: "https://tania-orcin.vercel.app/",
-    code: "https://github.com/Genius-mu/Tania",
-    stacks: [
-      "react",
-      "vite",
-      "tailwind CSS",
-      "framer motion",
-      "react-counter-up",
-      "react-router",
-      "lucide-react",
-    ],
-    imgs: ["/images/img72.webp", "/images/img73.webp"],
-  },
-  {
-    id: "Omega Hardwood",
-    title: "Omega Hardwood",
-    description:
-      "A fully responsive, multi-page React site for a premium French charcoal supplier, anchored by cinematic hero sections with layered gradient overlays, animated ember particles, and glassmorphic UI. Six pages of Framer Motion work — scroll-triggered reveals, staggered cascades, gradient text — plus a working blog with live search, category filtering, pagination, and a modal reader; a validated contact form with embedded map and FAQ accordion; and a scroll-aware header that morphs between floating and fixed states with a slide-in mobile drawer.",
-    metaDescription:
-      "Omega Hardwood: is a fully responsive, multi-page React website built for a premium French charcoal supplier, featuring a polished design system anchored in cinematic hero sections with layered gradient overlays, animated ember particles, and glassmorphic UI elements. React, Tailwind, Framer Motion.",
-    image: "/images/img62.webp",
-    live: "https://charcoal-web.vercel.app/",
-    code: "https://github.com/Genius-mu/Chakol-web",
-    stacks: [
-      "react",
-      "vite",
-      "tailwind CSS",
-      "framer motion",
-      "react-router",
-      "lucide-react",
-    ],
-    imgs: ["/images/img62.webp", "/images/img63.webp"],
-  },
+  // {
+  //   id: "Electriz",
+  //   title: "Electriz",
+  //   description:
+  //     "A modern website for electrical services — an industry mostly stuck with sites that look built in 2009. Confident visuals, clear service breakdowns, and prominent calls-to-action, structured around how customers actually decide to hire: credibility first, then services, then contact. Fully responsive, because the person searching for an emergency electrician is on their phone, not at a desk.",
+  //   metaDescription:
+  //     "Electiz: conversion-focused website for electrical services. Clean visuals, mobile-first design, credibility-driven layout. React, Tailwind, Framer Motion.",
+  //   image: "/images/img57.webp",
+  //   live: "https://electiz-virid.vercel.app/",
+  //   code: "https://github.com/Genius-mu/Electiz",
+  //   stacks: [
+  //     "react",
+  //     "vite",
+  //     "tailwind CSS",
+  //     "framer motion",
+  //     "react-router",
+  //     "lucide-react",
+  //   ],
+  //   imgs: ["/images/img56.webp", "/images/img57.webp"],
+  // },
+  // {
+  //   id: "DOM",
+  //   title: "DOM - AI Image Generation website",
+  //   description:
+  //     "A refined take on the AI image-generation website, in a space where most products look identical. Rebuilt from an existing concept with sharper visual hierarchy, smoother interactions, and a layout that actually showcases what the AI can do instead of burying it under copy. Wired to a real image-generation API so the demos are actual outputs — because nothing kills credibility in AI faster than fake examples.",
+  //   metaDescription:
+  //     "DOM: AI image generation website with refined design and live demo integration. Stand out in the crowded AI space. React, Tailwind, image generation API.",
+  //   image: "/images/img11.webp",
+  //   live: "https://aiprof-lac.vercel.app/",
+  //   code: "https://github.com/Genius-mu/-DOM1-",
+  //   stacks: [
+  //     "react",
+  //     "vite",
+  //     "tailwind CSS",
+  //     "framer motion",
+  //     "image generation API",
+  //     "react-router",
+  //     "lucide-react",
+  //   ],
+  //   imgs: ["/images/img58.webp", "/images/img59.webp"],
+  // },
+  // {
+  //   id: "Tania",
+  //   title: "Tania",
+  //   description:
+  //     "A wellness and massage landing page that sells a feeling, not a service. Where the industry tends toward loud colors and aggressive CTAs, Tania uses calming palettes, generous whitespace, and softly-paced animations so booking feels like the start of the relaxation, not an interruption to it. Every spacing decision was tuned to feel like a deep breath, holding that calm from desktop to mobile.",
+  //   metaDescription:
+  //     "Tania: wellness and massage service landing page with calming, emotionally-aligned design. Booking experience that begins the relaxation. React, Tailwind, Framer Motion.",
+  //   image: "/images/img72.webp",
+  //   live: "https://tania-orcin.vercel.app/",
+  //   code: "https://github.com/Genius-mu/Tania",
+  //   stacks: [
+  //     "react",
+  //     "vite",
+  //     "tailwind CSS",
+  //     "framer motion",
+  //     "react-counter-up",
+  //     "react-router",
+  //     "lucide-react",
+  //   ],
+  //   imgs: ["/images/img72.webp", "/images/img73.webp"],
+  // },
+  // {
+  //   id: "Omega Hardwood",
+  //   title: "Omega Hardwood",
+  //   description:
+  //     "A fully responsive, multi-page React site for a premium French charcoal supplier, anchored by cinematic hero sections with layered gradient overlays, animated ember particles, and glassmorphic UI. Six pages of Framer Motion work — scroll-triggered reveals, staggered cascades, gradient text — plus a working blog with live search, category filtering, pagination, and a modal reader; a validated contact form with embedded map and FAQ accordion; and a scroll-aware header that morphs between floating and fixed states with a slide-in mobile drawer.",
+  //   metaDescription:
+  //     "Omega Hardwood: is a fully responsive, multi-page React website built for a premium French charcoal supplier, featuring a polished design system anchored in cinematic hero sections with layered gradient overlays, animated ember particles, and glassmorphic UI elements. React, Tailwind, Framer Motion.",
+  //   image: "/images/img62.webp",
+  //   live: "https://charcoal-web.vercel.app/",
+  //   code: "https://github.com/Genius-mu/Chakol-web",
+  //   stacks: [
+  //     "react",
+  //     "vite",
+  //     "tailwind CSS",
+  //     "framer motion",
+  //     "react-router",
+  //     "lucide-react",
+  //   ],
+  //   imgs: ["/images/img62.webp", "/images/img63.webp"],
+  // },
   // {
   //   id: "Estate Zoom",
   //   title: "Estate Zoom - Real Estate Property Search Platform",
