@@ -22,13 +22,14 @@ const skillsRow2 = [
   { name: "TypeScript", icon: <SiTypescript />, color: "text-blue-400" },
 ];
 
-const SkillPill = ({ skill }) => (
+const SkillPill = ({ skill, hidden = false }) => (
   <div
+    aria-hidden={hidden || undefined}
     className="skill flex-none w-16 h-16 md:w-40 md:h-14 rounded-lg flex items-center justify-center gap-2
                bg-green-600/10 text-white font-medium text-lg shadow-md"
   >
     <span className={`text-3xl md:text-2xl ${skill.color}`}>{skill.icon}</span>
-    <span className="hidden md:inline">{skill.name}</span>
+    <span className="sr-only md:not-sr-only">{skill.name}</span>
   </div>
 );
 
@@ -48,7 +49,7 @@ const MarqueeRow = ({ skills, direction = "left" }) => (
         <SkillPill key={`${direction}-a-${i}`} skill={skill} />
       ))}
       {skills.map((skill, i) => (
-        <SkillPill key={`${direction}-b-${i}`} skill={skill} />
+        <SkillPill key={`${direction}-b-${i}`} skill={skill} hidden />
       ))}
     </div>
   </div>
