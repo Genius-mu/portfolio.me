@@ -2,7 +2,6 @@ import {
   FileBarChart,
   Github,
   Home,
-  Instagram,
   Mail,
   MailIcon,
   Twitter,
@@ -26,11 +25,13 @@ const Footer = () => {
         <p
           className={`footP text-black/70 font-light text-[14px] sm:text-[16px] leading-6`}
         >
-          Copyrights © 2025 Mustapha Adegbite
+          Copyright © {new Date().getFullYear()} Mustapha Adegbite
         </p>
         <nav className="flex gap-x-2 overflow-hidden">
           <Link
             to="https://x.com/mustaphAdegbite"
+            aria-label="X (Twitter)"
+            rel="noopener noreferrer"
             className={`text-black/70 hover:text-black/90 py-2 rounded px-2 sm:px-3 transition-all hover:bg-white rounded-[50%] duration-300 ease-in-out hover:scale-110`}
             target="_blank"
           >
@@ -38,19 +39,16 @@ const Footer = () => {
           </Link>
           <Link
             to="https://github.com/Genius-mu"
+            aria-label="GitHub"
+            rel="noopener noreferrer"
             className={`text-black/70 hover:text-black/90 py-2 rounded px-2 sm:px-3 transition-all hover:bg-white rounded-[50%] duration-300 ease-in-out hover:scale-110`}
             target="_blank"
           >
             <Github className="w-4 h-4 sm:w-6 sm:h-6" />
           </Link>
           <a
-            href="https://www.instagram.com/genius_mu01/"
-            className={`text-black/70 hover:text-black/90 py-2 rounded px-2 sm:px-3 transition-all hover:bg-white duration-300 ease-in-out hover:scale-110`}
-          >
-            <Instagram className="w-4 h-4 sm:w-6 sm:h-6" />
-          </a>
-          <a
             href="mailto:adegbitemustapha73@gmail.com"
+            aria-label="Email"
             className={`text-black/70 hover:text-black/90 py-2 rounded px-2 sm:px-3 transition-all hover:bg-white duration-300 ease-in-out hover:scale-110`}
           >
             <MailIcon className="w-4 h-4 sm:w-6 sm:h-6" />

@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import projects from "../utils/products";
 import { motion } from "framer-motion";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, ArrowUpRight } from "lucide-react";
 import { useRef } from "react";
 
 /* ---------- SpotlightCard ---------- */
@@ -103,32 +103,55 @@ const Section2 = () => {
 
               <div className="w-full aspect-[16/10] border border-black/30 shadow-xl rounded-2xl overflow-hidden z-10">
                 <img
-                  src={project.image}
-                  alt={project.title}
+                  src={project.thumb || project.image}
+                  alt={`${project.title} screenshot`}
+                  width="800"
+                  height="373"
                   loading="lazy"
-                  className="w-full h-full object-cover object-center transition-transform duration-300 ease-in-out hover:scale-110"
+                  decoding="async"
+                  className="w-full h-full object-cover object-top transition-transform duration-300 ease-in-out hover:scale-105"
                 />
               </div>
 
-              <h2 className="font-bold w-full text-left text-xl tracking-[1px] z-10 text-black/90 line-clamp-1 break-words">
+              <h3 className="font-bold w-full text-left text-xl tracking-[1px] z-10 text-black/90 line-clamp-1 break-words">
                 {project.title}
-              </h2>
+              </h3>
 
-              <p className="w-full text-black/90 text-base line-clamp-3 break-words z-10">
-                {project.description}
+              <p className="w-full text-black/80 text-base line-clamp-2 break-words z-10">
+                {project.summary || project.description}
               </p>
+
+              {project.stacks && (
+                <ul className="flex flex-wrap gap-2 z-10" aria-label="Tech stack">
+                  {project.stacks.slice(0, 4).map((stack) => (
+                    <li
+                      key={stack}
+                      className="text-xs font-medium text-black/70 bg-black/5 border border-black/10 rounded-full px-2.5 py-1 capitalize"
+                    >
+                      {stack}
+                    </li>
+                  ))}
+                </ul>
+              )}
 
               <span className="w-full flex items-center gap-x-2 z-10">
                 <Link
                   to={`/project/${project.id}`}
-                  rel="noopener noreferrer"
-                  className="font-semibold text-black/90 bg-black/10 w-[40%] text-base py-3 rounded-2xl px-4 flex items-center gap-x-2 transition-all group duration-300 ease-in-out hover:bg-black/30"
+                  className="font-semibold text-black/90 bg-black/10 w-fit text-base py-3 rounded-2xl px-5 flex items-center gap-x-2 transition-all group duration-300 ease-in-out hover:bg-black/20"
                 >
-                  View{" "}
-                  <span>
-                    <ArrowRight className="w-5 h-5 group-hover:ml-3 duration-200" />
-                  </span>
+                  Details{" "}
+                  <ArrowRight className="w-5 h-5 group-hover:translate-x-1 duration-200" />
                 </Link>
+                {project.live && (
+                  <a
+                    href={project.live}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="font-semibold text-black/80 text-base py-3 px-4 rounded-2xl flex items-center gap-x-1.5 hover:bg-black/5 transition-colors duration-200"
+                  >
+                    Live site <ArrowUpRight className="w-4 h-4" />
+                  </a>
+                )}
               </span>
             </SpotlightCard>
           ))}

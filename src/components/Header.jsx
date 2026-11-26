@@ -144,7 +144,7 @@ function Dock({
       className={`flex items-end rounded-3xl border px-3 sm:px-4 pb-2 pt-2 backdrop-blur-xl ${
         dark
           ? "bg-[#120F17]/70 border-white/10 shadow-lg shadow-black/30"
-          : "bg-white/60 border-black/10 shadow-lg shadow-black/10"
+          : "bg-white/90 border-black/10 shadow-lg shadow-black/10"
       } ${className}`}
       role="toolbar"
       aria-label="Application dock"

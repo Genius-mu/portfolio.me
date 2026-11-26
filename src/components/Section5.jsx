@@ -41,10 +41,9 @@ const Section5 = () => {
           <p
             className={`max-w-[800px] text-black/70 text-[14px] sm:text-[16px] leading-6`}
           >
-            Got an idea, a project, or a vision that needs a frontend touch? I'd
-            love to bring it to life. Saim, Gamified HabitXP, and a Spelling
-            Game — my projects speak for themselves. If you're looking for
-            someone who codes with purpose and passion — let's connect.
+            Hiring for a frontend role, or have a project that needs a fast,
+            polished interface? Send me a message and I'll get back to you
+            quickly.
           </p>
         </div>
 
@@ -182,15 +181,11 @@ const Section5 = () => {
 
                   {/* Submit Button */}
                   <button
-                    className="btn1Class"
+                    className="self-start mt-4 bg-black text-white text-[16px] py-3 px-8 rounded-2xl cursor-pointer transition-colors duration-300 hover:bg-black/80 disabled:opacity-60 disabled:cursor-not-allowed"
                     type="submit"
                     disabled={state.submitting}
                   >
-                    {state.submitting ? "Sending..." : "Send Message"}
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
+                    {state.submitting ? "Sending..." : "Send message"}
                   </button>
 
                   {/* Success / Error feedback */}

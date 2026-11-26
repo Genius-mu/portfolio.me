@@ -27,65 +27,47 @@ const Section3 = () => {
             variants={cardVariants}
             initial="hiddenLeft"
             whileInView="visible"
-            viewport={{ once: false, amount: 0.2 }}
+            viewport={{ once: true, amount: 0.2 }}
             transition={{ delay: 0.1 }}
-            className={`max-w-[800px] pl-5 border-l-3 rounded-l-[3px] border-gray-400 text-[14px] hover:border-green-400 transition duration-200 sm:text-[16px] text-black/70 sm:line-clamp-7 line-clamp-4 text-justify`}
+            className="max-w-[800px] pl-5 border-l-3 rounded-l-[3px] border-gray-300 hover:border-green-500 transition duration-200 text-[15px] sm:text-[16px] leading-7 text-black/70"
           >
-            I'm Mustapha Adegbite, a Frontend Engineer who builds complete web
-            solutions with{" "}
-            <span className={`text-black bg-blue-500/20`}>
-              React, Next.js, Node.js, and modern databases (MongoDB,
-              PostgreSQL).
-            </span>{" "}
-            I don't just implement designs or write backend code in isolation —
-            I architect end-to-end systems where scalable APIs meet
-            pixel-perfect frontends. Clean architecture, optimized databases,
-            and interfaces that feel alive.
+            I'm Mustapha Adegbite, a frontend engineer and Physics undergraduate
+            at the University of Lagos. I work mainly with{" "}
+            <span className="text-black font-medium">
+              React, Next.js, TypeScript and Tailwind
+            </span>
+            , and I care about interfaces that load fast, feel smooth and work
+            on every screen size.
           </motion.p>
           <motion.p
             variants={cardVariants}
             initial="hiddenRight"
             whileInView="visible"
-            viewport={{ once: false, amount: 0.2 }}
-            transition={{ delay: 0.3 }}
-            className={`max-w-[800px] pl-5 border-l-3 rounded-l-[3px] border-gray-400 text-[14px] hover:border-green-400 transition duration-200 sm:text-[16px] text-black/70 sm:line-clamp-7 line-clamp-4 text-justify`}
+            viewport={{ once: true, amount: 0.2 }}
+            transition={{ delay: 0.2 }}
+            className="max-w-[800px] pl-5 border-l-3 rounded-l-[3px] border-gray-300 hover:border-green-500 transition duration-200 text-[15px] sm:text-[16px] leading-7 text-black/70"
           >
-            My journey into full-stack development grew from shipping products
-            end-to-end.{" "}
-            <span className={`text-black`}>
-              I built Saim — an embeddable AI sales agent with a{" "}
-              <span className="bg-green-500/20">
-                React frontend, Express backend, and MongoDB database that
-                qualifies leads and captures contacts 24/7;{" "}
-              </span>{" "}
-              a reusable React component library with API integrations; and Padi
-              — a multilingual, offline-first voice assistant with both frontend
-              UI and backend NLP processing, designed for Nigerian senior
-              citizens and built during a hackathon with accessibility at its
-              core.
-            </span>{" "}
-            Every project pushed me to think beyond isolated layers — connecting
-            databases to APIs to user interfaces, obsessing over performance,
-            scalability, and real human impact.
+            Most of what I know comes from shipping. I built{" "}
+            <span className="text-black font-medium">Saim</span>, an embeddable
+            AI sales agent (React, Express, MongoDB) that runs as the chat widget
+            on this site;{" "}
+            <span className="text-black font-medium">Navilag</span>, a campus
+            navigation app for UNILAG students; and{" "}
+            <span className="text-black font-medium">Padi</span>, an
+            offline-first voice assistant for Nigerian senior citizens, built
+            at a hackathon. I also build scroll-driven 3D websites for brands.
           </motion.p>
           <motion.p
             variants={cardVariants}
             initial="hiddenLeft"
             whileInView="visible"
-            viewport={{ once: false, amount: 0.2 }}
+            viewport={{ once: true, amount: 0.2 }}
             transition={{ delay: 0.1 }}
-            className={`max-w-[800px] pl-5 border-l-3 rounded-l-[3px] border-gray-400 hover:border-green-400 transition duration-200 text-[14px] sm:text-[16px] text-black/70 sm:line-clamp-7 line-clamp-4 text-justify`}
+            className="max-w-[800px] pl-5 border-l-3 rounded-l-[3px] border-gray-300 hover:border-green-500 transition duration-200 text-[15px] sm:text-[16px] leading-7 text-black/70"
           >
-            Great products live at the intersection of{" "}
-            <span className={`text-black bg-red-500/20`}>
-              robust APIs, optimal database queries, performance, accessibility,
-              and emotion
-            </span>{" "}
-            — fast response times, efficient data handling, inclusive design,
-            and interactions that feel human, not just functional. When I'm not
-            shipping, I'm studying architecture patterns, database optimization,
-            and what great builders do differently — then applying it across the
-            stack.
+            Right now I'm going deeper on backend and databases so I can
+            take a product from idea to production on my own. I'm open to
+            frontend roles, internships and freelance projects.
           </motion.p>
 
           <h2

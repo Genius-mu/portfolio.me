@@ -7,6 +7,9 @@ export default [
     metaDescription:
       "Mordyn: modern, responsive e-commerce storefront with instant filtering, persistent cart, and smooth product browsing. Built with React, Vite, Tailwind, and Framer Motion.",
     image: "/images/img68.webp",
+    thumb: "/images/thumbs/img68.webp",
+    summary:
+      "An e-commerce storefront with instant filtering and sorting, a cart that persists across sessions, and no full-page reloads.",
     live: "https://mordyn.vercel.app/",
     code: "https://github.com/Genius-mu/mordyn",
     stacks: [
@@ -28,6 +31,9 @@ export default [
     metaDescription:
       "AUREA is a premium luxury real estate website showcasing architecturally significant residences, curated property listings, immersive photography, and private client enquiries through an elegant, responsive interface.",
     image: "/images/aurea.webp",
+    thumb: "/images/thumbs/aurea.webp",
+    summary:
+      "A luxury real estate site with editorial typography, curated residences and private enquiry flows. Built with Next.js and Three.js.",
     live: "https://aurea-ruddy.vercel.app/",
     code: "https://github.com/Genius-mu/aurea",
     stacks: [
@@ -53,6 +59,9 @@ export default [
     metaDescription:
       "Inkly: infinite-canvas drawing app with world-space coordinates, zoom-to-cursor, unified pointer input, and realtime-ready architecture. Built with React, TypeScript, Canvas API, Zustand, and Supabase.",
     image: "/images/img71.webp",
+    thumb: "/images/thumbs/img71.webp",
+    summary:
+      "An infinite-canvas whiteboard with pan and zoom, shapes, undo/redo and PNG export, on mouse, touch and pen.",
     live: "https://inklyma.vercel.app/",
     code: "https://github.com/Genius-mu/Inkly",
     stacks: [
@@ -75,6 +84,9 @@ export default [
     metaDescription:
       "NaviLag: The ultimate campus navigation and student survival app for the University of Lagos. Find real-time shortcuts, dynamic timetables, and past questions instantly. Built with React.",
     image: "/images/img80.webp",
+    thumb: "/images/thumbs/img80.webp",
+    summary:
+      "A campus navigation app for University of Lagos students, with routing, timetables and a past-question archive.",
     live: "https://navilag.vercel.app/",
     code: "https://github.com/Genius-mu/[navilag-repo]",
     stacks: [
